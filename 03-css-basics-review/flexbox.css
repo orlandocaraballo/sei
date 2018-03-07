@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  width: 1000px;
+  margin: 60px auto 0;
+}
+
+main {
+  display: flex;
+}
+
+article {
+  flex-grow: 4;
+  background: blueviolet;
+}
+
+aside {
+  flex-grow: 1;
+  background: burlywood;
+  height: 300px;
+}
+
+header {
+  background: blue;
+  color: white;
+  height: 100px;
+}
+
+footer {
+  background: black;
+  color: white;
+  height: 100px;
+}
+
+
+
+
+

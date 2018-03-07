@@ -1,0 +1,19 @@
+@media (min-width: 400px) and (max-width: 700px) {
+  body {
+    background-color: blue;
+  }
+}
+
+#container {
+  height: 400px;
+  text-align: center;
+}
+
+.box {
+  height: 300px;
+  width: 25%;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 1.1em;
+}

@@ -130,7 +130,7 @@ position: absolute | fixed / sticky | relative;
   * based on top left corner of the window 
   * will be in the same position regardless of scroll
 
-[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
 ### Positioning Exercise
 
@@ -147,7 +147,7 @@ _Note: Boxes are 150px by 150px_
 
 ## Flexbox
 
-[MDN Article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[MDN Reference](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 [Flexbox Froggy Practice](http://flexboxfroggy.com/)
 
@@ -155,7 +155,7 @@ _Note: Boxes are 150px by 150px_
 
 ## Floats
 
-[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 
 # Specificity
 
@@ -165,7 +165,7 @@ CSS will decide which styles to "take" when reading a stylesheet in the followin
 2. Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
 3. ID selectors (e.g., #example).
 
-[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
 
 # Vendor prefixing
@@ -178,7 +178,7 @@ The following prefixes are used to target specific browsers:
 
 # Mobile Responsive Design
 
-[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 
 [Smashing Magazine Example](https://www.smashingmagazine.com/2018/03/comprehensive-website-planning-guide-part3/)
 
@@ -233,7 +233,7 @@ Properties to Modify:
 * `transition-timing-function` - what movement it uses
 * `transition-delay` - how long to wait before doing the thing
 
-[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
 
 [CSS Transitions Explained](https://zellwk.com/blog/css-transitions/)
 
@@ -306,7 +306,7 @@ div {
 
 ^ Would run the `fadeOut` keyframe on any div but specifying properties on 4 different intervals
 
-[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 
 [CSS Animations Explained](https://zellwk.com/blog/css-animations/)
 

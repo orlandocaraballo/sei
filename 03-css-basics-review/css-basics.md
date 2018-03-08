@@ -1,12 +1,14 @@
-# Adding to HTML
+# CSS Basics
 
-## Inline
+## Adding to HTML
+
+### Inline
 
 ```html
   <span style="color: red" />
 ```
 
-## Style
+### Style
 
 ```html
   <head>
@@ -14,13 +16,13 @@
   </head>
 ```
 
-## File
+### File
 
 ```html
   <link href="main.css">
 ```
 
-## Rulesets
+### Rulesets
 
 ![Image of Yaktocat](https://en-support.files.wordpress.com/2011/09/css-selectors-lrg.png)
 
@@ -30,14 +32,14 @@
 * Values define how a property is being styled
 
 
-# Selectors
+## Selectors
 
-## Individual
+### Individual
 ```css
 span { color: red; }
 ```
 
-## Multiple
+### Multiple
 
 ```css
 span, div { color: green; }
@@ -46,7 +48,7 @@ span, div { color: green; }
 Attributes
 * Values
 
-## Class
+### Class
 
 ```html
 <!-- html -->
@@ -61,7 +63,7 @@ Attributes
 }
 ```
 
-## Id
+### Id
 
 ```html
 <!-- html -->
@@ -76,12 +78,12 @@ Attributes
 }
 ```
 
-## Comments
+### Comments
 ```css
 /* Everything within here is a comment */
 ```
 
-## Common Properties
+### Common Properties
 * color
 * font-family
 * font-size
@@ -91,19 +93,19 @@ Attributes
 * height
 * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-# Layouts
+## Layouts
 
-## Box Model
+### Box Model
 
 ![Box Model](https://mdn.mozillademos.org/files/13647/box-model-standard-small.png)
 
-### Box Model Exercise
+#### Box Model Exercise
 
-#### Setup
+##### Setup
 
 Create a new folder in their class directory called CSS-practice and make a new HTML called index.html and a CSS file called styles.css. Make sure they are linked properly linked together.
 
-#### Instructions
+##### Instructions
 1. Make a div with an id of "container" and give it a height of 400px.
 2. Within that div, make 3 smaller divs with a class of "box".
 3. Give the boxes a width equal to one quarter of the size of the parent div and a height of 300px. 
@@ -114,7 +116,7 @@ Create a new folder in their class directory called CSS-practice and make a new 
 8. Give each div some lorem ipsum text of your choice and resize the text to be 10% larger.
 
 
-## Positioning
+### Positioning
 
 ```css
 position: absolute | fixed / sticky | relative;
@@ -132,20 +134,20 @@ position: absolute | fixed / sticky | relative;
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
-### Positioning Exercise
+#### Positioning Exercise
 
-#### Setup
+##### Setup
 
 Use the same folder as the prior exercise
 
-#### Instructions
+##### Instructions
 
 Replicate the following four box mockups using positioning: 
 https://imgur.com/a/4WJv5 
 
 _Note: Boxes are 150px by 150px_
 
-## Flexbox
+### Flexbox
 
 [MDN Reference](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -157,7 +159,7 @@ _Note: Boxes are 150px by 150px_
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 
-# Specificity
+## Specificity
 
 CSS will decide which styles to "take" when reading a stylesheet in the following order. 
 
@@ -168,7 +170,7 @@ CSS will decide which styles to "take" when reading a stylesheet in the followin
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
 
-# Vendor prefixing
+## Vendor prefixing
 
 The following prefixes are used to target specific browsers:
 * `-moz-` (firefox)
@@ -176,7 +178,7 @@ The following prefixes are used to target specific browsers:
 * `-ms-` (microsoft ie, edge)
 * `-o-` (opera)
 
-# Mobile Responsive Design
+## Mobile Responsive Design
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 
@@ -197,33 +199,32 @@ To scale properly on mobile device:
 
 [Mobile Responsive Exercises](https://docs.google.com/document/d/1AN3cHrLX0axbf56jlZZ5_QzwZeR2LXJ1v2mFBbCIt-8/edit)
 
-### Exercise
+#### Exercise
 
-#### Setup
+##### Setup
 
 Use the same folder as the prior exercises
 
-#### Instructions
+##### Instructions
 
 Create the following Media Queries:
 1. For a laptop screen of min-width of 313 px and max-width of 513 px. 
 2. For a phone screen of max width of 480 px and orientation is landscape
 
-
-# Animations
+## Animations
 
 Different types of Animation Libraries
 * [Greensock](https://greensock.com/)
 * [Web Animation API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
 * CSS Animations
 
-## CSS Animations
+### CSS Animations
 
 There are two major ways to run animations using CSS:
 1. Transitions
 2. Keyframes
 
-### Transitions
+#### Transitions
 
 **By far the simplest way**
 
@@ -237,7 +238,7 @@ Properties to Modify:
 
 [CSS Transitions Explained](https://zellwk.com/blog/css-transitions/)
 
-### Keyframes
+#### Keyframes
 
 **A little more challenging to understand but more powerful**
 
@@ -310,7 +311,7 @@ div {
 
 [CSS Animations Explained](https://zellwk.com/blog/css-animations/)
 
-# Use cases
+## Use cases
 
 * Use restraint
 * Decide to use animations after the app is already functioning

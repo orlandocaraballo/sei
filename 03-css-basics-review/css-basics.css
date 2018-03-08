@@ -1,7 +1,12 @@
+/* will only resize when window width is between 400px - 700px */
 @media (min-width: 400px) and (max-width: 700px) {
   body {
     background-color: blue;
   }
+}
+
+body {
+  font-family: sans-serif;
 }
 
 #container {

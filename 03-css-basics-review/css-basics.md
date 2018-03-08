@@ -255,8 +255,8 @@ Keyframes Properties to Modify:
 * `%` values - dictate the properties at specific intervals
 
 Ruleset Properties to Modify:
-* animation - animation to be used
-* animation-duration - how long the animation will last
+* `animation` - animation to be used
+* `animation-duration` - how long the animation will last
 
 ```css
 /* simple example */
@@ -303,6 +303,8 @@ div {
   animation-duration: 1s;
 }
 ```
+
+^ Would run the `fadeOut` keyframe on any div but specifying properties on 4 different intervals
 
 [MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 

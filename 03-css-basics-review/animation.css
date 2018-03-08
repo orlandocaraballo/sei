@@ -1,29 +1,56 @@
-div {
-  background-color: blue;
-  height: 100px;
-  width: 100px;
-  transition: height 1s, width 2s linear 1s, top 1s linear 2s, left 1s linear 2s;
-  position: relative;
-  top: 0;
-  left: 0;
-  animation: move;
-  animation-duration: 1s;
+body {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-/* div:hover {
+div {
+  height: 200px;
+  width: 200px;
+  transition: height 1s, width 2s linear 1s, top 1s linear 2s, left 1s linear 2s;
+  position: absolute;
+  top: 0;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+#transition-example {
+  background-color: blue;
+  left: 0;
+}
+
+/* much easier to do more simpler animations */
+#transition-example:hover {
   height: 50px;
   width: 25px;
   top: 100px;
   left: 30px;
-  background-color: red;
-} */
+  background-color: black;
+}
 
+#keyframes-example {
+  right: 0;
+  background-color: red;
+  animation: move;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+/* much easier to do more complex animations */
 @keyframes move {
   0% {
     top: 0;
+    right: 0;
+  }
+
+  66% {
+    top: 300px;
+    right: 0;
   }
 
   100% {
-    top: 100px;
+    top: 300px;
+    right: 300px;
   }
 }

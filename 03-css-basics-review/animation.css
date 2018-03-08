@@ -6,12 +6,24 @@ div {
   position: relative;
   top: 0;
   left: 0;
+  animation: move;
+  animation-duration: 1s;
 }
 
-div:hover {
+/* div:hover {
   height: 50px;
   width: 25px;
   top: 100px;
   left: 30px;
   background-color: red;
+} */
+
+@keyframes move {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 100px;
+  }
 }

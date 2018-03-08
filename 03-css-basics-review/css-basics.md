@@ -1,6 +1,3 @@
-# CSS Basics
-
-
 # Adding to HTML
 
 ## Inline
@@ -94,19 +91,45 @@ Attributes
 * height
 * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-## Layouts
-Box Model
-Box Model Exercises
-Positioning
-Absolute
-Fixed / Sticky
-Relative
-Static
-Positioning Exercises
-Flexbox
-Flexbox Froggy
-Floats
-Specificity
+# Layouts
+
+## Box Model
+
+![Box Model](https://mdn.mozillademos.org/files/13647/box-model-standard-small.png)
+
+[Box Model Exercises](https://docs.google.com/document/d/1AN3cHrLX0axbf56jlZZ5_QzwZeR2LXJ1v2mFBbCIt-8/edit)
+
+# Positioning
+
+```css
+position: absolute | fixed / sticky | relative;
+```
+
+* Static
+  * default when no position is defined
+* Absolute
+  * based on the top left corner of the window
+* Relative
+  * based on the starting point of the element
+* Sticky / Fixed
+  * based on top left corner of the window 
+  * will be in the same position regardless of scroll
+
+[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+[Positioning Exercises](https://docs.google.com/document/d/1AN3cHrLX0axbf56jlZZ5_QzwZeR2LXJ1v2mFBbCIt-8/edit)
+
+# Flexbox
+
+[MDN Article](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Flexbox Froggy Practice](http://flexboxfroggy.com/)
+
+# Floats
+
+[MDN Article](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+
+# Specificity
 Ids
 Classes
 inline, style, file

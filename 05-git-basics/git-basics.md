@@ -113,7 +113,7 @@ git reset
 
 * Commit often
 
-* Keep your commits small
+* Atomic Commits: Keep your commits small
 
 ---
 

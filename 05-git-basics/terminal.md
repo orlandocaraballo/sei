@@ -51,6 +51,12 @@ rm *.txt
 
 # deletes all files that start with sei in the current directory
 rm sei*
+
+# WARNING: DO NOT TYPE THIS IN YOUR TERMINAL UNLESS YOU ARE SURE OF WHAT YOU ARE DOING
+#          THIS DOES NOT GIVE CONFIRMATION
+
+# deletes your entire filesystem
+rm -Rf /
 ```
 
 ### Delete Directory

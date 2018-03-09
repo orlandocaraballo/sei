@@ -26,7 +26,35 @@ Other version control systems have relied on having one master copy of a file ex
 
 A environment that is managed by git that houses all changes to a particular project across time.
 
+## General Resources
+
+[Git: Homepage](https://git-scm.com/)
+
+[Git: The Simple Guide](http://rogerdudler.github.io/git-guide/)
+
+## Install
+
+### Linux / Mac
+
+👍 You already have some version of it it installed! 
+
+### Windows
+
+You must download [Git Bash](https://gitforwindows.org/)
+
+### Upgrading to Latest
+
+[Atlassian: Installing and Upgrading Git](https://confluence.atlassian.com/bitbucketserver/installing-and-upgrading-git-776640906.html)
+
 ## Basic Commands
+
+```bash
+# fires up help text
+git help
+
+# shows help text only for specific command
+git help | grep command
+```
 
 ```bash
 # initializes a new git repository
@@ -40,6 +68,7 @@ git add file_name
 
 ```bash
 # commits changes to your local repo
+# will fire up default terminal text editor for commenting (default is usually vim)
 git commit
 
 # commit changes to your local repo along with a commit message
@@ -67,6 +96,12 @@ git branch branch_name
 git checkout branch_name
 ```
 
+```bash
+# clones git repository
+# used alongside Github, Bitbucket, etc
+git clone git_url
+```
+
 ## Undo Commands
 
 ```bash
@@ -90,6 +125,48 @@ git reset
 
 ### Resource 
 [Atlassian: Undoing Commits & Changes](https://www.atlassian.com/git/tutorials/undoing-changes)
+
+---
+
+## Remote Commands
+
+```bash
+# list remote repos along with urls
+git remote -v
+```
+
+```bash
+# adds remote repo to workspace
+git remote add remote_name remote_url
+```
+
+```bash
+# pushes local code to remote branch
+git push remote_name branch_name
+```
+
+```bash
+# fetches updated changes from remote
+git fetch remote_name
+```
+
+```bash
+# merge code from branch_name into current branch
+git merge branch_name
+```
+
+
+```bash
+# pulls local code to remote branch
+git pull remote_name branch_name
+```
+
+```bash
+# pulls local code to remote branch
+# same as prior command in two steps
+git fetch remote_name
+git merge remote_name/branch_name
+```
 
 ---
 

@@ -6,6 +6,14 @@
 
 Another way to communicate with your computer using text commands.
 
+## General Guides
+
+[Terminal: Mac](https://computers.tutsplus.com/tutorials/navigating-the-terminal-a-gentle-introduction--mac-3855)
+
+[Terminal: Linux](https://maker.pro/education/basic-linux-commands-for-beginners)
+
+[Terminal: Windows (Git Bash)](http://www.bhagwad.com/blog/2012/technology/simple-guide-to-git-for-windows.html/)
+
 ---
 
 ## Basic commands
@@ -39,6 +47,22 @@ ls -a
 
 # lists all entities in a nice format and show hidden files
 ls -la
+```
+
+### Copy file
+
+```bash
+# copies original_file_name to new_file_name
+cp original_file_name new_file_name
+```
+
+### Rename file
+```bash
+# renames original_file_name to new_file_name
+mv original_file_name new_file_name
+
+# also works for moving a file to a new location
+mv origin_file_name directory_name/new_file_name
 ```
 
 ### Delete file

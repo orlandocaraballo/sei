@@ -46,6 +46,17 @@ You must download [Git Bash](https://gitforwindows.org/)
 
 [Atlassian: Installing and Upgrading Git](https://confluence.atlassian.com/bitbucketserver/installing-and-upgrading-git-776640906.html)
 
+## First Time Setup
+
+The firs time you setup git, you will need to configure your git profile by changing your user name and user email via the following commands.
+
+```bash
+# replace "John Doe" with your name
+# replace johndoe@example.com with your email
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
 ## Basic Commands
 
 ```bash
@@ -234,3 +245,16 @@ Create a new directory called git_practice
 Stage the file
 6. Check the status of the git repository
 Commit the file with a message of "Added main.css file"
+
+---
+
+## Git Resources
+
+1. [Getting Started with Git](http://git.rocks/getting-started/)
+2. [Git](https://try.github.io/levels/1/challenges/1)
+
+---
+
+## Git Cheatsheet
+
+![Cheatsheet](https://www.git-tower.com/blog/content/posts/54-git-cheat-sheet/git-cheat-sheet-large01.png)

@@ -117,6 +117,14 @@ git reset
 
 ---
 
+## Related Technology
+
+* CVS
+
+* SVN
+
+---
+
 ## Exercise
 
 ### Setup
@@ -149,4 +157,3 @@ Create a new directory called git_practice
 Stage the file
 6. Check the status of the git repository
 Commit the file with a message of "Added main.css file"
-

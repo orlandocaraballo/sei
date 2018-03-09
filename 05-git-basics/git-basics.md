@@ -213,7 +213,7 @@ Create a new directory called git_practice
 #### Initial Commit
 1. Initialize a new git repository
 
-2. Create a file called index.html with an html 3. head and body 
+2. Create a file called index.html with an html `<head>` and `<body>` 
 4. Add the following text into the html body: 
 ```html
 <p>Hello World!</p>

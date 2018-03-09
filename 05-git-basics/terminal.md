@@ -4,7 +4,7 @@
 
 ## What is a terminal?
 
-Another way to communicate with your computer
+Another way to communicate with your computer using text commands.
 
 ---
 

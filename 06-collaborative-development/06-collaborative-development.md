@@ -202,6 +202,7 @@ Code Related:
 Life Related:
 - Understand how git / github behaves to avoid stress
 - Be in a state of relaxation
+<<<<<<< HEAD
 - Walk away
 
 ---
@@ -213,3 +214,6 @@ Life Related:
 - I usually make the class repos private not too long after the cohort end date
 
 __Note: All class code will be located here going forward__
+=======
+- Walk away
+>>>>>>> master

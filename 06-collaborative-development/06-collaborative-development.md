@@ -180,7 +180,7 @@ git pull remote_name branch_name
 
 ## Demo
 
-[Merge Demo](https://github.com/orlandocaraballo/merge-demo)
+[Merge Demo Repo](https://github.com/orlandocaraballo/merge-demo)
 
 ## Avoiding Merge Conflict Pain
 

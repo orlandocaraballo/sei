@@ -11,15 +11,11 @@ Examples:
 - [Gitlab](about.gitlab.com)
 - [Beanstalk](beanstalkapp.com)
 
----
-
 ## Open source software
 
 Freely available software developed with the intention of sharing with the wider community.
 
 [The Balance: What is Open Source Software](https://www.thebalance.com/what-is-open-source-software-2071941)
-
----
 
 ## What is Github?
 
@@ -43,13 +39,9 @@ A website that allows you to create public or private git repositories that you 
 
 [YouTube: What is Github?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 
----
-
 ## What problem does Github solve?
 
 It solves the issue of having to collaborate using just git.
-
----
 
 ## Initial Setup
 - Create account
@@ -69,8 +61,6 @@ It solves the issue of having to collaborate using just git.
 - Recommended: Two Step Authentication
 
 [Hostinger Tutorials: How Does SSH Work](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work)
-
----
 
 ## Collaboration: Things to Remember
 
@@ -100,8 +90,6 @@ It solves the issue of having to collaborate using just git.
 - How often to checkin
 - Communication when not in person
 - When are things finalized
-
----
 
 ## Branching
 
@@ -172,8 +160,6 @@ git merge remote_name/branch_name
 git pull remote_name branch_name
 ```
 
----
-
 ## Workflow
 
 1. Create feature branch
@@ -192,13 +178,11 @@ git pull remote_name branch_name
       - Once issue is fixed then push to remote master and move to step 6
 7. Profit
 
----
-
 ## Demo
 
----
+[Merge Demo](https://github.com/orlandocaraballo/merge-demo)
 
-## How to best avoid merge conflict pain
+## Avoiding Merge Conflict Pain
 
 Code Related:
 - Make atomic commits
@@ -209,8 +193,6 @@ Life Related:
 - Understand how git / github behaves to avoid stress
 - Be in a state of relaxation
 - Walk away
-
----
 
 ## I heard about Rebase
 
@@ -231,8 +213,6 @@ Life Related:
 ## Git Lost???
 
 [Checkout this handy cheatsheet](../05-git-basics/git-basics.md#git-cheatsheet)
-
----
 
 ## One Last Thing
 

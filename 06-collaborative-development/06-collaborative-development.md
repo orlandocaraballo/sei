@@ -203,3 +203,13 @@ Life Related:
 - Understand how git / github behaves to avoid stress
 - Be in a state of relaxation
 - Walk away
+
+---
+
+## One Last Thing
+
+- Remember to run a git clone on our class repo located [here](https://github.com/orlandocaraballo/sei-march-5)
+- When this cohort ends, make sure to fork the repo if you need access to my notes / examples
+- I usually make the class repos private not too long after the cohort end date
+
+__Note: All class code will be located here going forward__

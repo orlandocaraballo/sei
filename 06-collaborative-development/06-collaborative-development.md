@@ -212,9 +212,25 @@ Life Related:
 
 ---
 
+## I heard about Rebase
+
+- Yes, rebase is often a better way to collaborate
+- Yes, I prefer it myself
+- Yes, you may end up using it in the work place
+- No, I will not teach you how to rebase
+  - Makes more sense to learn it when you understand git better
+  - Because you can wipe out git history
+  - __If you wipe it out, there is no going back__
+- On a team, you either use merge or rebase:
+  - If you are rebasing but the rest of your team is not, you are operating like a cowboy coder
+  - Establish group norms, don't be cowboy
+  - Nobody likes a cowboy coder / lone wolf coder
+
+[Atlassian: Rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+
 ## Git Lost???
 
-[Refer to Cheatsheet](../05-git-basics/git-basics.md#git-cheatsheet)
+[Checkout this handy cheatsheet](../05-git-basics/git-basics.md#git-cheatsheet)
 
 ---
 

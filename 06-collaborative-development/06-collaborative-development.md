@@ -122,6 +122,12 @@ It solves the issue of having to collaborate using just git.
 ### Git Remote Commands
 
 ```bash
+# clones git repository
+# used alongside Github, Bitbucket, etc
+git clone git_url
+```
+
+```bash
 # list remote repos along with urls
 git remote -v
 ```
@@ -202,8 +208,13 @@ Code Related:
 Life Related:
 - Understand how git / github behaves to avoid stress
 - Be in a state of relaxation
-<<<<<<< HEAD
 - Walk away
+
+---
+
+## Git Lost???
+
+[Refer to Cheatsheet](../05-git-basics/git-basics.md#git-cheatsheet)
 
 ---
 
@@ -214,6 +225,4 @@ Life Related:
 - I usually make the class repos private not too long after the cohort end date
 
 __Note: All class code will be located here going forward__
-=======
 - Walk away
->>>>>>> master

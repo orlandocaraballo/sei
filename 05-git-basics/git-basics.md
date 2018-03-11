@@ -108,6 +108,14 @@ git checkout branch_name
 ```
 
 ```bash
+# deletes branch_name
+git branch -d branch_name
+
+# deletes branch_name and ignores unmerged warnings
+git branch -D branch_name
+```
+
+```bash
 # clones git repository
 # used alongside Github, Bitbucket, etc
 git clone git_url

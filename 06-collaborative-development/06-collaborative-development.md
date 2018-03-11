@@ -29,6 +29,7 @@ A website that allows you to create public or private git repositories that you 
   - Pull requests
   - Wikis
   - Project management tools such as:
+    - Project creation
     - Issue tracking
     - Milestone tracking
     - Tagging
@@ -68,6 +69,7 @@ It solves the issue of having to collaborate using just git.
 
 - Pick someone on your team who will own the repository
 - You can [fork](https://help.github.com/articles/fork-a-repo/) a repository to copy later
+- On larger workloads, create a github [project](https://help.github.com/articles/about-project-boards/)
 
 ### Assign Collaborators
 

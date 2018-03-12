@@ -225,5 +225,5 @@ __Note: All class code will be located here going forward__
 
 ## Workshop
 
-[Collaborative Causes](https://docs.google.com/document/d/1M9VNvIyRU-6zqsQWRj5AB8jcEOXCzJN2WxCrUcvhqEI/edit)
+[Collaborative Causes](https://docs.google.com/document/d/1M9VNvIyRU-6zqsQWRj5AB8jcEOXCzJN2WxCrUcvhqEI/edit?usp=sharing)
 

@@ -312,11 +312,16 @@ person["ethnicity"] = "dominican" // adds a new key 'ethnicity' with value 'domi
 
 // double plus adds 1 to itself
 let number = 1
-number++ // 2
+number++
+number // 2
+```
 
+```js
+let number = 1
 // plus equals adds the number on the right hand side
 // to the value of the variable on the left hand side and sets it equal to the variable
-let number += 10 // 11
+number += 10
+number // 11
 ```
 
 ##### Minus
@@ -327,11 +332,16 @@ let number += 10 // 11
 
 // double minus subtracts 1 from itself
 let number = 1
-number-- // 0
+number-- 
+number // 0
+```
 
+```js
+let number = 0
 // plus equals adds the number on the right hand side
 // to the value of the variable on the left hand side and sets it equal to the variable
-let number -= 10 // -10
+number -= 10
+number  // -10
 ```
 
 ##### Star
@@ -346,7 +356,9 @@ let number -= 10 // -10
 
 // star equals multiplies the number on the right hand side
 // to the value of the variable on the left hand side and sets it equal to the variable
-let number *= 10 // 11
+let number = 10 // 11
+number *= 2
+number // 20
 ```
 
 ##### Slash
@@ -355,13 +367,12 @@ let number *= 10 // 11
 // division
 10 / 2 // 5
 
-// double plus adds 1 to itself
-let number = 10
-
 // division equals divides the variable on the left hand side
 // by the value on the right hand side
 // and sets this new value to the variable
-let number /= 2 // 11
+let number = 10
+number /= 2
+number // 5
 ```
 
 ##### Modulo

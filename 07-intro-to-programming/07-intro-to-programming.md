@@ -83,7 +83,7 @@ _A language used on the browser for the purposes of adding behavior to a webpage
 
 ### Yo dawg, I heard you like ECMAScript
 
-ECMAScript is the name for the standards that dictate what features will be available when JS is implemented on a browser / server side (node js).
+ECMAScript is the name for the standards that dictate what features will be available when JS is implemented on a browser or server side (node.js).
 
 - ECMAScript
 - ECMAScript2015
@@ -150,34 +150,140 @@ var name = "orlando"
 
 ```js
 // also sets name variable to the value orlando
+// prefer let over var
 let name = "orlando"
 ```
 
 #### Data types
-- Number
-- String
-- Boolean
-- Object
-- Array
-  - One dimension
-  - Multi-dimensional
 
-#### Operators
+- Allow you to assign a classification to a literal (fixed value).
+- Data types are automatically assigned based on what javascript thinks the type should be unlike Java
 
-##### Mathematical
-- + , ++, +=
-- -, --, -=
-- /, /=
-- *, *=
 
-##### Conditional Operators
+##### Number
+
+```js
+4
+5
+-6
+7.0
+```
+
+##### String
+
+```js
+"Orlando"
+"New York Code & Design Academy"
+```
+
+##### Boolean
+
+```js
+true
+false
+```
+
+##### Array
+
+```js
+// one dimensional array
+[
+  "carrots",
+  "bacon",
+  "milk",
+  "parsley"
+]
+
+// multidimensional array
+[
+  ["x", "o", "x"],
+  ["x", "x", "o"],
+  ["o", "o", "x"]
+]
+```
+
+##### Object
+
+```js
+{
+  firstName : "Orlando",
+  lastName: "Caraballo",
+  age: "34"
+}
+```
+
+### Operators
+
+#### Mathematical
+
+```js
+// addition
+5 + 1 // 6
+
+// concatenation = combining strings together
+"orlando " + "caraballo" // "orlando caraballo"
+
+// double plus adds 1 to itself
+let number = 1
+number++ // 2
+
+// plus equals adds the number on the right hand side
+// to the value of the variable on the left hand side
+let number += 10 // 11
+```
+
+```js
+// subtraction
+5 - 1 // 4
+
+// double minus subtracts 1 from itself
+let number = 1
+number-- // 0
+
+// plus equals adds the number on the right hand side
+// to the value of the variable on the left hand side
+let number -= 10 // -10
+```
+
+```js
+// multiplication
+5 * 1 // 5
+
+// double star calculates base to exponent power
+// the example below is 2 to the power of 3 which is 8
+2 ** 3 // 8
+
+// star equals multiplies the number on the right hand side
+// to the value of the variable on the left hand side
+let 
+let number *= 10 // 11
+```
+
+```js
+// addition
+5 + 1 // 6
+
+// concatenation = combining strings together
+"orlando " + "caraballo" // "orlando caraballo"
+
+// double plus adds 1 to itself
+let number = 1
+number++ // 2
+
+// plus equals adds the number on the right hand side
+// to the value of the variable on the left hand side
+let number += 10 // 11
+```
+
+#### Conditional Operators
 - ||
 - &&
 
-##### Order of operations
+#### Order of operations
 
+[MDN: Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-#### Expressions
+### Expressions
 
 [MDN: Expressions / Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
@@ -192,7 +298,7 @@ let name = "orlando"
 Simple object syntax
 { key: "value" } pairs
 
-Looping
+#### Looping
 undefined
 NaN
 
@@ -204,3 +310,7 @@ for...in
 for… each (arrays)
 Looping
 Console
+
+## Workshop
+
+

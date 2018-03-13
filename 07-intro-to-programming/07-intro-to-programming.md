@@ -387,6 +387,14 @@ let number /= 2 // 11
 ```js
 let number = 5
 
+// equal to
+number == 10 // false
+number == "5" // true
+number === "5" // false
+
+// equal to
+number === 100 // false
+
 // greater than
 number > 2 // true
 

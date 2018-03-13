@@ -5,7 +5,7 @@
 
 - _The action or process of writing computer programs._
 
-- _The action or process of scheduling something, especially radio or television programs. The action or process of scheduling something, especially radio or television programs._
+- _The action or process of scheduling something, especially radio or television programs._
 
 ## Programming relative to daily life
 
@@ -36,6 +36,7 @@ Examples
 - C++
 - C
 - C#
+- PHP
 - R
 - etc...
 
@@ -133,7 +134,6 @@ alert("Hello!");
 #### Exercise
 
 - Create a script using JS that will alert a user with “Welcome to NYCDA, This is your first Javascript!”
-- Log it into your developer console.
 
 ---
 
@@ -165,6 +165,12 @@ var name = "orlando"
 // prefer let over var
 let name = "orlando"
 ```
+#### const
+
+```js
+// the value cannot change
+const name = "denisse"
+```
 
 #### Data types
 
@@ -183,11 +189,23 @@ let name = "orlando"
 
 ##### String
 
+###### One line
 ```js
 "Orlando"
 "New York Code & Design Academy"
 ```
 
+###### Template Literal
+```js
+`
+A bunch of text
+that I normally would
+struggle to write over many lines
+`
+
+let name = "Orlando"
+`my name is ${name}`
+```
 
 ##### Boolean
 
@@ -210,7 +228,7 @@ false
 
 ```js
 // one dimensional array
-let food = [
+let listOfFood = [
   "carrots",
   "bacon",
   "milk",
@@ -233,11 +251,8 @@ ticTacToe[1][2] // x (second row, third column)
 ---
 #### Exercise
 
-- Create an array with the name of 5 of your classmates (If you don’t remember than ask!). 
-- Access the classmate in the 4th position of your array. 
-- Add a new classmate into your array!
-- The classmate in the 2nd position of your array has gone missing. Lets remove them from the array. 
-- Remove the last element of our array without specifying its index. 
+- Create an array with the name of 5 of your classmates (If you don’t remember than ask!)
+- Access the classmate in the 4th position of your array
 
 Given the following multidimensional array: 
 ```js
@@ -275,11 +290,12 @@ person["ethnicity"] = "dominican" // adds a new key 'ethnicity' with value 'domi
 
 #### Exercise
 
-- Create an object with name and eyeColor properties. Change the eye color to 'brown'. Now add a hairColor property and change it to 'blonde'"
+- Create an object with `name` and `eyeColor` properties. Change the eye color to `brown`. Now add a `hairColor` property and change it to `"blonde"`
 
-- Create a object literal with your top 3 movies using the keys : topMovieOne , topMovieTwo , topMovieThree. 
+- Create a object literal with your top 3 movies using the keys: `topMovieOne`, `topMovieTwo`, `topMovieThree`. 
 - Assign some movie values to your keys!
-- Access your object literal and print out in the console the following string " My favorite movies are {topMovieOne} and {topMovieTwo}, but I really enjoy {topMovieThree}". 
+- Access your object literal and print out in the console the following string:
+  - My favorite movies are `topMovieOne` and `topMovieTwo`, but I really enjoy `topMovieThree`.
 ---
 
 ### Operators
@@ -549,6 +565,19 @@ Example:
 ++
 +
 ```
+
+---
+
+#### Exercise
+
+- Write a conditional that checks if a variable is less than 10. If it is, alert the user that their variable is less than 10. If it is not, let the user know what the variable was and that it was greater than 10.
+
+- Write a program that evaluates two things: 
+temperature and the status of an air conditioner (on or off). 
+If the temperature is warmer than 80, and the air conditioner is off, log "turn the ac on!".
+ If the temperature is warmer than 80 and the ac is on, log "this thing is broken!". 
+If the temperature is colder than 60 and the air conditioner is on, log "brrr, turn this thing off".
+If the temperature is cooler than 80, and the ac is off, log "not worth the electricity. leave it off." 
 
 ---
 

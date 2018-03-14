@@ -300,16 +300,16 @@ function functionWithinAFunction() {
   let number = 4
 
   function logNumber() {
-    console.log(number) // 4
+    console.log(number)
   }
 
-  return logNumber()
+  return logNumber() // 4
 }
 
 functionWithinAFunction()
 ```
 
-Let's go HAM!
+_Let's go H.A.M!_
 
 ```js
 function functionWithinAFunction() {

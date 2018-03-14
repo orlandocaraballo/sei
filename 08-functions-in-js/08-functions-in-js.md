@@ -81,6 +81,21 @@ _**Arguments** are the values that you assign to the parameters_
 - Create a simple calculator function called `brokenCalculator` that given two arguments will multiply the second argument by `3` and return the result.
 - Define a function `lineThemUp` that takes three integers as arguments and returns the integers as an array.
 
+## Default Arguments
+
+_In javascript you can assign default values for a function for those situations where you need to have your parameters populated with information. These are called **default arguments**._
+
+```js
+// in this case you are setting argumentB to 1 by default
+function multiply(argumentA, argumentB = 1) {
+  // this makes sense because can safely run the multiplication operation below without the need for an if statement to check to see if argumentB is defined
+  return argumentA * argumentB
+} 
+
+multiply(3, 2) // 6
+multiple(26) // 26
+```
+
 ## Calling functions within functions
 
 _You can invoke a functions within another function_
@@ -222,6 +237,24 @@ _Javascript will do a first pass to hoist all declared functions in the program 
   - Door 3 will turn into a blackhole and teleport you to antarctica
 - Create another function called `chooseDoor` that accepts one argument 1,2 or 3 much like above. Move all conditional logic from `magicDoor` into `chooseDoor`. Invoke `magicDoor` from `chooseDoor` by passing it the virtual `door`. What did this accomplish?
 
+## Javascript Global Functions
+
+There are certain functions that are provided to you by Javascript that can be useful under certain circumstances.
+
+```js
+// converts from a string to number
+parseInt("7") // 7
+
+// converts from a string to a floating point number (number with a decimal)
+parseFloat("-2.56") // -2.56
+
+// checks to see if something is not a number
+isNaN(4) // false
+isNaN("hello") // true
+isNaN(undefined) // true
+```
+
+[W3Schools: Global Functions](https://www.w3schools.com/jsref/jsref_obj_global.asp)
 
 ## Callback functions
 

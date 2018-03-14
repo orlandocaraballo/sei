@@ -331,16 +331,16 @@ function functionWithinAFunction() {
 functionWithinAFunction()
 ```
 
-_Closures capture the value of a variable that is in scope at the moment in which it was defined_
+_Closures capture the values of variables in scope at the moment in which the function is defined_
 
 ```js
 let value = 1
 
-let firstFunction = function () {
+function firstFunction() {
   console.log(value)
 }
 
-let secondFunction = function() {
+function secondFunction() {
   let value = 2
   
   firstFunction() // will this log 1 or 2?
@@ -348,6 +348,8 @@ let secondFunction = function() {
 
 secondFunction()
 ```
+
+__Note: Closures are confusing at first, it will take time for it to make sense__
 
 [Medium: Closure in Plain English Please](https://medium.freecodecamp.org/whats-a-javascript-closure-in-plain-english-please-6a1fc1d2ff1c)
 

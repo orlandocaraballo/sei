@@ -75,6 +75,12 @@ _**Parameters** are the variables you define for a function_
 
 _**Arguments** are the values that you assign to the parameters_
 
+## Exercises
+
+- NYCDA needs a simple welcome program for registered students. Create a function called `nycdaWelcome` that will take in a student's `name` as an argument and return a string that looks like: “Welcome to NYCDA {`name`}! Enjoy your stay!”
+- Create a simple calculator function called `brokenCalculator` that given two arguments will multiply the second argument by `3` and return the result.
+- Define a function `lineThemUp` that takes three integers as arguments and returns the integers as an array.
+
 ## Calling functions within functions
 
 _You can invoke a functions within another function_
@@ -204,6 +210,19 @@ _Javascript will do a first pass to hoist all declared functions in the program 
 
 [MDN Glossary: Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
+## Exercise
+
+- Define a function called `royalizer` that takes a `gender` and `name` as arguments, and returns a title string based on the gender. 
+  - `royalizer("male", "David")` returns `"His Majesty [name]"` , for female it would be `"Her Majesty [name]"`.
+  - How could we DRY this up?
+
+- Declare a function called `magicDoor` that receives an input of 1, 2 or 3. Depending upon which virtual `door` was entered create logic that will tell user they've received a different "prize" in an alert based on their selection
+  - Door 1 will give the user a brand new car
+  - Door 2 will give the user a nycda t-shirt
+  - Door 3 will turn into a blackhole and teleport you to antarctica
+- Create another function called `chooseDoor` that accepts one argument 1,2 or 3 much like above. Move all conditional logic from `magicDoor` into `chooseDoor`. Invoke `magicDoor` from `chooseDoor` by passing it the virtual `door`. What did this accomplish?
+
+
 ## Callback functions
 
 _Welcome to the Big Leagues!_
@@ -273,11 +292,14 @@ runCodeOnNumber(function(number){
 }) // 40
 ```
 
+![Inception](deeper.jpg)
+
+
 ## Functions Within Functions
 
 _Let's go deeper_
 
-![Inception](inception.jpg)
+![Inception](inception.gif)
 
 ```js
 function functionWithinAFunction() {
@@ -291,7 +313,7 @@ function functionWithinAFunction() {
 functionWithinAFunction()
 ```
 
-## Closures
+## Closures 
 
 _Any variables defined within a function are also accessible in functions declared inside that same function_
 
@@ -300,14 +322,34 @@ function functionWithinAFunction() {
   let number = 4
 
   function logNumber() {
-    console.log(number)
+    console.log(number) // 4
   }
 
-  return logNumber() // 4
+  logNumber()
 }
 
 functionWithinAFunction()
 ```
+
+_Closures capture the value of a variable that is in scope at the moment in which it was defined_
+
+```js
+let value = 1
+
+let firstFunction = function () {
+  console.log(value)
+}
+
+let secondFunction = function() {
+  let value = 2
+  
+  firstFunction() // will this log 1 or 2?
+}
+
+secondFunction()
+```
+
+[Medium: Closure in Plain English Please](https://medium.freecodecamp.org/whats-a-javascript-closure-in-plain-english-please-6a1fc1d2ff1c)
 
 _Let's go H.A.M!_
 

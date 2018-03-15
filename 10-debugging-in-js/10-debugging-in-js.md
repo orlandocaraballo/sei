@@ -1,9 +1,16 @@
+![Bart](clean.jpg)
 
-# Debugging
+# Debugging and Clean Code
 
-Introduction
-Debugging definition
-How to debug
+## Debugging definition
+
+_Debugging is the process of finding errors in your code and solving them_
+
+## How to debug
+
+1. Isolate the issue
+2. Identify the bug
+3. Create a solution based on step 1 and 2
 
 ## Identifying the bug
 

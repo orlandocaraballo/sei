@@ -140,6 +140,8 @@ _**Insertion sort** is a simplistic sorting algorithm that sorts one element at 
 - __Best-case performance__:	O(n)
 - __Average performance__:	О(n2)
 
+[CS50: Insertion Sort](https://www.youtube.com/watch?v=kU9M51eKSX8)
+
 #### Linear search
 
 _**Linear search**, also known as sequential search, is a process that checks every element in the list sequentially until the desired element is found._

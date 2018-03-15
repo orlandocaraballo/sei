@@ -164,7 +164,12 @@ _**A binary search** locates an item in a sorted array by repeatedly dividing th
 
 [Chegg Study: Binary Search](https://youtu.be/WzV9u3niC-Q)
 
-## Complexity
+#### Interesting Article
+
+[Medium: 10 Algorithms that Dominate our World](https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04)
+
+
+#### Complexity
 
 [Medium: Algorithm Time Complexity](https://medium.com/@StueyGK/algorithm-time-complexity-and-big-o-notation-51502e612b4d)
 
@@ -176,8 +181,3 @@ _**A binary search** locates an item in a sorted array by repeatedly dividing th
 
 [Javascript Word Problems
 ](https://drive.google.com/open?id=1g-HnSH9Iqt2xUt_FUBe2Wq8Vi4n41gAsk9IK2_SPlS4)
-
-## Article
-
-[Medium: 10 Algorithms that Dominate our World](https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04)
-

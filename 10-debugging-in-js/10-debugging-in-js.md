@@ -164,6 +164,8 @@ _Writing clean, organized and elegant code will elevate your game to the next le
 - Clean up throughout the process
 - Follow a guide
 
+__Note: When working collaboratively, establish coding style early__
+
 ### Understand Standards
 
 _Read through the best practices and standards set forth by the community._
@@ -256,29 +258,24 @@ function anotherWay ( argument1 , argument2 )
   // code
 }
 ```
----
 
-### __In a group, establish coding style early__
-
----
-
-### Prefer readability over cool shit
+### Prefer readability over flexing
 
 ```js
 // nice flex bruh
-function coolShit(gender, name) {
+function maxFlex(gender, name) {
   return `${gender == "male" ? "His" : "Her"} majesty ${name}!`
 }
 
 // this is more readable
-function coolShit(gender, name) {
+function mediumFlex(gender, name) {
   let prefix = gender == "male" ? "His" : "Her"
 
   return `${prefix} majesty ${name}!`
 }
 
 // this is even more readable
-function coolShit(gender, name) {
+function noFlexZone(gender, name) {
   let prefix = ""
 
   if(gender == "male") {

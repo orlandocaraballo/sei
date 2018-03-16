@@ -160,6 +160,7 @@ sayHelloAgain()
 
 ### Exercise
 
+_What is wrong in this code snippet?_
 ```js
 function magicDoor(doorNumber) {
   let prefix = "You have won";let output = "";
@@ -290,7 +291,14 @@ function loopThruArrayAndDoStuff(array) {
 loopThruArrayAndDoStuff([10, 9, 40, "hello", "goodbye"])
 ```
 
-### Name your variables / functions contextually
+### Naming
+
+_"There are only two hard things in Computer Science: cache invalidation and naming things" - Phil Karlton_
+
+Tips:
+- Name your variables based on what it's values represent
+- Name functions based on behavior
+- Don't be afraid to use longer names
 
 ```js
 // why?
@@ -309,7 +317,7 @@ f([10,5,2]) // 17
 
 ### Maintain consistency
 
-__I prefer you pick a style and stick to it than for you to mix and match styles__
+I prefer you pick a style and stick to it than for you to mix and match styles
 
 ```js
 // both are fine, just pick one and stick to it
@@ -326,8 +334,10 @@ function anotherWay ( argument1 , argument2 )
 ### Prefer readability over flexing
 
 ```js
-// nice flex bruh
+// this is difficult to read
 function maxFlex(gender, name) {
+  
+  // ok we get it bruh
   return `${gender == "male" ? "His" : "Her"} majesty ${name}!`
 }
 

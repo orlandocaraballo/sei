@@ -384,7 +384,7 @@ _Very much like cleaning your house / apt_
 
 ### Challenge 1
 
-Given an arbitrary integer as a celsius temperature, create an algorithm to convert it to a fahrenheit temperature.    
+Given an arbitrary integer as a celsius temperature, create an algorithm to convert it to a fahrenheit temperature.
 
 ### Challenge 2
 

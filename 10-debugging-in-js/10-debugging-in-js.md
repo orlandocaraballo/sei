@@ -379,3 +379,53 @@ _Very much like cleaning your house / apt_
 ## Workshop
 
 ["We Need Bug Spray!"](https://drive.google.com/open?id=1xCfp0ybglr7qwdg-nQT4RFyTICYmTazjulISm7BqkV8)
+
+## Extra Challenges
+
+### Challenge 1
+
+Given an arbitrary integer as a celsius temperature, create an algorithm to convert it to a fahrenheit temperature.    
+
+### Challenge 2
+
+Given an array of unsorted numbers, create an algorithm to sort them in descending order.
+
+```js
+[1, 0, 21, 2, 506, 9, 67]
+```
+
+### Challenge 3
+
+Given an the following array of unsorted numbers create an algorithm to find an arbitrary element in the array.
+
+```js
+[1, 0, 21, 2, 506, 9, 67] 
+```
+
+### Challenge 4
+
+You and your friends are getting dinner at your favorite restaurant.
+Create a function named tipAmount that when given a total bill value, number of people, and a tip percentage; uses this information to calculate the tip amount and return this value in a string that says "${Tip Amount} per person"
+
+```js
+tipAmount(50, 5, 10) // "$1 per person".
+```
+
+### Challenge 5
+
+_IBM has hired you to build them a simple calculator. 
+Create a function named ibmCalc that when given two numbers and a string which can be one of the following ( "add" , "subtract" , "multiply" , "divide" ) will return the result of the operation performed on the two numbers.
+If a bad value for the operation is provided return a error string that says "That is not a valid operation"
+
+```js
+ibmCalc(1,5, "multiply") // 5
+```
+
+### Challenge 6
+
+You're tasked with creating a string parser that will tell you how many times a letter appears in a string. 
+Create a function called parser that given a letter ( Ex. "a" ) and a string ("Ex : daslndeungnsio393c810sx") can return how many times that letter appears.
+
+```js
+parser("a", "aaaa3fvsdfr") // 4
+```

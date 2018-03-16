@@ -1,6 +1,6 @@
 ![Clean](clean.jpg)
 
-# Debugging and Clean Codez
+# Debugging and Clean Code
 
 _"It's time to take out the garbage!" (intended to be read like a 90s action hero)_
 
@@ -120,15 +120,79 @@ document.addEventListener("DOMContentLoaded", function(event) {
 - Error messages
 - Debugger
 
+### Example
+
+```js
+function sayHello() {
+   return "hello"
+}
+
+function sayHelloAgain() {
+  let output = ""
+  
+  for(let i = 0; i < 2 ;++i) {
+    // this is mispelled
+    output += sayHelo()
+  }
+  
+  return output
+}
+
+sayHelloAgain()
+/*
+  ReferenceError: sayHelo is not defined
+    at sayHelloAgain:9:5
+    at eval:15:1
+    at eval
+    at new Promise
+*/
+```
+
 [MDN: Debugging Javascript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 
 [Chrome: Devtools](https://developers.google.com/web/tools/chrome-devtools/)
 
 ## Techniques
 
-- Understanding the error
-- Comment code to find error source
+- Understand the error
 - Remove or comment code to find error code
+- Clean up code to make it easier to debug
+
+### Exercise
+
+```js
+function magicDoor(doorNumber) {
+  let prefix = "You have won";let output = "";
+  if(doorNumber === "1") {
+    output = `${prefix} a brand new car!`
+  }
+  
+  if(doorNumber == 10) {output = `${prefix} a brand new tent!`
+  }if(doorNumber == -2) {
+    output = `${prefix} a brand new house!`
+  }
+  
+  if(doorNumber == 1) {
+    output = `${prefixz} a brand new rock!`
+  
+    
+  }
+  
+  if(doorNumber > -1) {
+output = `${prefix} a brand new phone!`
+  }
+  return output
+}
+
+magicDoor(1)
+/*
+  ReferenceError: prefixz is not defined
+    at magicDoor:13:17
+    at eval:24:1
+    at eval
+    at new Promise
+*/
+```
 
 ## How to Google
 

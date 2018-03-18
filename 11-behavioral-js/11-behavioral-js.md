@@ -30,12 +30,28 @@ Example
 ```js
 // this is not how it is actually coded
 // but serves as an example
-function click(function(){
+function click(function(event){
   // open popup
 })
 ```
 
-Event listener structure
+There is also a shorthand form of a anonymous function called a _lambda expression_ or an _arrow function_.
+
+```js
+// similar to above with shorter syntax
+function click((event) => {
+  // open popup
+})
+```
+
+Lambda expressions are very similar to anonymous functions in javascrpt except that they have different ways of setting the _this_ keyword. We will talk more about _this_ when we talk about Object Oriented Programming.
+
+[MDN: Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+## Event listener structure
+
+document.getElementById("wikiArticle").innerHTML
+
 Usage of anonymous function callbacks
 .attachEvent() (outdated)
 .addEventListener()

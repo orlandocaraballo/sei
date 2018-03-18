@@ -1,7 +1,40 @@
+![HTML CSS JS](html_css_js.png)
 
-Event Handling
-What is an event?
-Callback functions
+# Behavioral Javascript
+
+_Let's put it all together!_
+
+# What is an event?
+
+_An event can be thought of as an abstract representation of something that happens on a web page._
+
+Examples
+- Click
+- Scroll
+- Window Resize
+- Hover
+- Keypress
+- Page load
+
+# Event Handling
+
+_Event handling is the process by which you tell the computer to have certain behaviors happen when an event occurs._
+
+Example
+- Open this popup on a button click
+- Fadein more content on page scroll
+- Zooming in on an image on hover
+
+# Callbacks (again)
+
+```js
+// this is not how it is actually coded
+// but serves as an example
+function click(function(){
+  // open popup
+})
+```
+
 Event listener structure
 Usage of anonymous function callbacks
 .attachEvent() (outdated)

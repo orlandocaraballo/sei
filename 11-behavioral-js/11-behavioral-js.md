@@ -132,7 +132,7 @@ _Allows us to target html elements on the page using an expressive selector synt
 
 Types
 - `document.querySelector("[selector]")` - gets the first element found matching [selector]
-- `document.querySelectorAll("[selector]")` - gets the all elements found matching [selector]
+- `document.querySelectorAll("[selector]")` - gets all elements found matching [selector]
 
 Example
 

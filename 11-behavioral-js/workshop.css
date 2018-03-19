@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 800px;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+section.fadeIn {
+  animation: fadeIn .6s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+section:nth-child(1) {
+  background: beige;
+}
+
+section:nth-child(2) {
+  background: navajowhite;
+}
+
+section:nth-child(3) {
+  background:rosybrown;
+}
+
+section:nth-child(4) {
+  background:mediumturquoise;
+}

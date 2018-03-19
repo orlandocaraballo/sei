@@ -7,14 +7,23 @@ section {
   height: 800px;
   padding: 0;
   margin: 0;
+
+  /* set the opacity to 0 to start */
   opacity: 0;
 }
 
+/* 
+  set the fadeIn keyframe to the fadeIn class
+    this animation runs for .6 seconds
+*/
 section.fadeIn {
   animation: fadeIn .6s forwards;
 }
 
+/* the fadeIn keyframe */
 @keyframes fadeIn {
+
+  /* keyframes must have at least two intervals from/to or 0%/100% */
   0% {
     opacity: 0;
   }
@@ -23,7 +32,6 @@ section.fadeIn {
     opacity: 1;
   }
 }
-
 
 section:nth-child(1) {
   background: beige;

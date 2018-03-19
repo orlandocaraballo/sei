@@ -230,8 +230,8 @@ let ul = document.getElementTagName("ul")[0]
 // first li element
 let firstLi = document.getElementTagName("li")[0]
 
-// first li element
-let thirdLi = document.getElementTagName("li")[0]
+// third li element
+let thirdLi = document.getElementTagName("li")[2]
 
 // the parent element of the li (ul)
 firstLi.parentElement
@@ -399,7 +399,7 @@ Example
 // main.js
 
 // this code only runs when the document is finished loading
-document.addEventListener("DOMCOntentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
   let firstLink = document.getElementById("link-1")
   let paragraph = document.getElementById("paragraph")
 

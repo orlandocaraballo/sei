@@ -48,44 +48,73 @@ document // the html document
 ```
 
 ```js
-let content = document.getElementById("content") // returns the element object with an id of content
+// returns the element object with an id of content
+let content = document.getElementById("content") 
 
-content.innerHTML // returns the inner html of the element with an id of content
-content.innerText // returns the inner text of the "#content" element with html stripped out
+// returns the inner html of the element with an id of content
+content.innerHTML
+
+ // returns the inner text of the "#content" element 
+ // with html stripped out
+content.innerText
 ```
 
 ```js
-document.getElementsByClassName("profile-photo") // a nodeList of elements with the class profile-photo
+ // a nodeList of elements with the class profile-photo
+document.getElementsByClassName("profile-photo")
 ```
 
 ```js
-let paragraphs = document.getElementsByTagName("p") // a nodeList of paragraph elements
-let secondParagraph = paragraphs[2] // the third element in the nodeList of paragraphs
+// a nodeList of paragraph elements
+let paragraphs = document.getElementsByTagName("p")
 
-secondParagraph.attributes // returns a namedNodeMap of attributes associated with the third p element
-secondParagraph.attributes[0] //  returns the first attribute of the third p element
-secondParagraph.attributes["id"] //  returns the id attribute of the third p element
+// the third element in the nodeList of paragraphs
+let secondParagraph = paragraphs[2] 
+
+// returns a namedNodeMap of attributes associated
+// with the third p element
+secondParagraph.attributes
+
+//  returns the first attribute of the third p element
+secondParagraph.attributes[0]
+
+//  returns the id attribute of the third p element
+secondParagraph.attributes["id"]
 ```
 
 ### Update Examples
 
 ```js
-let p = document.getElementsByTagName("p")[0] // stores first paragraph on the page in a variable named p
+// stores first paragraph on the page in a variable named p
+let p = document.getElementsByTagName("p")[0]
 
-p.setAttribute("id", "the-paragraph") // changes the class of the paragraph element to "the-paragraph
-p.classList.add("loud-text") // adds the class "loud-text" to the p element
-p.style.color = "red" // sets inline style element color to red (<p style="color: red;") 
-p.innerHTML = "<strong>Strongly worded text!</strong>" // modifies the p tag with the content defined
+// changes the class of the paragraph element to "the-paragraph
+p.setAttribute("id", "the-paragraph") 
+
+// adds the class "loud-text" to the p element
+p.classList.add("loud-text")
+
+// sets inline style element color to red (<p style="color: red;")
+p.style.color = "red" 
+
+// modifies the p tag with the content defined
+p.innerHTML = "<strong>Strongly worded text!</strong>" 
 ```
 
 ### Create Examples
 
 ```js
-let p = document.createElement("p") // creates a paragraph element (not seen on the page yet)
-let body = document.getElementsByTagName("body")[0] // stores a reference to the html body
+// creates a paragraph element (not seen on the page yet)
+let p = document.createElement("p")
 
-p.innerText = "content within p tag" // replaces text within p tag
-body.appendChild(p) // appends the paragraph to the end of the body
+// stores a reference to the html body
+let body = document.getElementsByTagName("body")[0] 
+
+ // replaces text within p tag
+p.innerText = "content within p tag"
+
+// appends the paragraph to the end of the body
+body.appendChild(p) 
 ```
 
 ### Delete Examples
@@ -93,7 +122,8 @@ body.appendChild(p) // appends the paragraph to the end of the body
 ```js
 let div = document.getElementById("mainContent")
 
-div.remove() // removes div from the html document
+// removes div from the html document
+div.remove()
 ```
 
 ### Query Selectors
@@ -115,11 +145,17 @@ Example
 ```
 
 ```js
-document.querySelector("li") // returns the first li
-document.querySelector("#li-2") // returns the second li
+ // returns the first li
+document.querySelector("li")
 
-document.querySelectorAll("li") // returns a nodeList of li elements
-document.querySelectorAll(".first-or-last") // returns a nodeList of li elements with the class first-or-last
+// returns the second li
+document.querySelector("#li-2")
+
+// returns a nodeList of li elements
+document.querySelectorAll("li")
+
+// returns a nodeList of li elements with the class first-or-last
+document.querySelectorAll(".first-or-last")
 ```
 
 Resources
@@ -169,18 +205,36 @@ ul li:nth-child(3) {
 
 ```js
 // main.js
-let ul = document.getElementTagName("ul")[0] // remember getElementByTagName returns a nodeList
-let firstLi = document.getElementTagName("li")[0] // first li element
-let thirdLi = document.getElementTagName("li")[0] // first li element
 
-firstLi.parentElement // the parent element of the li (ul)
-firstLi.nextElementSibling // get the next element sibling "list item 2"
-thirdLi.previousElementSibling // get the previous element sibling "list item 2"
-firstLi.nextElementSibling.nextElementSibling // also gets third li element "list item 3"
+// remember getElementByTagName returns a nodeList
+let ul = document.getElementTagName("ul")[0]
 
-ul.children // returns an HTMLCollection object
-ul.children[2] // returns the second child element
-ul.children[2].innerHTML = "orlando" // changes the second child element innerHTML to "orlando"
+// first li element
+let firstLi = document.getElementTagName("li")[0]
+
+// first li element
+let thirdLi = document.getElementTagName("li")[0]
+
+// the parent element of the li (ul)
+firstLi.parentElement
+
+// get the next element sibling "list item 2"
+firstLi.nextElementSibling
+
+// get the previous element sibling "list item 2"
+thirdLi.previousElementSibling
+
+// also gets third li element "list item 3"
+firstLi.nextElementSibling.nextElementSibling
+
+// returns an HTMLCollection object
+ul.children
+
+// returns the second child element
+ul.children[2]
+
+// changes the second child element innerHTML to "orlando"
+ul.children[2].innerHTML = "orlando"
 ```
 
 ## Forms
@@ -202,7 +256,10 @@ Types of Input Fields
 Example
 ```html
 <!-- index.html -->
-<!-- a typical login form with inputs for username, password and submission -->
+<!-- 
+  a typical login form with inputs for username, 
+  password and submission
+-->
 <form>
   <input type="text" id="username" name="username" placeholder="Enter your username" />
   <input type="password" id="password" name="password" placeholder="Enter your password" />
@@ -212,8 +269,12 @@ Example
 
 ```js
 // main.js
-document.getElementById("password").value // returns the typed in text within the password field
-document.getElementById("username").value = "orlandoc" // changes username to orlandoc
+
+// returns the typed in text within the password field
+document.getElementById("password").value 
+
+// changes username to orlandoc
+document.getElementById("username").value = "orlandoc"
 ```
 
 Resources
@@ -298,7 +359,7 @@ document.attachEvent("onClick", function() {
 });
 ```
 
-Examples
+Example
 ```html
 <!-- index.html -->
 <p id="paragraph">
@@ -310,32 +371,39 @@ Examples
 
 ```js
 // main.js
-let firstLink = document.getElementById("link-1")
-let paragraph = document.getElementById("paragraph")
 
-// adds an event listener to the anchor
-firstLink.addEventListener("click", (event) => {
-  // event represents the event that just took place
-  // prevents default behavior of anchors which is to jump to a different page
-  event.preventDefault()
+// this code only runs when the document is finished loading
+document.addEventListener("DOMCOntentLoaded", (event) => {
+  let firstLink = document.getElementById("link-1")
+  let paragraph = document.getElementById("paragraph")
 
-  // this will occur when the button above is clicked
-  alert("I clicked this button")
-})
-
-// loops thru the last two anchors
-for(let i = 1; i < paragraph.children.length - 1; ++i) {
-
-  // adds event listeners to the last two anchors
-  paragraph.children[i].addEventListener("click", (event) => {
-    // gets element that was clicked on
-    let currentElement = element.target
-
-    // prevents default anchor behavior
+  // adds an event listener to the anchor
+  firstLink.addEventListener("click", (event) => {
+    // event represents the event that just took place
+    // prevents default behavior of anchors which is to jump to a different page
     event.preventDefault()
 
-    // alerts the content of the current anchor
-    alert(currentElement.innerHTML)
+    // this will occur when the button above is clicked
+    alert("I clicked this button")
   })
-}
+
+  // loops thru the last two anchors
+  for(let i = 1; i < paragraph.children.length - 1; ++i) {
+    // adds event listeners to the last two anchors
+    paragraph.children[i].addEventListener("click", (event) => {
+      // gets element that was clicked on
+      let currentElement = element.target
+
+      // prevents default anchor behavior
+      event.preventDefault()
+
+      // alerts the content of the current anchor
+      alert(currentElement.innerHTML)
+    })
+  }
+})
 ```
+
+### Workshop
+
+[Secion Transitions](https://drive.google.com/open?id=1K6d971_4BL-JvFb4B8RwsMGhib7_L9qjchE8gqpawcY)

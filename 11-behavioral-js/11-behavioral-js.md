@@ -4,24 +4,7 @@
 
 _Let's put it all together!_
 
-## DOM
-
-_Stands for Document **Object** Model and is the primary way in which Javascript interfaces with html elements on an html document._
-
-There are four major things you can do to html elements by interacting with the DOM:
-- **C**reate
-- **R**ead
-- **U**pdate
-- **D**elete
-
-### DOM Data Types
-- document - represents the entire docment
-- element - represents an html element on a page
-- nodeList - represents an array of elements returned by functions such as `document.getElementsByTagName()`
-- attribute - represents an html attribute
-- namedNodeMap - represents an array-like object of attribute objects
-
-### Brief Object Oriented Javascript Intro
+## Brief Object Oriented Javascript Intro
 
 _Object oriented programming has you creating behavior and variables relative to an object._
 
@@ -40,6 +23,23 @@ car.model // "Corolla"
 car.drive() // this would drive the car
 car.stop() // this would stop the car
 ```
+
+## DOM
+
+_Stands for Document **Object** Model and is the primary way in which Javascript interfaces with html elements on an html document._
+
+There are four major things you can do to html elements by interacting with the DOM:
+- **C**reate
+- **R**ead
+- **U**pdate
+- **D**elete
+
+### DOM Data Types
+- document - represents the entire docment
+- element - represents an html element on a page
+- nodeList - represents an array of elements returned by functions such as `document.getElementsByTagName()`
+- attribute - represents an html attribute
+- namedNodeMap - represents an array-like object of attribute objects
 
 ### Read Examples
 
@@ -125,6 +125,24 @@ let div = document.getElementById("mainContent")
 // removes div from the html document
 div.remove()
 ```
+
+### Exercises
+Use this [starter code](https://codepen.io/anon/pen/RLLbeJ)
+
+
+1. Do the following in javascript:
+    - Target the element with the id of `nycda-title`.
+    - Change the value of the text inside the element to say `"Welcome to NYCDA"`
+    - Now grab the element with id of `nycda-help-message` and change the text inside to `"Ask people in NYCDA for help if you're struggling"`
+
+2. Do the following in javascript:
+    - Target all the elements with the class of `nycda-class`
+    - Log the last element from that class collection in your developer console
+
+3. Do the following in javascript:
+    - Target all the paragraph tags that exist in your document
+    - Log the second paragraph element to your developer console
+
 
 ### Query Selectors
 
@@ -281,6 +299,14 @@ Resources
 - [MDN: Form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 - [MDN: Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
+### Exercise
+Use [starter code](https://codepen.io/anon/pen/RLLbeJ)
+
+
+Do the following in javascript:
+  - Target all input fields on the html page without using `getElementsByTagName()`
+  - Change the border color to `red`
+
 ## Events
 
 ### What is an event?
@@ -404,6 +430,40 @@ document.addEventListener("DOMCOntentLoaded", (event) => {
 })
 ```
 
+Resources
+- [MDN: Intro to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [MDN: Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+### Exercise
+
+Use [starter code](https://codepen.io/anon/pen/RLLbeJ)
+
+Write JS to handle when a person clicks on element with the id of `submit-button` to grab the value of the input field with the the id of `input-important`. Make sure you type something in the input field before you run your testing!
+
+### Example Using Animation
+
+[Animation Demo](animation.html)
+
 ### Workshop
 
 [Secion Transitions](https://drive.google.com/open?id=1K6d971_4BL-JvFb4B8RwsMGhib7_L9qjchE8gqpawcY)
+
+---
+
+### Bonus Challenges
+
+#### On Keypress
+
+Create an HTML page with javascript that listens for a `keypress` event. When the user presses a key, the text of the `h1` should show the value of the key they have pressed.
+
+Example: If the user presses `J`, the text inside the `h1` should display `J`.
+
+#### Validation
+
+Create an html page with a form. The form should include inputs for a `username`, `email`, and `password` as well as a `submit` button.
+
+In a Javascript file, write code that does the following things when clicking the `submit` button:
+- checks that the password is `"12345678"`
+- checks that the username contains at least one number
+
+Your page should also include an `h1` tag. If the information in the form is correct, have Javascript change the text in the `h1` to `Correct` otherwise change the text to `Incorrect`.

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   for(let i = 0; i < children.length; ++i) {
     children[i].addEventListener("click", (clickEvent) => {
-      alert(clickEvent.target.innerHTML)
+      clickEvent.target.classList.toggle("fadeOut")
     })
   }
 })

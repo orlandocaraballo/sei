@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+li {
+  opacity: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0 20px 20px;
+  box-shadow: 2px 2px 1px blueviolet;
+}
+
+li:hover {
+  background: blueviolet;
+  color: white;
+}
+
+li.fadeOut {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

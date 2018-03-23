@@ -20,7 +20,7 @@ Create an object literal that models each of the following objects with the give
 
 #### A Car 
 - brand - `"ford"`
-- numOfWheels - `12`
+- wheels - `12`
 - color - `"red"`
 
 #### A Wizard
@@ -33,34 +33,39 @@ Create an object literal that models each of the following objects with the give
 - isFoggy - `true`
 - monstersExist - `true`
 
+### Constructor
 
-### Constructors
+1. Create a class `Car` that store the `brand`, `wheels` and `color` properties.
 
-Take one of the following objects you created above and replicate it using a generic constructor function. 
-Instantiate a object literal based off your constructor.  
-Ex : Wizard Gandalf or Video Game Level Lava Map
+    - Try logging the properties to the console.
 
+### Methods
 
-Using dot notation change a property value in your object instance.
-Ex : Wizard Gandalf has age 78 and is changed to age 108
+1. Create a class `Circle` that stores a property `radius`
 
+2. Create a method called `calculateDiameter` that multiplies the `radius` by two. Create a new object instance and log the `calculateDiameter` return value to the console.
 
-Give your object constructor a useful function, have one of your instance call your new method
-Ex. Wizard can do Fire Attack ( gandalf.fireAttack(); ) 
+3. Create a method called `calculateCircumference` that returns 2 times the radius multiplied by pi. (Use the special property `Math.PI` available in javascript)
 
-### Classes
+4. Using dot notation change the `radius` property value in your object instance. Now log the return value of `calculateCircumference` to the console.
+
+5. Change the `calculateCircumference` name to `circumference` and modify it to be a getter method.
+
+### Inheritance
 
 1. Create a class called `Rectangle` and initialize its constructor with a `height` and `width` property.
 
-    - Give it a method called `calcArea` that will return its `width` multiplied by its `height` 
+    - Give it a method called `calculateArea` that will return its `width` multiplied by its `height` 
 
 2. Create a class called `Animal` with a constructor that accepts a `name` parameter.
 
-    - Give the class a method called `speak` that will return the `name` concatenated with the word speaks at the end
+    - Give the class a method called `speak` that will return the `name` concatenated with the phrase `" speaks"` at the end
 
-3. Create another class called Dog and extend it to inherit from the Animal class
+3. Create another class called `Dog` and `extend` it to inherit from the `Animal` class
 
-4. Create a new dog instance and check if you can call the speak method on it 
+4. Create a new dog instance and check if you can call the `speak` method on it
+
+    - Override the `speak` method in the `Dog` class so that when a dog speaks it says the `"woof!"`
 
 ## Workshop
 

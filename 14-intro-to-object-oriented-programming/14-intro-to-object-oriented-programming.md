@@ -69,7 +69,7 @@ Create an object literal that models each of the following objects with the give
 
 ## Workshop
 
-[Art Gallery](https://docs.google.com/document/d/1Eeh8Qw1Km44_XwrL8ipcemWfYXzEe3mhJ6SdIBqrusA/edit?usp=sharing)
+[Art Gallery](https://drive.google.com/open?id=1j_AFf03OPSk7WR7fIf-FvDr2wgiLN1W3rNCdkCx76EY)
 
 ## Resources
 

@@ -1,11 +1,34 @@
+# Introduction to Data Structures using Javascript
 
-Objects Review (Brief)
+## Definition
 
+_A data structure is a specialized format for organizing and storing data_
 
-Syntax
-Why put things into objects
-Benefits
-Caveats
+## Why Use Objects
+
+_Objects provide us with a lot of power in how we organize our information because we are developers can decide the structure and behavior of code that is related together_
+
+## Caveats
+
+- Objects can be more work initially because you have group your code into constraints and classification hierarchies
+- Object oriented design can get complicated
+
+## Examples
+
+- Object literal (sometimes seen as hashes in other languages)
+- Object
+- Array
+- Stack
+- Queue
+- Tree
+- Linked List
+- Blockchain
+
+## Blockchain in JS Videos
+
+- [Part 1](https://www.youtube.com/watch?v=zVqczFZr124)
+- [Part 2](https://www.youtube.com/watch?v=HneatE69814)
+- [Part 3](https://www.youtube.com/watch?v=fRV6cGXVQ4I)
 
 Data Structures
 

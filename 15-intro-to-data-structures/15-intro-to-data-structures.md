@@ -31,6 +31,7 @@ _Objects provide us with a lot of power in how we organize our information becau
 1. Which data structure would you use to store english words and their translations to two other languages such as Spanish and French?
     - Given the following words: chair, television, lamp, music and window. What would the code look like to store this information and its translations?
     - How would you loop through this data structure?
+2. Which data structure would you use when organizing a hierarchy of species of animals?
 2. Which data structure would you use when storing books you have read?
     - How would you write the code for that?
     - How would you loop through this data structure?

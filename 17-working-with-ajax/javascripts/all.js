@@ -26,7 +26,7 @@ class Person {
 }
 
 // retrieve data from json
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/data.json")
+axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/all.json")
 .then((response) => {
   let data = response.data
   let people = new People()

@@ -78,8 +78,6 @@ _A modern library for handling AJAX requests_
 
 __Note: Read everything before "On the server side: retrieving the data"__
 
-## Exercises
-
 ## Workshop
 
 [Minimalistic Wings](https://drive.google.com/open?id=16kRKgQ06RG_WCPAKMI20wSraRkDZ4wIxbATAcy2veZY)

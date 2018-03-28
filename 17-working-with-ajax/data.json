@@ -1,18 +1,20 @@
-[{
-  "first-name" : "orlando",
-  "last-name" : "caraballo",
-  "age": 34,
-  "gender": "male"
-},
-{
-  "first-name" : "patrisha",
-  "last-name" : "caraballo",
-  "age": 34,
-  "gender": "female"
-},
-{
-  "first-name" : "denisse",
-  "last-name" : "caraballo",
-  "age": 23,
-  "gender": "female"
-}]
+[
+  {
+    "first-name" : "orlando",
+    "last-name" : "caraballo",
+    "age": 34,
+    "gender": "male"
+  },
+  {
+    "first-name" : "patrisha",
+    "last-name" : "caraballo",
+    "age": 34,
+    "gender": "female"
+  },
+  {
+    "first-name" : "denisse",
+    "last-name" : "caraballo",
+    "age": 23,
+    "gender": "female"
+  }
+]

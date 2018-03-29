@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>API Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="api.css" />
+</head>
+<body>
+  <!-- the form we are using to pass data into the api -->
+  <form action="https://swapi.co/api/people/" method="get">
+    <input type="search" name="search" id="search">
+    <input type="submit" value="Search">
+  </form>
+
+  <div>
+    <!-- this is where the star wars results will be added to -->
+  </div>
+
+  <!-- loads the axios library -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  <!-- our code -->
+  <script src="api.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+body {
+  padding: 20px;
+}
+
+input[input="search"] {
+  color: red;
+}

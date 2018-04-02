@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Extras</title>
+  <link rel="stylesheet" href="extras.css">
+</head>
+<body>
+  <h1>People Objects</h1>
+  <ul></ul>
+
+  <!-- we need this template in order for handlebars to work -->
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li>
+      <h2>{{ title }}</h2>
+      <p>{{ body }}</p>
+    </li>
+  </script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  <!-- loads handlebars library -->
+  <script src="handlebars-v4.0.11.js"></script>
+  <script src="extras.js"></script>
+</body>
+</html>

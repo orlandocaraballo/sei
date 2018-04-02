@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body {
+  padding: 0;
+  margin: 20px;
+  background: #333;
+  font-family: Roboto;
+  color: #ddd;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(33, 161, 131, 0.7);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #000;
+  color: #F7F0F0;
+}
+
+h1 {
+  font-family: Open Sans;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 18px;
+}

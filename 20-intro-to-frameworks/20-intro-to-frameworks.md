@@ -1,3 +1,4 @@
+![Bootstrap vs Materialize](bootstrap-vs-materialize.png)
 
 # Introduction to Frameworks
 
@@ -40,10 +41,10 @@ _Libraries provide standard code tools for a programming language whereas Framew
 - Django (Python)
 
 ## Frontend Visual Frameworks
-- Materialize
-- Bootstrap
-- Skeleton
-- Foundation
+- [Materialize](http://materializecss.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Skeleton](http://getskeleton.com/)
+- [Foundation](https://foundation.zurb.com/)
 
 ## Grid systems
 

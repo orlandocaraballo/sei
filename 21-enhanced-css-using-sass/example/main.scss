@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px');
+@import "variables";
+
+article p {
+  color: $fancy-red;
+  font-family: $secondary-font;
+}
+
+header, footer, article {
+  color: $fancy-red;
+  font-family: $primary-font;
+}
+
+ul {
+  padding-left: 0;
+
+  li {
+    border: 1px solid rgb(56, 78, 108);
+    margin: 10px;
+    list-style: none;
+    padding: 30px;
+
+    &:first-child {
+      border: 1px solid blue;
+      padding: 0px;
+    }
+  }
+}

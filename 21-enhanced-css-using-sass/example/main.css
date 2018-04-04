@@ -1,1 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Slabo+27px");
 /* css goes here */
+article p {
+  color: #8f2525;
+  font-family: Roboto, sans-serif; }
+
+header, footer, article {
+  color: #8f2525;
+  font-family: "Slabo 27px", sans-serif; }
+
+ul {
+  padding-left: 0; 
+}
+
+ul li {
+  border: 1px solid #384e6c;
+  margin: 10px;
+  list-style: none;
+  padding: 30px;
+}
+ul li:first-child {
+  border: 1px solid blue;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

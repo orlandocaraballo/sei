@@ -40,6 +40,38 @@ _A CSS preprocessor processes the more expressive Sass or Less code and transfor
 - Partials
 - @import
 
+## Exercises
+
+Given the following html:
+```html
+<main>
+  <article>
+    <h1>Ingles sin Barreras</h1>
+    <p>
+      <strong class="large">Hola</strong>
+      <span>¡Como Estas!</span>
+    </p>
+  </article>
+
+  <aside>
+    <h2>En el lado</h2>
+    <p class="large"> 
+      Estamos en la matriz
+    </p>
+  </aside>
+</main>
+```
+
+Write scss code that does the following:
+- Targets the span and changes the text color to `#63458A`
+  - What other ways can we target this?
+  - If we wanted to set the `h2` to the same color how would we do this?
+  - How can we use `.scss` to make this more DRY?
+- Targets every element with the class large and sets the font size to `20px`
+  - What other ways can we target this?
+  - Which method is most efficient?
+- If we had to set some default fonts and colors for the page, how can we rearrange our code to make it more organized?
+
 ## More Advanced Features
 
 ### Placeholders
@@ -126,6 +158,37 @@ Compiles to
   border-radius: 8px;
 }
 ```
+
+## Exercises
+
+Given the following:
+
+```scss
+.thin-shadow {
+  box-shadow: 1px 1px 1px black;
+}
+
+table td {
+  color: grey;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px solid blue;
+  font-family: Raleway, sans-serif;
+}
+
+h4 {
+  font-family: Raleway, sans-serif;
+  color: cyan;
+  font-size: 12px;
+}
+
+.strong-shadow {
+  box-shadow: 3px 3px 3px black;
+}
+
+```
+
+- How would we DRY up this code?
 
 ## Tools
 

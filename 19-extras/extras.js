@@ -1,3 +1,16 @@
+// this loops 5 times
+for(let i = 0; i < 5; ++i){
+  // this displays hola 5 times
+  console.log("hola")
+}
+console.log("orlando")
+
+
+
+
+
+
+
 // select the ul from the html document
 let ulElement = document.querySelector("ul")
  

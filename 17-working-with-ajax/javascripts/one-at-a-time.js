@@ -27,85 +27,91 @@ let ul = document.querySelector("ul")
 let people = new People()
 
 // retrieve data from hosted person-1 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-1.json")
+axios.get("https://pokeapi.co/api/v2/pokemon/50/")
 .then((response) => {
+  // console.log(response.data.abilities[1].ability.name)
+
+  response.data.abilities.forEach(ability => {
+    console.log(ability.ability.name)
+  })
+
   // creates new li element
-  let li = document.createElement("li")
-  let data = response.data
+  // let li = document.createElement("li")
+  // let data = response.data
 
   // creates new Person object
   // based on JSON payload
-  let orlando = new Person(
-    data["first-name"],
-    data["last-name"],
-    data["age"],
-    data["gender"]
-  )
+  // let orlando = new Person(
+  //   data["first-name"],
+  //   data["last-name"],
+  //   data["age"],
+  //   data["gender"]
+  // )
 
   // adds new Person object
-  people.add(orlando)
+  // people.add(orlando)
 
   // changes inner html of li to first name
-  li.innerHTML = orlando.firstName
+  // li.innerHTML = orlando.firstName
     
   // appends created li to the html ul
-  ul.appendChild(li)
+  // ul.appendChild(li)
 }).catch((error) => {
   console.log(error)
 })
 
 // retrieve data from hosted person-2 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-2.json")
-.then((response) => {
-  // creates new li element
-  let li = document.createElement("li")
-  let data = response.data
+// axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-2.json")
+// .then((response) => {
+//   // creates new li element
+//   let li = document.createElement("li")
+//   let data = response.data
 
-  // creates new Person object
-  // based on JSON payload
-  let trish = new Person(
-    data["first-name"],
-    data["last-name"],
-    data["age"],
-    data["gender"]
-  )
+//   // creates new Person object
+//   // based on JSON payload
+//   let trish = new Person(
+//     data["first-name"],
+//     data["last-name"],
+//     data["age"],
+//     data["gender"]
+//   )
 
-  // adds new Person object
-  people.add(trish)
+//   // adds new Person object
+//   people.add(trish)
 
-  // changes inner html of li to first name
-  li.innerHTML = trish.firstName
+//   // changes inner html of li to first name
+//   li.innerHTML = trish.firstName
     
-  // appends created li to the html ul
-  ul.appendChild(li)
-}).catch((error) => {
-  console.log(error)
-})
+//   // appends created li to the html ul
+//   ul.appendChild(li)
+// }).catch((error) => {
+//   console.log(error)
+// })
 
 // retrieve data from hosted person-3 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-3.json")
-.then((response) => {
-  // creates new li element
-  let li = document.createElement("li")
-  let data = response.data
+// axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-3.json")
+// .then((response) => {
+//   // creates new li element
+//   let li = document.createElement("li")
+//   let data = response.data
 
-  // creates new Person object
-  // based on JSON payload
-  let denisse = new Person(
-    data["first-name"],
-    data["last-name"],
-    data["age"],
-    data["gender"]
-  )
+//   // creates new Person object
+//   // based on JSON payload
+//   let denisse = new Person(
+//     data["first-name"],
+//     data["last-name"],
+//     data["age"],
+//     data["gender"]
+//   )
 
-  // adds new Person object
-  people.add(denisse)
+//   // adds new Person object
+//   people.add(denisse)
 
-  // changes inner html of li to first name
-  li.innerHTML = denisse.firstName
+//   // changes inner html of li to first name
+//   li.innerHTML = denisse.firstName
     
-  // appends created li to the html ul
-  ul.appendChild(li)
-}).catch((error) => {
-  console.log(error)
-})
+//   // appends created li to the html ul
+//   ul.appendChild(li)
+// }).catch((error) => {
+//   console.log(error)
+// })

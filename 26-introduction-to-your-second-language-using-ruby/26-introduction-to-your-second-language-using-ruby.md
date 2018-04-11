@@ -78,9 +78,10 @@ if
 else
 elsif
 begin
-end
 nil
 ```
+
+[Ruby Docs: Keywords](https://docs.ruby-lang.org/en/2.2.0/keywords_rdoc.html)
 
 ## Data Types
 
@@ -92,6 +93,8 @@ nil
 - Array
 - Hash
 - Constant
+
+[Zetcode: Ruby Datatypes](http://zetcode.com/lang/rubytutorial/datatypes/)
 
 ## Variables
 
@@ -155,7 +158,7 @@ p name
 1 + 15
 2 - 1
 8 * 9
-4 * 3
+4 / 3
 
 # not all though
 number = 5
@@ -346,7 +349,7 @@ __Containers__
 2. Think of three names and store the names, as strings, in an array named `names`
 3. Create a new hash named `colors_and_names` with two keys, one key is named `colors` and the other is named `names`. Set the value of the colors key to the colors array and set the value of `names` to the `names` array. What did we just achieve?
 4. Loop thru each name in the `names` array and display it on the console.
-5. Loop thru each color in the `names` array and display it on the console.
+5. Loop thru each color in the `colors` array and display it on the console.
 6. Loop thru each name within the `colors_and_names` hash and display it on the console.
 7. Loop thru each color within the `colors_and_names` hash and display it on the console.
 
@@ -396,7 +399,7 @@ add_two(5) # 7
 number = 2
 
 # you can access local variables within a block
-[1,2,3,4,5].map do ||
+[1,2,3,4,5].map do
   number  
 end # [2,2,2,2,2]
 ```

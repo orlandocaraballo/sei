@@ -46,7 +46,7 @@ end
 
 # displays:
 #   "Hi my name is Orlando, my age is 34 and my gender is male"
-new_person = Person.new("orlando", 34, "male)
+new_person = Person.new("orlando", 34, "male")
 ```
 
 ## Instance Variables

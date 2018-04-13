@@ -1,31 +1,61 @@
 
-Using a Library
+![Gem](gem.png)
+## Libraries Using Rubygems
+
+## Libraries
+
+_A library is a reusable piece of code that has been packaged for use by the broader community_
+
 Definition and overview of what a library is
 Use cases of implementing a library 
 Definition and overview of what gems are and how they are used
 
-Using Ruby Gems
-Using require
+## Common Gems
+
+- Nokogiri
+- Oauth
+- Rake
+- RSpec
+- Rollbar
+- Rake
+- JSON
+- Bundler
+- Sinatra
+- Ruby on Rails
+
+### Gems Used in this Class
+
+- Rollbar
+- Rake
+- JSON
+- Bundler
+- Sinatra
+- Ruby on Rails
+
+## Using Ruby Gems
+
+```bash
 $ gem install mygem
 $ gem uninstall mygem
 $ gem list --local
-Using RVM
-Installation
-the sudo command is typically not necessary to install gems
-Only use sudo if you have problems with permissions during gem installation
-Example
-Pick gem and demo it - pirate gem
+```
 
-Bundler
-From now on, when you create a new Ruby script, put it in its own folder
-This structure will become useful as our project grow
-Definition and overview
-Terminal command to install bundler: $ gem install bundler
-Gemfile
-Definition and overview
-The file itself should always have the name Gemfile, with no extension after it
-Code examples of what to put inside a gem file 
-Example of fetching a gem from a repository:
-gem 'rack-flash3', :git => "git://github.com/treeder/rack-flash.git"
-Go over terminal commands 
-Code examples
+## Bundler
+
+_Bundler allows us to group a set of gems together in a package that can be distributed with our apps for another developer to use_
+
+```bash
+$ gem install bundler
+$ touch Gemfile
+$ bundle
+```
+
+## Resources
+
+- [RubyGems: Homepage](https://rubygems.org/)
+- [RubyGems: Basics](http://guides.rubygems.org/rubygems-basics/)
+- [Bundler: Homepage](http://bundler.io/)
+
+## Workshop
+
+[Chuck Norris CLI](https://drive.google.com/open?id=1cXwxZZ8MVuwo4dNZLWfILPMLmqAJ-BWF_4P9PoZyNQo)

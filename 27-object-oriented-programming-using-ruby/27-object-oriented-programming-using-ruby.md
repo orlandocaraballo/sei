@@ -272,7 +272,7 @@ student.gpa # 4.0
 
 ## Exercises
 
-- Create an `Animal` class that stores information on an animal's `height`, `species` and `name`. The `name`, `species` and `height` are accessible outside of the class definition. Only `name` is changeable outside of the class definition.
+- Create an `Animal` class that stores information on an animal's `height`, `species` and `name`. The `name`, `species` and `height` are readable outside of the class definition. Only `name` is changeable outside of the class definition.
     - Add two instance methods called `walk` and `run`. The walk method returns `"I am walking very slowly"` and the run method returns `"I am running very quickly"`.
 
 - Create a Calculator class with 4 class methods: `add`, `subtract`, `multiply` and `divide`. Each method accepts two parameters and returns the result of the operation.

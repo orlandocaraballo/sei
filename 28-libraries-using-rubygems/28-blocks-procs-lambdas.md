@@ -40,7 +40,7 @@ If we run `yield` without there being a block....
 
 ```ruby
 def block_example_check_block
-  yield(5) if block_given?
+  yield(5)
 end
 
 block_example_check_block # this cause return an error

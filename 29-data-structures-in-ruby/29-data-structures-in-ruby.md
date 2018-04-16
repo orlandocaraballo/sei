@@ -65,8 +65,6 @@ Queue Instance Methods
 
 ## Linked List Properties
 
-_First in first out_
-
 Classes
 - **LinkedList** - the linked list container class
 - **Node** - the individual node within a linked list
@@ -93,7 +91,7 @@ LinkedList Instance Methods
 - **Stacks** - used for data that needs to be retrieved in the reverse order it was added (undo or redo in text editor)
 - **Queues** - used for data that needs to retrieved in the order it was added (people standing in line)
 - **Linked List** - used for data that has indefinite length (todo list)
-- **Tree* - used for data that naturally forms a hierarchy (animals by species, DOM)
+- **Tree** - used for data that naturally forms a hierarchy (animals by species, DOM)
 
 ## Designing Your Own
 

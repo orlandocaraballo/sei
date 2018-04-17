@@ -22,7 +22,7 @@
   2. Swap if number on left is greater than on right
   3. Then do the same for the next number
   4. When reaching the end of the list, assume the last number is sorted
-  5. Repeat steps 1 - 4 while assuming ignoring sorted numbers
+  5. Repeat steps 1 - 4 while ignoring sorted numbers
 
 ### Insertion Sort
 

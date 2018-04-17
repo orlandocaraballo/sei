@@ -70,7 +70,7 @@ Classes
 - **Node** - the individual node within a linked list
 
 Node Instance Variables
-- **data** - the information stored in this node
+- **data** - the information stored in this node (a number)
 - **next** - the next node in the linked list
 
 LinkedList Instance Variables
@@ -78,8 +78,11 @@ LinkedList Instance Variables
 - **size** - the length of the list
 
 LinkedList Instance Methods
+
+_element is a number_
+
 - **add(element)** - adds a new element to the list
-- **remove(index)** - returns and removes the front element from the queue
+- **remove(index)** - returns and removes the element at the specified index location
 - **insert(element, index)** - adds a new element to the list at the specified index location
 - **empty?()** / **isEmpty()** - returns if linked list is empty
 - **show()** - returns a string with all elements of the linked list concatenated

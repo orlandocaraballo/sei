@@ -242,3 +242,7 @@ mr_dog.human_years + yo_dog.human_years
 - [Honeybadger: A Beginner's Guide to Exceptions in Ruby](http://blog.honeybadger.io/a-beginner-s-guide-to-exceptions-in-ruby/)
 - [Ruby Learning: Ruby Exceptions](http://rubylearning.com/satishtalim/ruby_exceptions.html)
 - [MDN: Try...Catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+## Workshop
+
+[Schoolhouse Automation](https://drive.google.com/open?id=1smPgw7SkWgoaFxQmGdxAgxBl8My3a41TynUEhOFvtzE)

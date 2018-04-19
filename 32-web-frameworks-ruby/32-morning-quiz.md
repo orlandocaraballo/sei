@@ -99,3 +99,5 @@ namePlusTen()
 10. Given the list on number 9, assign each comment / phrase to the person it best fits. If you had to describe this relationship in javascript and ruby code, how would you write it?
 
 11. If you had to rate your confidence level so far in this course using a scale of 1-10 where 1 is absolutely lost and 10 is "extremely confident", where would you place yourself? Why? What current habits are you utilizing to improve your confidence in the course?
+
+12. What is best in life?

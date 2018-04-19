@@ -100,6 +100,7 @@ namePlusTen()
     - This death wish coffee is all for me... Mwahaha!
 
     a. Describe this list in code form.
+    
     b. What code would I write to allow someone to swap a value from one location on the list to another location on the list?
 
 10. Given the list on number 9, assign each comment / phrase to the person it best fits. If you had to describe this relationship in javascript and ruby code, how would you write it?

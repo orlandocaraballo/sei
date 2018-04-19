@@ -9,7 +9,7 @@ def no_name(x)
   l = x.length
 
   for i in 0..l
-    x[i] = (x[i] * -1) * x[i]
+    x[i] = (x[i] * 1) * x[i]
   end
 
   x

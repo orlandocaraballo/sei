@@ -41,7 +41,7 @@ class GoodJoke < Joke
   def initialize(name, content)
     @funny = true
     
-    super(name, translation)
+    super(name, content)
   end
 end
 
@@ -51,7 +51,7 @@ class BadJoke < Joke
   def initialize(name, content)
     @funny = false
 
-    super(name, translation)
+    super(name, content)
   end
 end
 

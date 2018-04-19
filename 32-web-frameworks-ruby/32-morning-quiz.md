@@ -36,6 +36,8 @@ class Joke
 end
 
 class GoodJoke < Joke
+  attr_accessor :funny
+
   def initialize(name, content)
     @funny = true
     
@@ -44,6 +46,8 @@ class GoodJoke < Joke
 end
 
 class BadJoke < Joke
+  attr_accessor :funny
+
   def initialize(name, content)
     @funny = false
 

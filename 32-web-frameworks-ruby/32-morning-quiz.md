@@ -56,7 +56,7 @@ class BadJoke < Joke
 end
 
 bad_joke = BadJoke.new("knock knock", "knock, knock...")
-good_joke = BadJoke.new("question", "what are those!?")
+good_joke = GoodJoke.new("question", "what are those!?")
 
 puts good_joke.tell
 puts bad_joke.tell

@@ -89,9 +89,10 @@ namePlusTen()
 9. Given the following list of comments:
     - That's what she said
     - Minhal is amused...
-    - I am the meme lord!
+    - When would you use this?
     - Third eye open
     - [Whistle] Look at dat sauce
+    - This death wish coffee is all for me... Mwahaha!
 
     a. Describe this list in code form.
     b. What code would I write to allow someone to swap a value from one location on the list to another location on the list?

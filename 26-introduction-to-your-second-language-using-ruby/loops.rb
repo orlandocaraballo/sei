@@ -12,7 +12,6 @@
 # colors_and_names[:names].each { |name| puts name }
 # colors_and_names[:colors].each { |color| puts color }
 
-
 def dummy
   numbers = (1..5).to_a
 

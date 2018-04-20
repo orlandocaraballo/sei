@@ -1,13 +1,5 @@
 <img src="framework.png" style="width: 100%" />
 
-# Web Frameworks in Ruby
-
-Web Frameworks 
-Introduction
-Explanation of what Web Frameworks are
-Explanation of why web frameworks are used
-Overview of the different types of frameworks and choosing which frameworks to used based on the specific project
-
 ## What is a Framework?
 
 A software framework, in computer programming, is an abstraction in which common code providing generic functionality can be selectively overridden or specialized by user code providing specific functionality. Frameworks are a special case of software libraries in that they are reusable abstractions of code wrapped in a well-defined Application programming interface (API), yet they contain some key distinguishing features that separate them from normal libraries.
@@ -304,7 +296,7 @@ Axios Example (Client Side)
 ```js
 // "/users" is the path
 // post is the method
-axios.post("/").then(response => {
+axios.post("/users").then(response => {
   // this is the action that occurs after retrieving the response
   console.log(response.data)
 })

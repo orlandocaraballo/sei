@@ -118,7 +118,7 @@ _Note: To test your server, remember to run `ruby app.rb` in the terminal and ch
 3. Now require this file in `app.rb`.
 4. Create some classmate objects before your routes and store them in some variables.
 5. Create three `get` routes with the pathnames representing their names. (e.g. `get "/orlando"`, `get "/chris"`)
-6. In each action, try displaying each classmates name and super power by utilizing the `i_have_the_power!` methods on each object within each of the routes. (e.g. `get "/orlando"` would utilize the `i_have_the_power` method on an `orlando` object I created beforehand)
+6. In each action, try displaying each classmates name and super power by utilizing the `i_have_the_power!` methods on each object within each of the routes. (e.g. `get "/orlando"` would utilize the `i_have_the_power!` method on an `orlando` object I created beforehand)
 
 ### Challenge Exercises
 

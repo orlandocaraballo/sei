@@ -1,3 +1,4 @@
+<img src="routes.png" style="width: 100%">
 
 # Routing + Controllers in Sinatra
 

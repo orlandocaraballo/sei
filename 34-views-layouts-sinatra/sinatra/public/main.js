@@ -1,1 +1,1 @@
-console.log("dsfsd")
+console.log(window.location.search)

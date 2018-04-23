@@ -372,7 +372,7 @@ end
 4. Create a navigation that would link you to both the `/double_time` and `/` pages in the `layout.erb` file.
 5. Add the `main.js` and `main.css` files into your `public` folder with the text `alert("I am alive!")` and `body { color: red; }` in each file respectively. Now link these files properly in the `layout.erb` file.
 6. Create two routes called `get "/info"` and `post "/info"`. In the first route, display a form that accepts a `username` and `password`. Allow the user the submit the data to `post "/info"`. In the second route display the information submitted from the form within the console and redirect to the landing page.
-    - How else could we pass in that information to the `post "/info"` route?
+    - How else could we pass in that information to the `get "/info"` route?
 
 ## Workshop
 

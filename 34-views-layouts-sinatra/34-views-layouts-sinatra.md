@@ -1,3 +1,4 @@
+<img src="sinatra.png" style="width: 100%">
 
 # Sinatra Views and Layouts
 

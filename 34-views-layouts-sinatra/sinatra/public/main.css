@@ -1,0 +1,15 @@
+body {
+  color: red;
+}
+
+.zoidberg {
+  width: 200px;
+}
+
+.grocery-list {
+  list-style-type: none;
+}
+
+.panda {
+  list-style-type: square;
+}

@@ -33,7 +33,9 @@ get "/form" do
 end
 
 post "/form" do
-  puts params
+  @name, @age, @gender = params[:name], params[:age], params[:gender]
+  
+  erb :form_response
 
-  redirect "/form"
+  # redirect "/form?name=#{params[:name]}&age=#{params[:age]}&gender=#{params[:gender]}"
 end

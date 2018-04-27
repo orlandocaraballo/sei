@@ -82,7 +82,7 @@ _A `primary key` is a column in a table that represents the primary identifier t
 
 **Note:** Schemas should display the table name, the column names and column data types
 
-## Group Exercise
+### Group Exercise
 
 - Design the schema for a `posts` table to represent the data representing blog posts
 

@@ -105,7 +105,7 @@ _In a one-to-one relationship, a record in one table is related to only one reco
 - one **user** has one **profile** record
 - one **car** has one **company** that manufactures it
 
-### Drawn Out Example
+### Group Exercise
 - Let's design the schema for a `one-to-one` relationship between `cars` and `companies` table
 
 ## one-to-many
@@ -117,7 +117,7 @@ _In a one-to-many relationship, a record in one table is related to many records
 - one **post** has many **comments**
 - one **user** has many **tweets**
 
-## Group Exercise
+### Group Exercise
 - Design the schema for a `one-to-many` relationship between `users` and `posts` table
 
 ## many-to-many
@@ -130,7 +130,7 @@ _In a many-to-many relationship, a record in one table is related to many record
 - many **products** have many **orders**
     - a product could be ordered many different times, each order could have many different products in it
 
-## Group Exercise
+### Group Exercise
 - Design the schema for a `many-to-many` relationship between `users` and `addresses` table
 
 ## SQLite3

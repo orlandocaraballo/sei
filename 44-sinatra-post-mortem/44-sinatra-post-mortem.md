@@ -1,4 +1,5 @@
 
+
 Sinatra Review
 Review most important ideas from Sinatra
 Models
@@ -13,6 +14,8 @@ DELETE
 Forms
 Initial view load
 Responding to input
+
+-- Remember to mention pivoting --
 
 
 Comparison to Ruby on Rails

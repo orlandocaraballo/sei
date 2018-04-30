@@ -41,5 +41,5 @@ user = User.new("O", "pass")
 
 puts user.username # O
 puts user.password # s2s2a2p
-puts user.decryptedPassword # pass
+puts user.decrypted_password # pass
 ```

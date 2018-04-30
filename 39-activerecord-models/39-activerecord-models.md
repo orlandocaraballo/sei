@@ -367,6 +367,12 @@ end
 4. How would you retrieve the `employee` that has the task with an id of `4`?
 5. How would you find the `id_card` that belongs to an `employee` with the name `"jane"`?
 
+## Resources
+
+- [RoR Guides: ActiveRecord Basics](http://guides.rubyonrails.org/active_record_basics.html)
+- [RoR Guides: Association Basics](http://guides.rubyonrails.org/association_basics.html)
+- [RoR Guides: ActiveRecord Query Basics](http://guides.rubyonrails.org/active_record_querying.html)
+
 ## Workshop
 
 [Johnny Carson's Customer Tracker](https://drive.google.com/open?id=1-tB_9fvIrhJTYnZAEBeXB8zTj7_NHYpEyBH7CqmI1NA)

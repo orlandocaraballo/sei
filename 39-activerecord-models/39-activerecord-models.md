@@ -87,7 +87,7 @@ User.create(
 
 Using `save()`:
 ```ruby
-user = User.find(1)
+user = User.new
 
 # sets the object properties one by one
 user.first_name = "orlando"

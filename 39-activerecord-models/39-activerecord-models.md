@@ -333,13 +333,13 @@ class Task < ActiveRecord::Base
   belongs_to :employee
 end
 
-class Office < ActiveRecord::Base
+class Office < ActivRecord::Base
   has_many :employee, through: :employee_offices
 end
 
 class OfficeEmployee < ActiveRecord::Base
   belongs_to :employee
-  belongs_to :employee
+  belongs_to :employees
 end
 ```
 

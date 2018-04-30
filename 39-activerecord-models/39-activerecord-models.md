@@ -54,6 +54,22 @@ class [Singular Table Name] < ActiveRecord::Base
 end
 ```
 
+## Example
+
+```ruby
+require "active_record"
+require "sqlite3"
+
+ActiveRecord::Base.establish_connection(
+  adapter:  "sqlite3",
+  database: "app.db"
+)
+
+# refers to the users table
+class User < ActiveRecord::Base
+end
+```
+
 ## Commands
 
 ### Create

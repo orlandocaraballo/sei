@@ -23,7 +23,7 @@ $ sqlite3 [database name].db
 ```
 - Create your schema by executing create commands from a sql file on your new database
 ```bash
-$ sqlite3 [database name].db < [sequel file].sql)
+$ sqlite3 [database name].db < [sequel file].sql
 ```
 
 ## ActiveRecord Installation
@@ -273,6 +273,7 @@ For many to many, let's use a `Product` and `Order` class as examples:
 
 ```ruby
 class Product < ActiveRecord::Base
+  has_many :product_orders
   has_many :orders, through: :product_orders
 end
 ```
@@ -290,6 +291,7 @@ product.orders
 
 ```ruby
 class Order < ActiveRecord::Base
+  has_many :product_orders
   has_many :products, through: :product_orders 
 end
 ```

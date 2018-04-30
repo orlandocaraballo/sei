@@ -7,7 +7,29 @@ ActiveRecord::Base.establish_connection(
 )
 
 class User < ActiveRecord::Base
+  has_one :profile
+  has_many :posts
 end
 
-# class Post < ActiveRecord::Base
-# end
+class Profile < ActiveRecord::Base
+  belongs_to :user
+end
+
+class Post < ActiveRecord::Base
+  belongs_to :user
+end
+
+class Product < ActiveRecord::Base
+  has_many :product_orders
+  has_many :orders, through: :product_orders
+end
+
+class Order < ActiveRecord::Base
+  has_many :product_orders
+  has_many :products, through: :product_orders
+end
+
+class ProductOrder < ActiveRecord::Base
+  belongs_to :product
+  belongs_to :order
+end

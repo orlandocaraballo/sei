@@ -13,18 +13,18 @@ Disadvantages:
 - It adds a little complexity
 - It can be a little confusing at first
 
-### Remember `import.sql` ?
+## Remember `import.sql` ?
 
 So far, you have been creating your schema via import scripts that you run on the database. Going forward, we will be utilizing migrations to leverage ruby to create our schema for us. Therefore, we will not be importing our database structure using a `import.sql` file.
 
-### How To
+## How To
 
 There are three general steps to utilizing database migrations
 - Create the migration
 - Modify the migration
 - Run the migration
 
-### Creating a Migration
+## Creating a Migration
 
 In our `Gemfile`:
 ```ruby
@@ -67,7 +67,7 @@ Once we have these in place, we can run the following command in the terminal:
 $ rake db:create_migration NAME=[name of migration file to create]
 ```
 
-#### Rakefile
+### Rakefile
 
 _A `Rakefile` is a file that is used by a gem called `rake`. `rake` is a bash program that allows us to utilize frequently used tasks by running the `rake` command along with the task name._
 
@@ -80,7 +80,7 @@ require 'sinatra/activerecord/rake'
 
 [Culttt: Understanding and Using Ruby Rake](https://www.culttt.com/2015/08/05/understanding-and-using-ruby-rake/)
 
-#### Naming Migrations
+### Naming Migrations
 
 Choose a name that represents the change being made to the database
   - `create_users_table`
@@ -91,7 +91,7 @@ Choose a name that represents the change being made to the database
 
 This command above creates a new file in a folder `db/migrate/` that houses a migration file with the same name you chose above. If we would have chosen the name `create_users_table` then it create a file within the `db/migrate` folder called `2018300409813_create_users_table` where `2018300409813` is a timestamp of when it was created to keep all migrations in order.
 
-### Modifying a Migration
+## Modifying a Migration
 
 When you open this file it should look something like this:
 
@@ -145,7 +145,7 @@ Data types in ActiveRecord Migrations translate behind the scenes to sqlite3 / p
 - `:string` => VARCHAR
 - `:text` => TEXT
 
-#### Multiple Tasks Per Migration
+### Multiple Tasks Per Migration
 
 We can also do multiple things within a migration:
 
@@ -166,7 +166,7 @@ class CleanUpTables < ActiveRecord::Migration[5.0]
 end
 ```
 
-### Running a Migration
+## Running a Migration
 
 In order to run a migration, we run the following command on the terminal:
 
@@ -176,7 +176,7 @@ $ rake db:migrate
 
 After running a migration, it should execute the commands indicated in the migration file.
 
-### Reversing a Migration
+## Reversing a Migration
 
 If you need to reverse a migration you can run the following command on the terminal:
 
@@ -188,7 +188,7 @@ $ rake db:rollback
 $ rake db:rollback STEP=3
 ```
 
-### Seed Data
+## Seed Data
 
 _Seed data is data that is necessary to have in your app in order for it to work._
 
@@ -196,7 +196,7 @@ Examples
 - A starting user account
 - Information hard coded in the database that is not user generated (e.g list of country codes or products)
 
-#### How To
+### How To
 
 There are three steps to creating seed data:
 - Create the `db/seeds.rb` file
@@ -222,11 +222,30 @@ $ rake db:seed
 - [XYZPub: Populating the Database with seeds.rb](http://www.xyzpub.com/en/ruby-on-rails/3.2/seed_rb.html)
 - [RoR Guides: Migrations](http://edgeguides.rubyonrails.org/active_record_migrations.html)
 
+## Testing Your Database
+
+Now that we are using database migrations we have modify the way we test our models. We are now setting our database within the sinatra controller file via the `set :database` command as well as loading our models into this same file via the `require "./models"` command. Therefore, in order to test our models in irb:
+
+```bash
+$ irb
+2.5.1 :001 > require "./app"
+ => true 
+2.5.1 :002 > User.first
+D, [2018-05-01T08:47:27.385023 #83632] DEBUG -- :   User Load (0.5ms)  SELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?  [["LIMIT", 1]]
+ => #<User id: 1, username: "orlandoc", password: "12345", created_at: "2018-05-01 11:09:02", updated_at: "2018-05-01 11:09:02"> 
+```
+
+**Note:** Now we can see the database queries that are run when executing activerecord commands
+
 ## Sinatra Guide
 
 Running all these commands can ba very confusing and time confusing but don't fret. I have written a step by step guide to creating a Sinatra application including the additional steps necessary to create a database backed app.
 
 [Sinatra Guide](40-sinatra-guide.md)
+
+## Working Version
+
+Yes, this is a lot of code and commands to remember. Luckily, I have created a working migrated database for you to play with located in the `session_example` subfolder. If you need to see it working before it makes sense to you then please review that code. It is also using some authentication logic that is described in the [authentication lesson](40-authentication.md).
 
 ## Exercise
 

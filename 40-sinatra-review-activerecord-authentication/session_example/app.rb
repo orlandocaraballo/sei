@@ -3,8 +3,9 @@ require "sinatra/activerecord"
 require "sinatra/flash"
 require "./models"
 
-set :database, "sqlite3:app.db"
 enable :sessions
+
+set :database, "sqlite3:app.db"
 
 get "/" do
   if session[:user_id]

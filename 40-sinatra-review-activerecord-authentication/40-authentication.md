@@ -141,6 +141,12 @@ Lastly, how would we hide / show links based on signed in status:
 </html>
 ```
 
+## Working Example
+
+I have provided a working example for you can use as a reference located in the `session_example` subfolder. Run the `rake db:migrate` command within that subfolder and then you can run the command `ruby app.rb` to run the server.
+
+**Note:** I added some special sauce on `flash` messages in there. For more info on how to setup flash messages read thru [this markdown document](https://gist.github.com/cmkoller/0d3b048b3c4b48ee4955).
+
 ## Exercise
 
 Let's create a simple authentication system, by creating the following 5 routes:

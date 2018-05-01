@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+body {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.flash {
+  border-radius: 2px;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.flash.info {
+  background-color: #7cee7c;
+}
+
+.flash.warning {
+  background-color: #ee7c7c;
+}
+
+.flash a, .flash a:link, .flash a:active, .flash a:visited {
+  position: absolute;
+  right: 20px;
+  text-decoration:  none;
+  color: black;
+  animation: beckon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.flash a:hover {
+  color: white;
+}
+
+.flash.hide {
+  display: none;
+}
+
+@keyframes beckon {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

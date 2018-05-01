@@ -11,6 +11,8 @@ def largest(array)
   # your code here
 end
 
-smallest([98, -43, 7, -2, 19, 240]) # -43
-largest([98, -43, 7, -2, 19, 240]) # 240
+test_array = [98, -43, 7, -2, 19, 240]
+
+smallest(test_array) # -43
+largest(test_array) # 240
 ```

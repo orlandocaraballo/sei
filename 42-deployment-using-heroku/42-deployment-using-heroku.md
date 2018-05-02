@@ -16,7 +16,7 @@ _Development Operations (or devops) is not clearly defined but in my eyes it enc
 
 ## Environments (Stages)
 
-- `test` - a special environment used to run automated tests on your development code
+- `test` - (optional) a special environment used to run automated tests on your development code
 - `development` - environment local to your computer
 - `staging`  (optional) - environment mirroring production for testing purposes
 - `production` - environment available to the public

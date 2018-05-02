@@ -264,6 +264,12 @@ gem "pg"
 # ...rest of file
 ```
 
+Then bundle
+
+```bash
+$ bundle install
+```
+
 ### Create database
 
 Postgres provides for us a command `createdb` to create database for us:

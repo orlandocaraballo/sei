@@ -94,23 +94,10 @@ This information is important because on heroku, we cannot use a `sqlite3` datab
 ## Swapping to Postgres
 
 In order to facilitate this transition we need to do several things:
-- Install postgres locally
 - Modify the `Gemfile`
 - Install gems without production group
 - Configure sinatra controller file
 - Push to heroku
-
-### Install postgres locally
-**OSX (Mac):**
-```bash
-# for the purposes of messing with settings in postgres
-$ brew install postgresql
-```
-
-**Ubuntu (Linux):**
-```bash
-$ sudo apt-get install postgresql postgresql-contrib
-```
 
 ### Modify the Gemfile:
 
@@ -225,12 +212,25 @@ $ sudo /sbin/service postgresql [start | stop]
 ### Setup
 
 In order to setup our local database to use postgres we need to do the following:
-- Set our `pg` gem to install locally
+- Install `postgresql` locally
+- Install `pg` gem locally
 - Create a database (each application should have its own database)
 - Configure our sinatra controller file
 - Run migrations
 
-## Local `pg` gem
+### Install `postgresql` locally
+**OSX (Mac):**
+```bash
+# for the purposes of messing with settings in postgres
+$ brew install postgresql
+```
+
+**Ubuntu (Linux):**
+```bash
+$ sudo apt-get install postgresql postgresql-contrib
+```
+
+### Install `pg` gem locally
 
 Change your Gemfile from:
 

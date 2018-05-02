@@ -1,3 +1,4 @@
+<img src="postgres.png" style="width: 100%">
 
 # Database Backed Server Side Deployment
 

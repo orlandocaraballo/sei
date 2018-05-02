@@ -34,7 +34,7 @@ In a professional environment:
 ```
 => [automated tests] => [tests fail] => [write development code to pass test]
 => [automated tests] => [tests pass] => [deploy to staging] => [verify staging]
-                                     => [desploy to production] => [verify production]
+                                     => [deploy to production] => [verify production]
 ```
 
 ## Gemfile Groups

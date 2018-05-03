@@ -125,6 +125,10 @@ end
 ```bash
 # to prevent pg gem from being installed locally
 $ bundle install --without production
+
+# we run this command to add .bundle/config to our .gitignore
+#   .bundle/config would prevent our production group from running on heroku
+$ cat ".bundle/config" >> .gitignore
 ```
 
 ### Configure the sinatra controller file
@@ -228,6 +232,7 @@ $ brew install postgresql
 **Ubuntu (Linux):**
 ```bash
 $ sudo apt-get install postgresql postgresql-contrib
+$ sudo apt-get install libpq-dev
 ```
 
 ### Install `pg` gem locally
@@ -274,6 +279,16 @@ $ bundle install
 
 Postgres provides for us a command `createdb` to create database for us:
 
+#### Linux
+
+On linux the process is slightly more involved because all actions must be made thru the username -> `postgres` therefore:
+- We must first login to our postgres account then make necessary system changes or...
+- We must run our commands through the postgres user account every time
+
+[Digital Ocean: How to Install and Use Postgresql on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+
+#### OSX (Mac)
+
 ```bash
 # this creates a database called indicated by name
 #   postgres does not store our information in a ".db" file
@@ -281,6 +296,41 @@ $ createdb [name of database]
 ```
 
 ### Configure Sinatra
+
+#### Linux (Ubuntu)
+
+```ruby
+# ...beginning of file
+
+configure :development do
+  # in this case 
+  set :database, {
+    adapter: "postgresql", 
+    database: "sinatra_heroku", 
+    username: "[your username]",
+    password: "[your password]"
+  }
+end
+
+# ...test of file
+```
+
+Or more securely:
+
+```yml
+# config/database.yml
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: database_name
+  pool: 2
+  username: ENV["DATABASE_USERNAME"]
+  password: ENV["DATABASE_PASSWORD"]
+```
+
+[Sinatra: Postgresql](http://recipes.sinatrarb.com/p/databases/postgresql-activerecord)
+
+#### OSX (Mac)
 
 ```ruby
 # ...beginning of file

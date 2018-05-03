@@ -128,7 +128,7 @@ $ bundle install --without production
 
 # we run this command to add .bundle/config to our .gitignore
 #   .bundle/config would prevent our production group from running on heroku
-$ cat ".bundle/config" >> .gitignore
+$ echo ".bundle/config" >> .gitignore
 ```
 
 ### Configure the sinatra controller file

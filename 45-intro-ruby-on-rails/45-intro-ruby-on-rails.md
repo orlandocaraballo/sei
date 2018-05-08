@@ -1,102 +1,205 @@
 
-Scaffolded Approach to Ruby on Rails
-Simulation of the of learning and building a project simultaneously - similar to in the workplace
-Project will be done these next two weeks
-Pieces of the project will be filled in as its learned
-Short exercises will be used while going along
+# Introduction to Ruby on Rails: Controllers + Routes
 
-Introduction
 Routing review
 Controller review
 
-Getting Started
-gem install rails --no-rdoc --no-ri
-http://localhost:3000
 
-Commands
-rails new [app_name]
-rails console
-rails routes
-rails generate controller
+## Useful Commands
 
-Routing
-routes.rb
-Simple routes
+```bash
+# installs rails without terminal documentation
+# this installs much faster than normal
+$ gem install rails --no-rdoc --no-ri
+
+# creates a new app
+# check http://localhost:3000 to verify your server
+$ rails new [app_name]
+
+# runs the rails console
+$ rails console
+
+# shows you all routes in your app
+# also available via http://localhost:3000/rails/info/routes
+$ rails routes
+
+# generates a new controller
+$ rails generate controller [controller name]
+
+# runs database migration
+$ rails db:migrate
+```
+
+## Routing
+
+All routes are stored in the `/config/routes.rb`
+
+### Simple routes
+
+All routes dictate which controller / action will be targeted when hitting a path within your web app. The pattern being used here is as follows:
+
+```
+[method] "[path]", to: "[controller]#[action]"
+```
+
+#### Example
+
+```ruby
 get "/users", to: "users#index"
-Restful routing
-RepresEntational State Transfer
-A standard used across platforms
-Different HTTP verbs are used on the same URL (resource) by the user to represent the requested state of that resource
-resources :[resource_name]
-Generates many routes in one line
+post "/posts", to: "posts#create"
+put "/comments/:id", to: "comments#update"
+delete "/users/:id", to: "users#destroy"
+```
 
-REST Verb Standards
+### Restful routing
+
+_REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other_
+
+- [CodeAcademy: What is REST?](https://www.codecademy.com/articles/what-is-rest)
+
+The pattern being followed here is as follows:
+
+```ruby
+resources :[resource_plural]
+```
+
+#### Example
+
+```ruby
+resources :users
+```
+
+Can be used as a substitute for the following manual routes:
+
+```ruby
+get "/users", to: "users#index"
+get "/users/:id", to: "users#show"
+get "/users/new", to: "users#new"
+get "/users/edit", to: "users#edit"
+
+post "/users", to: "users#create"
+put "/users/:id", to: "users#update"
+delete "/users/:id", to: "users#destroy"
+```
+
+#### REST Verb Standards
+
+_Different HTTP verbs  being used on the same URL (resource) by the user to represent the requested state of that resource_
+
 GET
-All require individual views
-All display information
-Index
-Displays all resources
-Path: /[resource_plural]
-Controller: [resource_plural]_controller
-Show
-Display one individual resource
-Requires an id parameter
-Path: /[resource_plural]/[resource_id]
-Controller: [resource_plural]_controller
-New
-Displays form to gather data on new resource
-Path: /[resource_plural]
-Controller: [resource_plural]_controller
-Edit
-Displays form to gather data on existing resource
-Requires an id parameter
-Path: /[resource_plural]/[resource_id]
-Controller: [resource_plural]_controller
+- All require individual views
+- All display information
+- Index
+  - Displays all resources
+  - Path: `/[resource_plural]`
+  - Controller: `[resource_plural]_controller`
+- Show
+  - Display one individual resource
+  - Requires an `id` parameter
+  - Path: `/[resource_plural]/[resource_id]`
+  - Controller: `[resource_plural]_controller`
+- New
+  - Displays form to gather data on new resource
+  - Path: `/[resource_plural]`
+  - Controller: `[resource_plural]_controller`
+- Edit
+  - Displays form to gather data on existing resource
+  - Requires an `id` parameter
+  - Path: `/[resource_plural]/[resource_id]`
+  - Controller: `[resource_plural]_controller`
+
 POST
-Create
-Responds to data submitted via New
-Path: /[resource_plural]/[resource_id]
-Controller: [resource_plural]_controller
+- Create
+  - Responds to data submitted via `new`
+  - Path: `/[resource_plural]/[resource_id]`
+  - Controller: `[resource_plural]_controller`
+
 PUT / PATCH
-Update
-Responds to data submitted via Edit
-Requires an id parameter
-Path: /[resource_plural]/[resource_id]
-Controller: [resource_plural]_controller
+- Update
+  - Responds to data submitted via `edit`
+  - Requires an `id` parameter
+  - Path: `/[resource_plural]/[resource_id]`
+  - Controller: `[resource_plural]_controller`
+
 DELETE
-Destroy
-Destroys resource
-Requires an id parameter
-Path: /[resource_plural]/[resource_id]
-Controller: [resource_plural]_controller
-Related to action names
+- Destroy
+  - Destroys resource
+  - Requires an `id` parameter
+  - Path: `/[resource_plural]/[resource_id]`
+  - Controller: `[resource_plural]_controller`
 
-Controller
-Name must match name in route
+## Controller
+
+_In RoR controllers are what immediately gets tasked to do something when a user sends an http request to a route_
+
+```ruby
+# all controllers inherit from ApplicationController
+# users_controller.rb
+class UsersController < ApplicationController
+end
+
+# posts_controller.rb
+class PostsController < ApplicationController
+end
+```
+
+Important Facts
+- Name must match name in route
+- Names are usually plural
+- Should represent a group of related activities that should be grouped together
+
 Naming
-Plural
-When aligned with model
-Singular
-When housing special behavior not aligned with model
+- plural: when aligned with model
+- singular: when housing special behavior not aligned with model
 
-Action
-Directly related to route
-Name must match name in route
-Rendering html within action
+### Action
 
-Filters
-Used to DRY up code
-Can create confusion due to hidden behavior
-Use with caution
+_In RoR actions are the methods defined within controllers that dictate what happens when a certain route is asked for a resource_
 
-Workflow
-Create route and test if route exists
-Create controller to fix controller missing problem
-Create action to fix action missing problem
-Render html using html_safe to bypass template missing problem
+```ruby
+# all controllers inherit from ApplicationController
+# users_controller.rb
+class UsersController < ActionController
+  def index
+    # this will trigger when a get request is made
+    #   on the "/users" path
+  end
 
-Tips
-Read errors carefully
-Use errors to guide your workflow
-Test at every step of the way
-Go slowly
+  def show
+    # this will trigger when a get request is made
+    #   on the "/users/:id" path
+  end
+
+  def update
+    # this will trigger when a put request is made
+    #   on the "/users/:id" path
+  end
+
+  ...
+end
+```
+
+- Directly related to route
+- Name must match name in route
+- Rendering html within action
+
+## Workflow
+- Create route and test if route exists
+- Create controller to fix controller missing problem
+- Create action to fix action missing problem
+- Render html using `html_safe` to bypass template missing problem
+
+## Tips
+- Read errors carefully
+- Use errors to guide your workflow
+- Test at every step of the way
+- Go slowly
+
+## Resources
+
+- [RoR Guides: Routing From the Outside In](http://guides.rubyonrails.org/routing.html)
+- [RoR Guides: Action Controller Overview](http://guides.rubyonrails.org/action_controller_overview.html)
+
+## Practice
+
+[]()

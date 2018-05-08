@@ -1,10 +1,6 @@
 
 # Introduction to Ruby on Rails: Controllers + Routes
 
-Routing review
-Controller review
-
-
 ## Useful Commands
 
 ```bash

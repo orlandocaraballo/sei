@@ -199,7 +199,3 @@ end
 
 - [RoR Guides: Routing From the Outside In](http://guides.rubyonrails.org/routing.html)
 - [RoR Guides: Action Controller Overview](http://guides.rubyonrails.org/action_controller_overview.html)
-
-## Practice
-
-[]()

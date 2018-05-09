@@ -22,13 +22,13 @@ config.action_controller.permit_all_parameters
 # routes.rb
 
 # indicates the landing page is pointing to the
-#		home controller
-#		index action
+#   home controller
+#   index action
 root "home#index"
 
 # indicates the notes update page is pointing to the
-#		notes controller
-#		update action
+#   notes controller
+#   update action
 put "/notes/:id", to: "notes#update"
 ```
 
@@ -221,15 +221,15 @@ class User < ApplicationRecord
   has_one :profile
 
   # this ensurs all our users ALWAYS
-  #		have profiles
+  #   have profiles
   # otherwise if you try to run the code
-  #		User.find(1).profile
-  # 	on a user with no profile, you will get an error
+  #   User.find(1).profile
+  #   on a user with no profile, you will get an error
   after_create :create_profile
 
   def create_profile
     # the rest of the profile info will be nil
-    #		but the user_id will be associated with the profile
+    #   but the user_id will be associated with the profile
     Profile.create(user_id: self.id)
   end
 end
@@ -264,8 +264,8 @@ You can define a route that would create a pathway to all posts that belong to a
 get "users/:id/posts", to: "users#posts"
 
 # this is equivalent to above but with the added
-#		benefit of being able to add more actions
-# 	by adding more elements to the only array
+#   benefit of being able to add more actions
+#   by adding more elements to the only array
 resources :users do
   resources :posts, only: [:index]
 end

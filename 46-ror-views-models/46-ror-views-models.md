@@ -9,7 +9,7 @@ For the time being we need to drop this line in our `application.rb` file. This 
 ```ruby
 # application.rb
 # this prevents strong parameter errors
-#	  we will be talking about this topic later
+#	we will be talking about this topic later
 config.action_controller.permit_all_parameters
 ```
 

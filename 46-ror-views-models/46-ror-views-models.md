@@ -83,16 +83,87 @@ class UsersController < ApplicationController
 end
 ```
 
-# Your Layout
+## Instance Variables
 
-Layouts
-Differences from Sinatra
-Helpers
-Definition
-How / When to use
-Partials
-Instance variables
-Locals
+Instance variables assigned in the action will be available to use in the corresponding view
+
+```ruby
+# users_controller.rb
+class UsersController < ApplicationController
+  def index
+    @users = User.all
+  end
+end
+```
+
+```erb
+<!-- /views/users/index.html.erb -->
+<%= @users.each do |user| %>
+  <%= user.first_name %>
+  <%= user.last_name %>
+  <%= user.age %>
+  <%= user.gender %>
+<% end %>
+```
+
+## Partials
+
+Partials are views that can be rendered in multiple places via the `render` method
+
+```bash
+# file system
+/views
+  |- /users
+     |- _user.html.erb
+     |- index.html.erb
+     |- show.html.erb
+```
+
+```erb
+# /views/users/index.html.erb
+<%= @users.each do |user| %>
+  <%= render "user", locals: { user: user } %>
+<% end %>
+```
+
+```erb
+# /views/users/show.html.erb
+<%= render "user", locals: { user: @user } %>
+```
+
+```erb
+<%= user.first_name %>
+<%= user.last_name %>
+<%= user.age %>
+<%= user.gender %>
+```
+
+The `locals` key is being assigned the value of what you would like the `user` object to set to. In this way we can keep our code DRY.
+
+## Layouts
+
+The default layout in your app is located in `application.html.erb`
+
+```erb
+# application.html.erb
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ControllerRoutes</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+```
+
+[RoR Guides: Layouts and Rendering](http://guides.rubyonrails.org/layouts_and_rendering.html)
 
 ## Model
 
@@ -185,6 +256,27 @@ class User < ActiveRecord::Base
   #		first and last name
   def full_name
     "#{first_name} #{last_name}"
+  end
+end
+```
+
+### Availability
+
+Models are availale to us in all controllers and also all views. **However, please avoid making model calls in the view because it can be difficult to debug**
+
+```ruby
+# posts_controller.rb
+class PostController < ApplicationController
+  def index
+    # all Post method calls are available here
+    #   or in any other action
+    @posts = Post.all
+  end
+
+  def show
+    # you can also use Post.all, or Post.update, etc
+    #   if necessary
+    @post = Post.find(params[:id])
   end
 end
 ```

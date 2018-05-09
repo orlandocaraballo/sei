@@ -220,7 +220,7 @@ after_save
 class User < ApplicationRecord
   has_one :profile
 
-  # this ensurs all our users ALWAYS
+  # this ensures all our users ALWAYS
   #   have profiles
   # otherwise if you try to run the code
   #   User.find(1).profile

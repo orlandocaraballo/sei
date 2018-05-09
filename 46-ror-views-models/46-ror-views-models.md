@@ -47,7 +47,7 @@ View folder placement and naming corresponds to the controller and action names.
    |- users_controller.rb
 |- /views
    |- /users
-       |- index.html.erb
+      |- index.html.erb
       |- show.html.erb
       |- edit.html.erb
       |- new.html.erb

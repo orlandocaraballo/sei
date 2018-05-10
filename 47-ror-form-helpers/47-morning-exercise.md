@@ -5,9 +5,9 @@
 1. Create a 4 functions `add`, `subtract`, `divide`, `multiply`. All four functions accept two arguments (`arg1` and `arg2`).
 
   - `add` adds two arguments together
-  - `subtract` subtracts arg2 from arg1
-  - `divide` divides arg1 by arg2
-  - `multiply` mutiplies arg1 by arg2
+  - `subtract` subtracts `arg2` from `arg1`
+  - `divide` divides `arg1` by `arg2`
+  - `multiply` mutiplies `arg1` by `arg2`
 
 2. Create one more function called `calculator` that accepts three arguments (`arg1`, `arg2`, and `operation`).
 

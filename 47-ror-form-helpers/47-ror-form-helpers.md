@@ -1,4 +1,6 @@
 
+## RoR Forms and Helpers
+
 Introduction
 Forms review
 Input
@@ -65,9 +67,9 @@ Will also nest your params
 Comments nested within posts
 params[:posts][45][:comments][9]
 
-Tips
-Check the html of the page with a form
-Double check params grouping
-Double check for hidden fields
-Take it slow
-Practice using different types of forms
+## Tips
+- Check the html of the page with a form
+- Double check params grouping
+- Double check for hidden fields
+- Take it slow
+- Practice using different types of forms

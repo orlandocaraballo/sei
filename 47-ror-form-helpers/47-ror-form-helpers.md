@@ -1,3 +1,4 @@
+<img src="formation.png" style="width: 100%;">
 
 ## RoR Forms and Helpers
 
@@ -174,7 +175,7 @@ end
 
 ```erb
 <%= form_with url: search_path do |form| %>
-  <%= form.text_field :query, value: <%= @query %> %>
+  <%= form.text_field :query, value: @query %>
   <%= form.submit %>
 <% end %>
 ```
@@ -192,8 +193,15 @@ Which roughly generates the following html:
 
 ## Other View Helpers
 
+- `image_path("[image name]")` - constructs html for `img` tag by path
+- `image_url("[image name]")` - constructs html for `img` by url
+- `javascript_include_path("[js file name]")` - constructs html for including js
+- `stylesheet_link_tag("[stylesheet file name]")` - constructs html for stylesheet
 - `render "view"` - render other partials into a view (among other uses)
+- `select_date([default date])` - constructs a date field with today being the default
 - `parses_number_into_currency(number)` - takes a number and returns a string with correct decimals and a currency marker
+
+[RoR Guides: Overview of View Helpers](http://guides.rubyonrails.org/action_view_overview.html#overview-of-helpers-provided-by-action-view)
 
 ## Tips
 - Understand how it works BEFORE you code, you may become frustrated otherwise

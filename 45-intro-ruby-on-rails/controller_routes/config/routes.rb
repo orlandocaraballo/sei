@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  root "users#index"
+  root "home#index"
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get "/edge-case", to: "home#index"
+  # get "/edge-case", to: "home#index"
   
+
   # restful routes
-  # get "/users", to: "users#index"
+  get "/pokemons", to: "pokemons#index"
+  get "/trainers", to: "trainers#index"
+  get "/weird", to: "users#weird"
   # get "/users/:id", to: "users#show"
 
   # get "/users/new", to: "users#new"
@@ -16,5 +19,5 @@ Rails.application.routes.draw do
 
   # delete "/users/:id", to: "users#destroy"
 
-  resources :users
+  # resources :users
 end

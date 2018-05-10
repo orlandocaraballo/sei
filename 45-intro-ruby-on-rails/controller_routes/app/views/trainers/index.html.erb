@@ -1,0 +1,6 @@
+<h1>Users#index</h1>
+
+<% @users.each do |user| %>
+  <strong><%= user.name %></strong>: <%= user.age %><br />
+  Name and Age = <%= user.name_plus_age %>
+<% end %>

@@ -27,9 +27,9 @@ _Concatenation is the process by which javscript or stylesheet assets are combin
 
 ```bash
 # the following files
-/app/assets/users.scss
-/app/assets/posts.scss
-/app/assets/comments.scss
+/app/assets/stylesheets/users.scss
+/app/assets/stylesheets/posts.scss
+/app/assets/stylesheets/comments.scss
 
 # would compile into
 /app/assets/application.css
@@ -39,9 +39,9 @@ and
 
 ```bash
 # the following files
-/app/assets/users.js
-/app/assets/posts.js
-/app/assets/comments.js
+/app/assets/javascripts/users.js
+/app/assets/javascripts/posts.js
+/app/assets/javascripts/comments.js
 
 # would compile into
 /app/assets/application.js
@@ -58,6 +58,18 @@ By default the following gems are used for compressing:
 - js - `uglifier`
 
 Compressed files are stored as another file type such as `.gz` or `.gzip`.
+
+```bash
+# so these files
+/app/assets/images/avatar.jpg
+/app/assets/stylesheets/students.scss
+/app/assets/javascripts/teacher.js
+
+# would be compressed into these files
+/app/assets/images/avatar.jpg.gz
+/app/assets/stylesheets/students.scss.gz
+/app/assets/javascripts/teacher.js.gz
+```
 
 ## Preprocessing
 

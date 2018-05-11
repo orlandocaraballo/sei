@@ -1,4 +1,4 @@
-<img src="deadlift.jpg" width="1000">
+<img src="deadlift.jpg" width="100%">
 
 # Morning Exercise
 
@@ -20,11 +20,11 @@ zip(["a", "b", "c", "d", "e"], [1,2,3,4]) // [["a", 1], ["b", 2], ["c", 3], ["d"
 zip(["z", "i", "p"], ["d", "r", "i", "v", "e"]) // [["z", "d"], ["i", "r"], ["p", "i"]]
 ```
 
-*Challenge:*
+**Challenge:**
 
-Create another function called `objectify` that accepts a zipped array argument and returns an object that looks like the following. 
+Create another function called `objectify` that accepts a zipped array argument and returns an object that looks like the following.
 
-*Note:* Because it does accept a zipped array, you can assume that every array element is of length 2.
+**Note:** Because it does accept a zipped array, you can assume that every array element is of length 2.
 
 ```js
 objectify([1, 99], [3, -90], ["x", 3], ["q", null]) // { 1: 99, 3: -90, x: 3, q: null}

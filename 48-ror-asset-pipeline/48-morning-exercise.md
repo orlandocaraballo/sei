@@ -27,5 +27,5 @@ Create another function called `objectify` that accepts a zipped array argument 
 **Note:** Because it does accept a zipped array, you can assume that every array element is of length 2.
 
 ```js
-objectify([1, 99], [3, -90], ["x", 3], ["q", null]) // { 1: 99, 3: -90, x: 3, q: null}
+objectify([[1, 99], [3, -90], ["x", 3], ["q", null]]) // { 1: 99, 3: -90, x: 3, q: null}
 ```

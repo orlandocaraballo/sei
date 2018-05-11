@@ -19,7 +19,7 @@ The following folders are created for you by default:
 
 ## What is the Asset Pipeline?
 
-_The asset pipeline provides a framework to concatenate and minify or compress JavaScript and CSS assets._
+_The asset pipeline provides a framework to concatenate, minify and compress assets._
 
 ## Concatenation
 

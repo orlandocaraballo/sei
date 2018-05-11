@@ -1,4 +1,4 @@
-<img src="deadlift.jpg" style="width: 1000px">
+<img src="deadlift.jpg" width="1000">
 
 # Morning Exercise
 

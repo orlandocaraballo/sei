@@ -83,7 +83,7 @@ This form post would submit to the `create` action and also submit the `user_id`
 
 ## Forms in Rails
 
-Unfortunate, due to security concerns, in RoR, the process for using forms is a little different. The convention is to use what is referred to as a form view helper.
+Unfortunately, due to security concerns, in RoR, the process for using forms is a little different. The convention is to use what is referred to as a form view helper.
 
 ### Form Helpers
 

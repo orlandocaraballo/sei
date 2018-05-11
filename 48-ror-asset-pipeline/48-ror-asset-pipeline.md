@@ -1,3 +1,4 @@
+![Asset Pipeline](pipeline.jpg)
 
 # Asset Pipeline
 

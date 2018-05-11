@@ -25,7 +25,29 @@ _The asset pipeline provides a framework to concatenate, minify and compress ass
 
 _Concatenation is the process by which javscript or stylesheet assets are combined into one file for the purpose of serving to the application._
 
-Concatenation is not enabled on development, this feature is enabled only on production by default.
+```bash
+# the following files
+/app/assets/users.scss
+/app/assets/posts.scss
+/app/assets/comments.scss
+
+# would compile into
+/app/assets/application.css
+```
+
+and
+
+```bash
+# the following files
+/app/assets/users.js
+/app/assets/posts.js
+/app/assets/comments.js
+
+# would compile into
+/app/assets/application.js
+```
+
+Concatenation is not enabled on `development`, this feature is enabled only on `production` by default.
 
 ## Compression
 

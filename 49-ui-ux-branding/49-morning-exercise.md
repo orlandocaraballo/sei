@@ -2,7 +2,7 @@
 
 # Morning Exercise
 
-Create a function in javascript that accepts an array of numbers called `numbers` and an integer called `value` as an argument named `compare`. This function should search return an array of arrays of size 3 where the first element stores an array of all numbers that are less than `value`, the second element are all numbers equal to `value` and the third element are all numbers greater than `value`.
+Create a function in javascript named `compare` that accepts an array of numbers called `numbers` and an integer called `value`. This function should return an array of arrays of size 3 where the first element stores an array of all numbers that are less than `value`, the second element are all numbers equal to `value` and the third element are all numbers greater than `value`.
 
 ```js
 compare([10, -30, -45, 4, 21, -30], -30) // [[-45], [-30, -30], [10, 4, 21]]

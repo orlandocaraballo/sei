@@ -5,7 +5,7 @@
 ## Debugging and Problem Solving Review
 
 - [Problem Solving](../30-problem-solving-algorithms-ruby/30-problem-solving-algorithms-ruby.md)
-- [Debugging](31-debugging-in-ruby/31-debugging-in-ruby.md)
+- [Debugging](../31-debugging-in-ruby/31-debugging-in-ruby.md)
 
 ## How to Begin
 

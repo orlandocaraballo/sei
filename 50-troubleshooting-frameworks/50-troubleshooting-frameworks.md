@@ -36,6 +36,7 @@ Much like it states in [my alchemic problem solving process](../09-problem-solvi
 - Do I have some clues on how to proceed?
 - Does this look like a similar error I have seen in the past?
 - Do I know how to proceed from here
+- Do I know what I am doing? (review how to work with RoR)
 
 ## Remember Your Tools
 
@@ -52,9 +53,13 @@ Use your tools for more info
 
 Remember that rails is ruby code, many rails errors come back down to ruby errors:
 - Undefined method for `nil` class
+  - **Translation:** You have attempted to call a method on an object that is `nil`
 - Unexpected keyword `end`
+  - **Translation:** You have an extra `end` somewhere that does not correspond to any `def`, `begin`, `class` or `do` block
 - Wrong number of arguments
+  - **Translation:** You have are passing into a method / function less or more arguments than it is expecting
 - Undefined local variable or method [x]
+  - **Translation:** You are attempting to use a variable that has not been set to a value
 
 ## Reading a Stack Trace
 - Start from the bottom (now we're here)

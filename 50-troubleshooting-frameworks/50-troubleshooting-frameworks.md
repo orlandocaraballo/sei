@@ -70,30 +70,32 @@ Remember that rails is ruby code, many rails errors come back down to ruby error
 
 ## Common Rails Error Types
 
-Route
-- Cannot find route
-- Restful routes
+### Route
+- Cannot find route - verify path on route is correct
+- Restful routes - verify controller and action names correstpond to restful style
 
-Controller
-- Cannot find controller
-- Pluralization on controllers
+### Controller
+- Cannot find controller - verify controller name matches route
+- Pluralization on controllers - verify controller name is plural if using RESTful style or verify name is correct on route
 
-View
-- Cannot find template
-- Instance variable not set
+### View
+- Cannot find template - verify folder and file name of view
+- Instance variable not set - verify instance variables are defined
 
-Partials
-- Locals
-- Instance variables
+### Partials
+- Locals - verify locals are being passed in
+- Instance variables - verify instance variables are defined
 
-Model
+### Model
 - Singular name on models
-- Relationships tense
+- Relationships tense - verify model name sinfular
 - Singular
-  - `has_one`
+  - `has_one :[model name]` - verify model name is singular
 - Plural
-  - `has_many`
-  - `has_many, through: :[model name]`
+  - `has_many :[plural model name]` - verify plural
+  - `has_many :[plural model name], through: :[plural join model]`
+      - verify model name is plural
+      - verify join model is plural
 
 ## Remember Exception Handling
 When coding functions or classes you create it may be beneficial to capture exceptions and do something simple with it

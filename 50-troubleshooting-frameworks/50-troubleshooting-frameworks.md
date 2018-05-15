@@ -2,6 +2,10 @@
 
 # Troubleshooting Frameworks
 
+_Oftentimes, when writing code in a framework we find ourselves expriencing similar errors over and over again. The following is a listing of some common debugging and problem solving techniques that may be useful to you when working frameworks._
+
+**Note:** Many of these errors are referring to Ruby on Rails but similar techniques may be utilized in Sinatra, Express, Flask or any other web framework by translating the techniques to the appropriate language or framework.
+
 ## Debugging and Problem Solving Review
 
 - [Problem Solving](../30-problem-solving-algorithms-ruby/30-problem-solving-algorithms-ruby.md)

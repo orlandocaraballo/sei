@@ -71,27 +71,27 @@ Remember that rails is ruby code, many rails errors come back down to ruby error
 ## Common Rails Error Types
 
 ### Route
-- Cannot find route - verify path on route is correct
-- Restful routes - verify controller and action names correstpond to restful style
+- **Cannot find route** - verify path on route is correct
+- **Restful routes** - verify controller and action names correstpond to restful style
 
 ### Controller
-- Cannot find controller - verify controller name matches route
-- Pluralization on controllers - verify controller name is plural if using RESTful style or verify name is correct on route
+- **Cannot find controller** - verify controller name matches route
+- **Pluralization on controllers** - verify controller name is plural if using RESTful style or verify name is correct on route
 
 ### View
-- Cannot find template - verify folder and file name of view
-- Instance variable not set - verify instance variables are defined
+- **Cannot find template** - verify folder and file name of view
+- **Instance variable not set** - verify instance variables are defined
 
 ### Partials
-- Locals - verify locals are being passed in
-- Instance variables - verify instance variables are defined
+- **Locals** - verify locals are being passed in
+- **Instance variables** - verify instance variables are defined
 
 ### Model
-- Singular name on models
-- Relationships tense - verify model name sinfular
-- Singular
+- **Singular name on models**
+- **Relationships tense** - verify model name sinfular
+- **Singular**
   - `has_one :[model name]` - verify model name is singular
-- Plural
+- **Plural**
   - `has_many :[plural model name]` - verify plural
   - `has_many :[plural model name], through: :[plural join model]`
       - verify model name is plural

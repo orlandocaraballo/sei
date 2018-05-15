@@ -8,7 +8,7 @@ _Problem solving allows us to take a very complex problem and break it down so t
 
 ## Orlando's Alchemic Problem Solving Process
 
-![Alchemy](alchemy.gif)
+<img src="alchemy.gif" width="100%" />
 
 1. __Reduce the problem down to simpler problems__
     - If the problem is still too complex, break it down again

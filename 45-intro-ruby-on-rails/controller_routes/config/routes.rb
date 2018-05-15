@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/pokemons", to: "pokemons#index"
   get "/trainers", to: "trainers#index"
   get "/weird", to: "users#weird"
+
   # get "/users/:id", to: "users#show"
 
   # get "/users/new", to: "users#new"

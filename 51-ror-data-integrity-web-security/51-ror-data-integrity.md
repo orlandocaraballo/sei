@@ -102,7 +102,7 @@ Checks to see if a field has been set to something
 
 ```ruby
 class Person < ApplicationRecord
-  validates :terms_of_service, acceptance: true, { message: "must be checked" }
+  validates :name, :login, :email, presence: true
 end
 ```
 

@@ -1,11 +1,6 @@
 
 # Data Integrity
 
-Introduction
-Database Review
-Brief models review
-Brief controllers review
-
 ## Access Control
 - `public` - available outside and within the class definition
 - `protected` - available within the class definition and its children

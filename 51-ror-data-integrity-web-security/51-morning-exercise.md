@@ -2,7 +2,7 @@
 
 # Morning Exercise
 
-Open the file, `animals.txt`, in ruby and gather all the attributes from the file then store them in an animal object with the following attributes.
+Open the file, [animals.txt](../51-ror-data-integrity-web-security/animals.txt), in ruby and gather all the attributes from the file then store them in an animal object with the following attributes.
 
 ```ruby
 type

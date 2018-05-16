@@ -57,7 +57,7 @@ _Dictionary password attacks involve a hacker using a program or script to try t
 
 _Keylogger attacks involve a hacker using a program to track all of a user’s keystrokes._
 
-## Lookup Tables, Reverse Lookup Tables, Salt + Hash
+### Lookup Tables, Reverse Lookup Tables, Salt + Hash
 
 [CrackStation: Hashing Security](https://crackstation.net/hashing-security.htm)
 

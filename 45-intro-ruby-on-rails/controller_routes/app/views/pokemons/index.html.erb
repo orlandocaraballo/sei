@@ -5,6 +5,4 @@
   <%= pokemon.name %>
 <% end %>
 
-<% @users.each do |user| %>
-  <%= user.name %>
-<% end %>
+<%= render partial: "users", locals: { users: @users } %>

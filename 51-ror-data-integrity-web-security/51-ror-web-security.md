@@ -1,3 +1,4 @@
+<img src="web-security.png" width="100%">
 
 # Web Security
 

@@ -1,3 +1,4 @@
+<img src="data-integrity.jpg" width="100%">
 
 # Data Integrity
 
@@ -274,6 +275,8 @@ redirect_to :[action name]
 - Requests a new url
 - Used to reroute the user to a brand new page
 - Instance variables defined in the original action are NOT available after redirecting
+
+## Resources
 
 - [RoR Guides: Validations - Errors](http://guides.rubyonrails.org/active_record_validations.html#working-with-validation-errors)
 - [RoR Guides: Validations](http://guides.rubyonrails.org/active_record_validations.html)

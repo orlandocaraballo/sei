@@ -29,4 +29,12 @@ console.log(dimensionClosure())
 
 Create a function `studentFactory` that accepts one argument `course`. This function will return an anonymous function (or arrow function). This anonymous function will accept three aguments `name`, `gender` and `age`. When this anonymous function run, will generate a student represented by an object literal. The object literal should have four properties: `name`, `gender`, `age` and `course`. Use the example above as the structure for your `studentFactory` function.
 
+```js
+let generateSeiStudent = studentFactory("sei")
+
+// returns:
+//    { name: "denisse", gender: "female", age: 23, course: "sei" }
+generateSeiStudent("denisse", "female", 23) 
+```
+
 **Note:** If this is confusing, this is ok... this is pretty mind bending. I will explain how this works when we review. For now, give it your best try. :)

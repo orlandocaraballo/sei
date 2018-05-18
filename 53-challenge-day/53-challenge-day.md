@@ -24,9 +24,9 @@ Example
 
 ```js
 array = [2, 3, 14, 3, 9, 22]
-downsort_evenly(array, 3) // [22, 14, 2]
-downsort_evenly(array, 10) // [22, 14, 2]
-downsort_oddly(array, 2) // [9, 3]
+downsortEvenly(array, 3) // [22, 14, 2]
+downsortEvenly(array, 10) // [22, 14, 2]
+downsortOddly(array, 2) // [9, 3]
 ```
 
 ### Challenge

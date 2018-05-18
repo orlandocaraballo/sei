@@ -2,6 +2,8 @@
 
 # Brace Yourself
 
+Consider today a challenge day. I have created two very lengthy problem sets, with extra challenging sections, for you to solve. This is designed to be difficult so do not give up. Try to do the ones that you feel most comfortable doing first and then doing the ones you find more difficult. This puts together several complex topics we have spoken about several times in the past. Good luck!
+
 ## Javascript
 
 Create two functions:

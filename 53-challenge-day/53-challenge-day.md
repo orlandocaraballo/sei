@@ -56,7 +56,7 @@ Create a class `Track` with the following features:
   - `name` - stores the name of the track
   - `artist` - stores the name of the artist who made the track
   - `length` - stores the length of the track (in [min]:[seconds] format)
-  - all 3 of these instance variables should **NOT** be readable and writeable outside of the class
+  - all 3 of these instance variables should be readable and writeable outside of the class
 
 Create a class `Playlist` with the following features:
 - it has 2 instance variable:

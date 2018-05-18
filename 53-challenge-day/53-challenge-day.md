@@ -68,7 +68,7 @@ Create a class `Playlist` with the following features:
 - it has 3 methods:
   - `add_track`:
     - accepts one argument that is a `Track` object
-    - should add a new photo to the `tracks` array
+    - should add a new track to the `tracks` array
   - `add_album`:
     - accepts one argument of type `Album`
     - should add all tracks of the album to the end of the `tracks` array
@@ -91,7 +91,7 @@ Create a class `Album` with the following features:
 - it has 2 methods:
   - `add_track`:
     - accepts one argument that is a `Track` object
-    - should add a new photo to the `tracks` array
+    - should add a new track to the `tracks` array
   - `get_track`:
     - accepts one integer argument named `index`
     - returns a `Track` object based on its index

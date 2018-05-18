@@ -96,6 +96,9 @@ Create a class `Album` with the following features:
     - accepts one integer argument named `index`
     - returns a `Track` object based on its index
       - note: because we are dealing with an album, all indexes start at 1
+  - `get_tracks`:
+    - accepts no arguments
+    - return the array of tracks
   
 Example
 

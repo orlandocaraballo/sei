@@ -7,13 +7,13 @@ Consider today a challenge day. I have created two very lengthy problem sets, wi
 ## Javascript
 
 Create two functions:
-- `downsort_evenly`:
+- `downsortEvenly`:
   - accepts 2 arguments:
     - `array` - stores an array of integers
     - `count` - the amount of elements to return
   - returns an array of length `count` sorted from largest to smallest of only **even** elements
   - if `count` is greater than the total available even numbers then return the max amount of even numbers
-- `downsort_oddly`
+- `downsortOddly`
   - accepts 2 arguments:
     - `array` - stores an array of integers
     - `count` - the amount of elements to return

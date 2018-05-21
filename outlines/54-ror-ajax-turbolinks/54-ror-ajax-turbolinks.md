@@ -108,7 +108,7 @@ end
 ```
 
 ```js
-// /app/assets/javascripts/home.js
+// /app/assets/javascripts/users.js
 
 // used to get around the race condition issue
 document.addEventListener('DOMContentLoaded', domContentLoadedEvent => {
@@ -122,9 +122,10 @@ document.addEventListener('DOMContentLoaded', domContentLoadedEvent => {
     axios({
       method: 'get', 
       url: '/users',
-      data: {
-        id: 6
-      },
+      // use the following only if you making an POST, PUT / PATCH, DELETE
+      // data: {
+      //   id: 6
+      // },
       headers: {
         // these two are required in order for the request to work
         'X-CSRF-Token': document.querySelector("meta[name=csrf-token]").content,
@@ -161,7 +162,7 @@ document.addEventListener('DOMContentLoaded', domContentLoadedEvent => {
 Here's an example using UJS syntax (the controller and route are the same):
 
 ```js
-// /app/assets/javascripts/home.js
+// /app/assets/javascripts/users.js
 
 document.addEventListener('DOMContentLoaded', domContentLoadedEvent => {
   // gets reference to the button element on the page
@@ -174,12 +175,13 @@ document.addEventListener('DOMContentLoaded', domContentLoadedEvent => {
     Rails.ajax({
       type: 'get', 
       url: '/users',
-      data: {
-        id: 6
-      },
+      // use the following only if you making an POST, PUT / PATCH, DELETE
+      // data: {
+      //   id: 6
+      // },
       success: (response) => {
         // this is what executes when the request is successful
-        let users = response.data.users
+        let users = response.users
         let usersUl = document.querySelector("ul#users")
 
         users.forEach(user => {

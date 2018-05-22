@@ -1,0 +1,7 @@
+<h1>Books#new</h1>
+<p>Find me in app/views/books/new.html.erb</p>
+
+<%= form_with model: @book, local: true do |form| %>
+  <%= form.text_field :name %>
+  <%= form.submit %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_with model: @post, local: true do |form| %>
+  <%= form.text_field :title, placeholder: "title" %><br />
+  <%= form.text_area :content, placeholder: "content" %>
+  <%= form.select :author_id, @authors.map { |author| [author.name, author.id] } %>
+  <%= form.submit %>
+<% end %>

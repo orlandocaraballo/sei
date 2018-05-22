@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AuthorPostBooks</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <%= link_to "Authors", authors_path %> <%= link_to "New Author", new_author_path %> |||
+      <%= link_to "Books", books_path %> <%= link_to "New Book", new_book_path %> |||
+      <%= link_to "Posts", posts_path %> <%= link_to "New Post", new_post_path %>
+    </nav>
+
+    <%= flash[:info] if flash[:info] %>
+    <%= flash[:error] if flash[:error] %>
+
+    <%= yield %>
+  </body>
+</html>

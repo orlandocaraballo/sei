@@ -1,0 +1,7 @@
+<h1>Authors#new</h1>
+<p>Find me in app/views/authors/new.html.erb</p>
+
+<%= form_with model: @author, local: true do |form| %>
+  <%= form.text_field :name %>
+  <%= form.submit %>
+<% end %>

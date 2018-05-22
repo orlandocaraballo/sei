@@ -1,0 +1,14 @@
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+
+<ul>
+<% @books.each do |book| %>
+  <li>
+    <strong>Name:</strong> <%= book.name %>
+
+    <%= link_to "Edit", edit_book_path(book.id) %>
+    <%= link_to "Show", book_path(book.id) %>
+    <%= link_to "Delete", book_path(book.id), method: :delete %>
+  </li>
+<% end %>
+</ul>

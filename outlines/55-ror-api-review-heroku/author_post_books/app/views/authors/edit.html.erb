@@ -1,0 +1,15 @@
+<h1>Authors#edit</h1>
+<p>Find me in app/views/authors/edit.html.erb</p>
+
+<%= form_with model: @author, local: true do |form| %>
+  <%= form.text_field :name %>
+  <%= form.submit %>
+<% end %>
+
+<% @books.each do |book| %>
+  <% if @author_books.include?(book.id) %>
+    <%= link_to "Remove #{ book.name }", author_destroy_book_path(@author.id, book.id), method: :delete %><br />
+  <% else %>
+    <%= link_to "Add #{ book.name }", author_add_book_path(@author.id, book.id) %><br />
+  <% end %>
+<% end %>

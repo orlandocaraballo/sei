@@ -1,0 +1,7 @@
+<h1>Authors#show</h1>
+<p>Find me in app/views/authors/show.html.erb</p>
+
+<strong>Name:</strong> <%= @author.name %>
+
+<%= link_to "Edit", edit_author_path(@author.id) %>
+<%= link_to "Delete", author_path(@author.id), method: :delete %>

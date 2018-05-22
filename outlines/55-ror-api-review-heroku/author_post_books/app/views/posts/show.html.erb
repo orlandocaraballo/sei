@@ -1,0 +1,8 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+<%= @post.title %><br />
+<%= @post.content %>
+
+<%= link_to "Edit", edit_post_path(@post.id) %>
+<%= link_to "Delete", post_path(@post.id), method: :delete %>

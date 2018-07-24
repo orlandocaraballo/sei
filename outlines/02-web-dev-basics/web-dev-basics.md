@@ -88,6 +88,7 @@ Input
 - `<forms>`
   - `<select>`
   - `<option>`
+  - `<textarea>`
   - `<input>`
     - `<input type="text">`
     - `<input type="email">`

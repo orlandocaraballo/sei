@@ -18,7 +18,7 @@ Create a two page html website dedicated to people who love pens.
   - a navigation menu linking to the home page and this second page
 - No css is necessary
 
-_Note: If you are having trouble coming up with descriptive text or header text, just fill it with some dummy text and come back to that portion when you are done_
+_Note: If you are having trouble coming up with descriptive text or header text, just fill it with some dummy text and come back to that portion when you are done. You can use a text generator such as [Lorem Ipsum](https://lipsum.com/)_
 
 ## Challenge
 

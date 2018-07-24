@@ -143,13 +143,17 @@ Examples
 
 _References a file by using the exact location of where it exists in the file system_
 
+Example
+- C:\\\Users\Orlando Caraballo\Documents\picture.jpg
+- /home/orlandocaraballo/documents/picture.jpg
+
 #### Relative
 
 _References a file by using the location of a file / folder relative to the current folder_
 
 Examples
-- ../
-
+- ..\images\picture.jpg
+- ./readme.txt
 
 ### HTML Best Practices
 Proper nesting

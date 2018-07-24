@@ -1,5 +1,5 @@
 
-<img src="web-dev-basics.jpg" />
+<img src="web-dev-basics.jpg" width="100%" />
 
 # How the Web Works
 

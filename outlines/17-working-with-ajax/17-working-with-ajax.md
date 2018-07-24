@@ -1,4 +1,4 @@
-<img src="https://images-na.ssl-images-amazon.com/images/I/51Y22eeuctL._SY355_.jpg">
+<img src="https://images-na.ssl-images-amazon.com/images/I/51Y22eeuctL._SY355_.jpg" width="100%">
 
 # AJAX
 

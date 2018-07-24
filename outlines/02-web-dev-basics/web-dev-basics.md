@@ -85,7 +85,7 @@ Media
 - `<video>`
 
 Input
-- `<forms>`
+- `<form>`
   - `<select>`
   - `<option>`
   - `<textarea>`

@@ -11,9 +11,9 @@
 ### Style
 
 ```html
-  <head>
+  <style>
     color: blue;
-  </head>
+  </style>
 ```
 
 ### File
@@ -45,9 +45,6 @@ span { color: red; }
 span, div { color: green; }
 ```
 
-Attributes
-* Values
-
 ### Class
 
 ```html
@@ -75,8 +72,50 @@ Attributes
 #identifier-name {
   height: 100px;
   width: 100px;
+
+```
+
+### Psuedo Classes
+
+_A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s)._
+
+Syntax
+
+```css
+selector:pseudo-class {
+  property: value;
 }
 ```
+
+#### Examples
+
+The following psuedoclass only selects the scenario in which a user hovers over a div:
+
+```css
+div:hover {
+  background-color: #F89B4D;
+}
+```
+
+The following psuedoclass only selects anchors that have already been visited:
+
+```css
+a:visited {
+  color: red;
+}
+```
+
+Remember that the selector can also be a class, id or can be used when selecting multiple elements:
+
+```css
+/* selects the first li as well an element with the class of "small"  */
+ul li:first-child, .small {
+  height: 100px;
+  width: 100px;
+}
+```
+
+[MDN: Psuedoclasses](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
 ### Comments
 ```css
@@ -92,6 +131,24 @@ Attributes
 * width
 * height
 * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+### Units
+
+_In css, units refer to the measurement units being utilized when dealing with distance in either x, y or z coordinates._
+
+Common Types
+- px
+- %
+- vh
+- vw
+- em
+- rem
+
+Less Common Types
+- pt
+- mm / cm / in
+
+[MDN: Values and Units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
 
 ## Layouts
 
@@ -156,6 +213,18 @@ _Note: Boxes are 150px by 150px_
 [Flexbox Defense](http://www.flexboxdefense.com/)
 
 ## Floats
+
+_Floating an element was originally designed for the purpose of having text surround images inline_
+
+![Float](float.jpg)
+
+```css
+img {
+  float: left | right | both;
+}
+```
+
+Floating elements have traditionally have also been used for laying out pages but more recently it is a better practice to use flexbox for layouts.
 
 [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 

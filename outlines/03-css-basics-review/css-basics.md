@@ -386,3 +386,7 @@ div {
 * Use restraint
 * Decide to use animations after the app is already functioning
 * When it’s necessary and not just to “flex” your animation muscles
+
+## Workshop
+
+[UX Enhancing Transitions](https://drive.google.com/open?id=1BJQbmHAM3EvuABEZnur4ADt9RqlZAFBQMHYPsl2aJOY)

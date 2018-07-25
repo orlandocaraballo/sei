@@ -81,7 +81,7 @@ span, div { color: green; }
 
 _A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s)._
 
-Syntax
+#### Syntax
 
 ```css
 selector:pseudo-class {

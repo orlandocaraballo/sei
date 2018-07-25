@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  background-color: green;
+}
+
+#container {
+  height: 400px;
+  text-align: center;
+}
+
+.box {
+  height: 300px;
+  width: 25%;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 1.1em;
+}
+
+/* will only resize when window width is between 400px - 700px */
+@media (min-width: 500px) and (max-width: 700px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 701px) {
+  body {
+    background-color: red;
+  }
+}

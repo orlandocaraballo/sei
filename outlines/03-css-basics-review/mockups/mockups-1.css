@@ -1,0 +1,32 @@
+#container {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#box-1 {
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+  float: left;
+}
+
+#box-2 {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  float: left;
+}
+
+#box-3 {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  float: left;
+}
+
+#box-4 {
+  height: 150px;
+  width: 150px;
+  background-color: pink;
+  float: left;
+}

@@ -21,7 +21,7 @@ _CSS stands for cascading stylesheets. CSS allows us to design our webpages acco
 ### File
 
 ```html
-  <link href="main.css">
+  <link rel="stylesheet" href="main.css">
 ```
 
 ### Rulesets
@@ -135,6 +135,14 @@ ul li:first-child, .small {
 
 [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
+### Display
+
+```css
+display: inline | block | inline-block | table-cell | ...
+```
+
+[MDN: Display Property]()
+
 ### Units
 
 _In css, units refer to the measurement units being utilized when dealing with distance in either x, y or z coordinates._
@@ -171,9 +179,8 @@ Create a new folder in their class directory called CSS-practice and make a new 
 3. Give the boxes a width equal to one quarter of the size of the parent div and a height of 300px. 
 4. Next, give these elements a display property which will display the divs in a single line.
 5. Let's give the boxes some padding of 10px as well.
-6. Center your boxes.
-7. These boxes look a little crammed together so let's give them a margin on the left and on the right of 20px. Try using the margin attribute instead of margin-left and margin-right.
-8. Give each div some lorem ipsum text of your choice and resize the text to be 10% larger.
+6. These boxes look a little crammed together so let's give them a margin on the left and on the right of 20px. Try using the margin attribute instead of margin-left and margin-right.
+7. Give each div some lorem ipsum text of your choice and resize the text to be 10% larger.
 
 
 ### Positioning

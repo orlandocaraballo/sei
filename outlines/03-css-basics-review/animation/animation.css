@@ -33,7 +33,7 @@ div {
   background-color: red;
   animation: move;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-timing-function: linear;
 }
 

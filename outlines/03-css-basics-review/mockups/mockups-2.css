@@ -1,0 +1,38 @@
+#container {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#box-1 {
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+  position: absolute;
+}
+
+#box-2 {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#box-3 {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+#box-4 {
+  height: 150px;
+  width: 150px;
+  background-color: pink;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}

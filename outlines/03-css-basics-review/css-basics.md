@@ -130,7 +130,8 @@ ul li:first-child, .small {
 * background-image
 * width
 * height
-* [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+[CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 ### Units
 

@@ -1,5 +1,7 @@
 # CSS Basics
 
+_CSS stands for cascading stylesheets. CSS allows us to design our webpages according to the structure that was defined in our html document._
+
 ## Adding to HTML
 
 ### Inline

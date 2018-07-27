@@ -4,7 +4,7 @@
 
 ## What is Git?
 
-A decrntralized version control system created by Linus Torvalds.
+A decentralized version control system created by Linus Torvalds.
 
 ## What is a Version Control System
 
@@ -142,10 +142,7 @@ git revert
 git reset
 ```
 
-### Resource 
 [Atlassian: Undoing Commits & Changes](https://www.atlassian.com/git/tutorials/undoing-changes)
-
----
 
 ## Remote Commands
 
@@ -187,8 +184,6 @@ git fetch remote_name
 git merge remote_name/branch_name
 ```
 
----
-
 ## Workflow
 
 1. Initialize repository
@@ -208,18 +203,12 @@ git merge remote_name/branch_name
 ## Tips
 
 * Commit often
-
 * Atomic Commits: Keep your commits small
-
----
 
 ## Related Technology
 
 * CVS
-
 * SVN
-
----
 
 ## Exercise
 
@@ -250,19 +239,19 @@ Create a new directory called git_practice
 3. Link the main.css in the html file
 4. Open the html file in the browser to make sure it linked css file
 5. Check the status of the git repository
-Stage the file
-6. Check the status of the git repository
-Commit the file with a message of "Added main.css file"
-
----
+6. Stage the file
+7. Check the status of the git repository
+8. Commit the file with a message of "Added main.css file"
 
 ## Git Resources
 
 1. [Getting Started with Git](http://git.rocks/getting-started/)
 2. [Git](https://try.github.io/levels/1/challenges/1)
 
----
-
 ## Git Cheatsheet
 
 ![Cheatsheet](https://www.git-tower.com/blog/content/posts/54-git-cheat-sheet/git-cheat-sheet-large01.png)
+
+## Workshop
+
+[Byte Sized Commits](https://drive.google.com/open?id=1-3TzQ2bwqayHTs6O5Dx6k9q6ch3k0rwTDyFYWaLSLOY)

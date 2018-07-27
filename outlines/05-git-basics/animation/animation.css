@@ -1,0 +1,134 @@
+.box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  position: absolute;
+}
+
+#box-1 {
+  background: blue;
+  top: 0;
+  left: 0;
+  animation: move-to-slot-1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#box-2 {
+  background: black;
+  top: 0;
+  left: 100px;
+  animation: move-to-slot-2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#box-3 {
+  background: red;
+  top: 100px;
+  left: 100px;
+  animation: move-to-slot-3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#box-4 {
+  background: green;
+  top: 100px;
+  left: 0;
+  animation: move-to-slot-4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-to-slot-1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  50% {
+    top: 0;
+    left: 100px;
+  }
+
+  75% {
+    top: 100px;
+    left: 100px; 
+  }
+
+  100% {
+    top: 100px;
+    left: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move-to-slot-2 {
+  0% {
+    top: 0;
+    left: 100px;
+  }
+
+  50% {
+    top: 100px;
+    left: 100px;
+  }
+
+  75% {
+    top: 100px;
+    left: 0px; 
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move-to-slot-3 {
+  0% {
+    top: 100px;
+    left: 100px;
+  }
+
+  50% {
+    top: 100px;
+    left: 0;
+  }
+
+  75% {
+    top: 0;
+    left: 0; 
+  }
+
+  100% {
+    top: 0;
+    left: 100px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move-to-slot-4 {
+  0% {
+    top: 100px;
+    left: 0;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+  }
+
+  75% {
+    top: 0;
+    left: 100px; 
+  }
+
+  100% {
+    top: 100px;
+    left: 100px;
+    transform: rotate(360deg);
+  }
+}

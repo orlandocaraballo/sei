@@ -1,4 +1,5 @@
-![Github](https://19386-presscdn-pagely.netdna-ssl.com/wp-content/uploads/2017/10/github-logo-1.png)
+<img src="github.jpeg" width="100%" />
+
 # Collaborative Development using Github
 
 ## How do you collaborate in software development?

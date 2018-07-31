@@ -1,4 +1,5 @@
-![Hacking](hacking.jpg)
+<img src="hacking.jpg" width="100%" />
+
 # Introduction to Programming
 
 ## What is programming?

@@ -70,7 +70,7 @@ __How would you make a peanut butter and jelly sandwich?__
 
 ### What is it?
 
-_A language used on the browser for the purposes of adding behavior to a webpage._
+_A language used on the browser and on the server for the purposes of adding behavior to a webpage or executing complex server side behavior._
 
 
 ### Yo dawg, I heard you like ECMAScript

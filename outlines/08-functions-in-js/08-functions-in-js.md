@@ -15,7 +15,7 @@ _When you are executing behavior more than one time_
 
 ## Benefits
 
-- You can avoid repeating yourself
+- You can avoid repeating yourself (DRY)
 - You can code complex behavior and reuse it later more than one time
 
 ## Some Definitions
@@ -276,6 +276,10 @@ function doTwoThings(argument1, argument2, firstFunction, secondFunction) {
 doTwoThings(2, 3, add, multiply)
 ```
 
+**Note: We will be practicing callbacks when we do behavioral javascript.**
+
+[Codeburst: What the Heck is a Callback](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
+
 ## Anonymous functions
 
 Functions can be created without a name
@@ -340,7 +344,7 @@ function functionWithinAFunction() {
     console.log("Logging stuff")
   }
 
-  return logStuff()
+  return logStuff
 }
 
 functionWithinAFunction()
@@ -348,92 +352,75 @@ functionWithinAFunction()
 
 ## Closures 
 
-_Any variables defined within a function are also accessible in functions declared inside that same function_
+_Any variables defined within a function are also accessible in functions declared inside that same function. Closures capture the values of variables in scope at the moment in which the function is defined_
 
 ```js
-function functionWithinAFunction() {
-  let number = 4
+function returnLogFunction() {
+  let name = 'Orlando'
 
-  function logNumber() {
-    console.log(number) // 4
+  // this inner function has access to the 
+  //  name variable
+  function logName() {
+    console.log(name)
   }
 
-  logNumber()
+  // returns the inner function
+  return logName
 }
 
-functionWithinAFunction()
-```
+let logger = returnLogFunction()
 
-_Closures capture the values of variables in scope at the moment in which the function is defined_
-
-```js
-let value = 1
-
-function firstFunction() {
-  console.log(value)
-}
-
-function secondFunction() {
-  let value = 2
-  
-  firstFunction() // will this log 1 or 2?
-}
-
-secondFunction()
+// this should log "Orlando" to the console
+logger()
 ```
 
 __Note: Closures are confusing at first, it will take time for it to make sense__
 
 [Medium: Closure in Plain English Please](https://medium.freecodecamp.org/whats-a-javascript-closure-in-plain-english-please-6a1fc1d2ff1c)
 
-_Let's go H.A.M!_
-
-```js
-function functionWithinAFunction() {
-  let listOfNumbers = [1,7,4,5]
-
-  function displayAndSumNumbers() {
-    let sum = 0
-
-    for(let i = 0; i < listOfNumbers.length; ++i) {
-      console.log(`The current number is ${listOfNumbers[i]}`)
-
-      sum += listOfNumbers[i]
-    }
-
-    return sum
-  }
-
-  return displayAndSumNumbers()
-}
-
-console.log(`The total sum is ${functionWithinAFunction()}`) //
-```
-
 ## Recursive Functions - _Welcome to the Final Frontier!_
 
 ![Interstellar](final-frontier.jpg)
 
-You can also invoke the same function within itself
+_Recursive function allow you to invoke the same function within itself_
+
+There are two pieces to a successful recursive function:
+1. Recursive step - the code that calls itself
+2. Base case - the code that dictates when to stop recursing
+
+In some cases you may also need:
+- Termination condition - code that checks for bad input and exits the function
 
 ```js
 // WE WILL NOT BE REQUIRING YOU KNOW THIS BUT...
 //  IT IS PRETTY COOL
 function recursiveSum(array) {
-  if(array.length == 1) {
+  // Termination Condition
+  //  if the array is empty then return false
+  if(array.length == 0) {
+    return false
+  }
+
+  // Base Case
+  //  when array is down to one element, return that element
+  if(array.length <= 1) {
     // if its down to the last element then return
     return array[0]
   }
   
-  // gets removes the first element of the array
+  // first element of array is removed
   array = array.slice(1)
   
+  // Recursive Step
+  //  the now shortened array is passed into the function
   return array[0] + recursiveSum(array)
 }
 
 // wut D-:
 recursiveSum([1,2,3,4,5]) // 19
 ```
+
+[CodeBurst: Learn and Understand Recursion in JS](https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea)
 
 ## Workshop
 

@@ -78,7 +78,7 @@ _How can we convert the prior psuedocode into actual code?_
 - __Code in small snippets and verify it works every step of the way__
   - You will build confidence in your own abilities
 - __Build your code one line at a time__
-  - if you do not understand the line you are writing then do research or ask what the line does
+  - If you do not understand the line you are writing then do research or ask what the line does
 - __If you are frustrated, take a 5-10 minute break__
   - Those 5-10 minutes now can give you the much needed space to activate your creative right brain
 - __If you have completed your work, try helping others__

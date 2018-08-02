@@ -44,7 +44,7 @@ Much like the problem above, solving code challenges can have multiple solutions
 3. Identify the tools you have at your disposal
     - _What functions can I use?_
 4. Identify if your blocks
-    - _Should I look to strengthen my knowledge of closures?_
+    - _Should I look to strengthen my knowledge of functions?_
     - _Am I missing some information?_
 5. Formulate your strategy
     - _How am I going to approach this?_
@@ -57,13 +57,13 @@ __Note: If you have not at least thought through the steps 1 - 5 above, do not s
 
 ---
 
-## _¿What are some of your approaches for solving problems?_
+## _¿What are some of your approaches for solving programming problems?_
 
 ---
 
 ## Problem
 
-_You are really hungry today so you decide to head to the grocery store to buy some supplies to cook some food for yourself. You managed to quickly scrounge together a grocery list to use for keeping yourself focused on buying only what you have written down. There are 15 aisles in the grovery store. In words, how would you go about searching for your groceries?_
+_You are really hungry today so you decide to head to the grocery store to buy some supplies to cook some food for yourself. You managed to quickly scrounge together a grocery list to use for keeping yourself focused on buying only what you have written down. There are 15 aisles in the grocery store. In words, how would you go about searching for your groceries?_
 
 ## Psuedocode
 
@@ -124,9 +124,9 @@ _The __bubble sort__ algorithm makes multiple passes through a list. It compares
 
 ![Bubble Sort](bubble-sort.gif)
 
-- __Worst-case performance__:	О(n2)
+- __Worst-case performance__:	О(n^2)
 - __Best-case performance__:	O(n)
-- __Average performance__:	О(n2)
+- __Average performance__:	О(n^2)
 
 [Chegg Study: Bubble Sort](https://youtu.be/G7VLVAgLhpc)
 
@@ -136,9 +136,9 @@ _**Insertion sort** is a simplistic sorting algorithm that sorts one element at 
 
 ![Insertion Sort](insertion-sort.gif)
 
-- __Worst-case performance__:	О(n2)
+- __Worst-case performance__:	О(n^2)
 - __Best-case performance__:	O(n)
-- __Average performance__:	О(n2)
+- __Average performance__:	О(n^2)
 
 [CS50: Insertion Sort](https://www.youtube.com/watch?v=kU9M51eKSX8)
 
@@ -170,14 +170,9 @@ _**A binary search** locates an item in a sorted array by repeatedly dividing th
 
 [Medium: 10 Algorithms that Dominate our World](https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04)
 
-
 #### Complexity
 
 [Medium: Algorithm Time Complexity](https://medium.com/@StueyGK/algorithm-time-complexity-and-big-o-notation-51502e612b4d)
-
-## Exercise
-
-[Interview Cake: Inflight Entertainment System](https://www.interviewcake.com/question/javascript/inflight-entertainment)
 
 ## Workshop
 

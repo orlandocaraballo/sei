@@ -224,7 +224,7 @@ _Writing clean, organized and elegant code will elevate your game to the next le
 - Understand standards
 - Let your code breathe
 - Name your variables appropriately
-- Miantain consistency
+- Maintain consistency
 - Prefer readability
 - Clean up throughout the process
 - Follow a guide
@@ -305,7 +305,7 @@ Tips:
 function f(x) {
   let s = 0
   
-  for(let i = 0; i < x ; ++i) {
+  for(let i = 0; i < x.length ; ++i) {
     s += x[i]
   }
 

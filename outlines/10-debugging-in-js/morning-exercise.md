@@ -15,9 +15,9 @@ stringifyLine({ x: -78, y: -90 }, { x: 1, y: 1 }) // {(-78,-90) - (1,1)}
 2. Create another function named `translatePoint` that accepts two parameters `startingCoordinates` and `amountToMoveBy` that moves the point identified by `startingCoordinates` by the amount indicated in `amountToMoveBy`. Assume `startingCoordinates` is an object with two keys `x` and `y`. Return an object with the new coordinates for `x` and `y`.
 
 ```js
-translatePoint({ x: 10, y: 8 }, 4) // { 14, 12 }
-translatePoint({ x: -15, y: -900 }, 20) // { 5, 880 }
-translatePoint({ x: 14, y: 2 }, -9) // { 5, -7 }
+translatePoint({ x: 10, y: 8 }, 4) // { x: 14, x: 12 }
+translatePoint({ x: -15, y: -900 }, 20) // { x: 5, y: 880 }
+translatePoint({ x: 14, y: 2 }, -9) // { y: 5, y: -7 }
 ```
 
 ## Challenge:

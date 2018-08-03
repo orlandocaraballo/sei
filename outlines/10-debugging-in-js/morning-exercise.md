@@ -5,9 +5,9 @@
 1. Create a function named `stringifyLine` that accepts two parameters `startingCoordinates` and `endingCoordinates`. Assume both parameters are objects each with two keys `x` and `y`. Return a string that states "{([start x],[start y]) - ([end x],[end y])}".
 
 ```js
-stringifyLine({ x: 3, y: 2 }, { x: 18, y: -3 }) // {(3,2) - (18,-3)}
-stringifyLine({ x: 15, y: 2 }, { x: 100, y: 14 }) // {(15,2) - (100,14)}
-stringifyLine({ x: -78, y: -90 }, { x: 1, y: 1 }) // {(-78,-90) - (1,1)}
+stringifyLine({ x: 3, y: 2 }, { x: 18, y: -3 }) // "{(3,2) - (18,-3)}"
+stringifyLine({ x: 15, y: 2 }, { x: 100, y: 14 }) // "{(15,2) - (100,14)}"
+stringifyLine({ x: -78, y: -90 }, { x: 1, y: 1 }) // "{(-78,-90) - (1,1)}"
 ```
 
 **Note: [start x], [start y], [end x], [end y] represent the values of the keys within the starting coordinates / ending coordinates**

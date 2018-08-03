@@ -22,12 +22,12 @@ translatePoint({ x: 14, y: 2 }, -9) // { y: 5, y: -7 }
 
 ## Challenge:
 
-3. Create a function named `createLineAndStringify` that two parameters `startingCoordinates` and `amountToMoveBy` that creates a line by taking the point identified by `startingCoordinates`, moving that point by the amount indicated in `amountToMoveBy` assuming the result is the end point of a line. The return value is a string that states "{([x],[y]) - ([x],[y])}" which are the start and end points of the line.
+3. Create a function named `createLineAndStringify` that two parameters `startingCoordinates` and `amountToMoveBy` that creates a line by taking the point identified by `startingCoordinates`, moving that point by the amount indicated in `amountToMoveBy` assuming the result is the end point of a line. The return value is a string that states "{([start x],[start y]) - ([end x],[end y])}" which are the start and end points of the line.
 
 ```js
-createLineAndStringify({ x: 10, y: 8 }, 4) // {(10,8) - (14, 12)}
-createLineAndStringify({ x: -15, y: -900 }, 20) // {(-15, -900) - (5, 880)}
-createLineAndStringify({ x: 14, y: 2 }, -9) // {(14, 2) - (5, -7)}
+createLineAndStringify({ x: 10, y: 8 }, 4) // "{(10,8) - (14, 12)}"
+createLineAndStringify({ x: -15, y: -900 }, 20) // "{(-15, -900) - (5, 880)}"
+createLineAndStringify({ x: 14, y: 2 }, -9) // "{(14, 2) - (5, -7)}"
 ```
 
 **Note: Remember to try to keep your code DRY (Don't repeat yourself)**

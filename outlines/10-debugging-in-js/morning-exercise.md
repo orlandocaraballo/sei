@@ -10,7 +10,7 @@ stringifyLine({ x: 15, y: 2 }, { x: 100, y: 14 }) // {(15,2) - (100,14)}
 stringifyLine({ x: -78, y: -90 }, { x: 1, y: 1 }) // {(-78,-90) - (1,1)}
 ```
 
-**Note: [start x] and [start y] represent the values of the keys within the starting coordinates / ending coordinates**
+**Note: [start x], [start y], [end x], [end y] represent the values of the keys within the starting coordinates / ending coordinates**
 
 2. Create another function named `translatePoint` that accepts two parameters `startingCoordinates` and `amountToMoveBy` that moves the point identified by `startingCoordinates` by the amount indicated in `amountToMoveBy`. Assume `startingCoordinates` is an object with two keys `x` and `y`. Return an object with the new coordinates for `x` and `y`.
 

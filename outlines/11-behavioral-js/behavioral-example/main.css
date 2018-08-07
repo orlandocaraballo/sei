@@ -1,0 +1,10 @@
+body {
+}
+
+.red {
+  color: red;
+}
+
+.with-border {
+  border: 1px solid blue;
+}

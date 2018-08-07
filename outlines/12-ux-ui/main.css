@@ -3,7 +3,7 @@ body {
 }
 
 header, section, footer {
-  height: 200px;
+  height: 600px;
   font-size: 40px;
   font-family: sans-serif;
   padding: 20px;
@@ -12,6 +12,7 @@ header, section, footer {
 header {
   background-color:#b9b8d3;
   text-align: right;
+  color: #1F2D3D;
 }
 
 section {
@@ -20,12 +21,16 @@ section {
 
 section:nth-child(odd) {
   background-color:#759FBC;
+  color: #fff;
 }
 
 section:nth-child(even) {
   background-color:#b9b8d3;
+  color: #1F2D3D;
 }
 
 footer {
   background-color:#b9b8d3;
+  color: #1F2D3D;
+  text-align: center;
 }

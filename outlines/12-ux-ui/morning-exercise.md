@@ -1,3 +1,5 @@
+<img src="morning-exercise.png" width="100%" />
+
 # Morning Exercise
 
 Create a one page website, using semantic html (using `header`, `main`, `footer` tags as top level elements) where within the `main` tag you have 3 `section` elements.
@@ -20,6 +22,6 @@ Design Requirements:
 
 The end result should look something like this:
 
-<img src="top.png" />
+<img src="top.png" width="100%" />
 
-<img src="bottom.png" />
+<img src="bottom.png" width="100%" />

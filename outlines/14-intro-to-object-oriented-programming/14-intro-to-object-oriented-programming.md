@@ -12,6 +12,43 @@
 - __`this`__ - a keyword representing the current object
 - __dot syntax__ - the syntax used for executing behavior relative to an object (e.g. `person.age`)
 
+## Example
+
+```js
+// defines the class "Person"
+class Person {
+  // runs when the object is first created
+  constructor(firstName, lastName, age) {
+    // sets the firstName to the firstName parameter
+    //  passed into the constructor
+    this.firstName = firstName
+
+    // sets the internal last name equal to lastName parameter
+    this.lastName = lastName
+
+    // sets the age equal to the age parameter passed in
+    this.age = age
+  }
+
+  // this is called a method
+  // a method is a function that is associated with the class its
+  //    defined in
+  fullName() {
+    // returns the first name and last name with a space in between
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+// creates a new Person object and sets it to the person variable
+let person = new Person("Orlando", "Caraballo", 34)
+
+// executes the fullName method associated with person
+person.fullName() // Orlando Caraballo
+
+// gives you the variable age associated with person 
+person.age // 34
+```
+
 ## Exercises
 
 ### Object Literals

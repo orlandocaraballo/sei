@@ -12,7 +12,7 @@
 - __`this`__ - a keyword representing the current object
 - __dot syntax__ - the syntax used for executing behavior relative to an object (e.g. `person.age`)
 
-## Example
+## Basic Class Example
 
 ```js
 // defines the class "Person"
@@ -49,6 +49,33 @@ person.fullName() // Orlando Caraballo
 person.age // 34
 ```
 
+## Inheritance
+
+```js
+// the student class inherits behavior from Person
+//  this enables us to make use of all prior defined functions
+class Student extends Person {
+  // we define a new constructor for Student
+  constructor(firstName, lastName, age, education) {
+    // we utilize the constructor defined in Person
+    // we pass in firstName, lastName and age
+    //  into the constructor for Person to DRY
+    //  up our code
+    super(firstName, lastName, age)
+
+    // we set the education to the highest completed level
+    this.education = education
+  }
+}
+
+let zach = new Student("zach", "morris", 18, "high school")
+
+// because we inherited information from Person
+//  we can utilize the function fullName
+//  defined in the Person class
+console.log( zach.fullName() ) // zach morris
+```
+
 ## Exercises
 
 ### Object Literals
@@ -73,7 +100,6 @@ Create an object literal that models each of the following objects with the give
 ### Constructor
 
 1. Create a class `Car` that store the `brand`, `wheels` and `color` properties.
-
     - Try logging the properties to the console.
 
 ### Methods

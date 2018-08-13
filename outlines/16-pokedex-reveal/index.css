@@ -1,0 +1,30 @@
+main {
+  width: 1200px;
+}
+
+body {
+  background-color: #666;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #333;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: white;
+}
+
+button {
+  display: block;
+}

@@ -32,7 +32,7 @@ _The url you must hit in order to retrieve a specific data point from an API_
 
 Example
 
-```http
+```
 https://swapi.co/api/people/1
 ```
 
@@ -40,7 +40,7 @@ https://swapi.co/api/people/1
 
 #### Pokemon API:
 
-```http
+```
 http://pokeapi.co/api/v2/[id]
 ``` 
 retrieves information on a specific pokemon
@@ -59,7 +59,7 @@ _The root endpoint is the starting point of the API you’re requesting from_
 
 Using the endpoint from the example above, the following would be the root endpoint:
 
-```http
+```
 https://swapi.co/api
 ```
 
@@ -71,7 +71,7 @@ _The path determines the resource you’re requesting for_
 
 Using the endpoint from the example above, the following would be the path:
 
-```http
+```
 /people/1/
 ```
 

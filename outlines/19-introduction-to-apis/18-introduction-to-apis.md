@@ -1,4 +1,4 @@
-<img src="api.png" style="width:100%" />
+<img src="api.png" width="100%" />
 
 # Introduction to APIs
 

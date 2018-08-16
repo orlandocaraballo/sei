@@ -33,7 +33,7 @@ let ul = document.querySelector("ul")
 let people = new People()
 
 // retrieve data from hosted person-1 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-1.json")
+axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/18-working-with-ajax/json/person-1.json")
 .then((response) => {
   // creates new li element
   let li = document.createElement("li")
@@ -61,7 +61,7 @@ axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master
 })
 
 // retrieve data from hosted person-2 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-2.json")
+axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/18-working-with-ajax/json/person-2.json")
 .then((response) => {
   // creates new li element
   let li = document.createElement("li")
@@ -89,7 +89,7 @@ axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master
 })
 
 // retrieve data from hosted person-3 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei-march-5/master/17-working-with-ajax/json/person-3.json")
+axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/18-working-with-ajax/json/person-3.json")
 .then((response) => {
   // creates new li element
   let li = document.createElement("li")

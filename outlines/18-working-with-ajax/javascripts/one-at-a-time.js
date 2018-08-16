@@ -112,8 +112,9 @@ axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outline
     
   // appends created li to the html ul
   ul.appendChild(li)
+
+  // console log orlando
+  console.log(people.get("orlando"))
 }).catch((error) => {
   console.log(error)
 })
-
-console.log(people.get("orlando"))

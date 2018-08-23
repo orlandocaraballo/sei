@@ -12,18 +12,21 @@ function sum(operand1, operand2) {
 }
 
 function subtract(operand1, operand2) {
-  return operand1 / operand2
+  return operand1 - operand2
 }
 
 function calculate(operand1, operand2, operation) {
   return operation(operand1, operand2)
 }
 
-// calculate the 
-calculate(4, 5, subtract) // 9
+// subtracts 5 from 4
+calculate(4, 5, subtract) // -1
+
+// adds 10 to 10
 calculate(10, 10, add) // 20
 
-// we are providing the calculator function with operands and we have defined an anonymous function that uses those values to do something unique
+// we are providing the calculator function with operands and
+// we have defined an anonymous function that uses those values to do something unique
 calculate(1, 2, (operand1, operand2) => {
   return (operand1 * operand2) + 10
 }) // 12
@@ -34,6 +37,23 @@ calculate(1, 2, (operand1, operand2) => {
 ## Closures
 
 _A closure is an inner function that has access to the outer (enclosing) function’s variable scope_
+
+```js
+function outerFunction() {
+  let outerNum = 29
+
+  // this inner function has access to
+  //  the outerNumber's scope
+  // this behavior is called a closure
+  function innerFunction() {
+    return outerNum + 1000
+  }
+
+  return innerFunction()
+}
+
+outerFunction() // 1029
+```
 
 ```js
 function closureGenerator() {

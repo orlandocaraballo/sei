@@ -460,6 +460,7 @@ __Functions__
 [RVM Basics](https://rvm.io/rvm/basics)
 [Codeacademy: Ruby](https://www.codecademy.com/learn/learn-ruby)
 [Launchschool: Intro to Ruby](https://launchschool.com/books/ruby/read/introduction)
+[Erik Trautman: Everything in Ruby is an Object](https://www.eriktrautman.com/posts/ruby-explained-objects-and-methods)
 
 ## Workshop
 

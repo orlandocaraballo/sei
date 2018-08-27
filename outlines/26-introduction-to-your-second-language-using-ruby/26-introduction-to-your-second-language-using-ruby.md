@@ -1,4 +1,4 @@
-<img src="sexy.jpg" style="width: 100%" />
+<img src="sexy.jpg" width=" 100%" />
 
 # Introduction to Another Language using Ruby
 

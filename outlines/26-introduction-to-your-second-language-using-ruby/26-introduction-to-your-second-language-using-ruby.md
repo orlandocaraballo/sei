@@ -250,6 +250,15 @@ numbers[-2] # 9
 numbers[3..8] # [4,5,6,7,8,9]
 ```
 
+```ruby
+prefix = %w{orlando is my name}
+suffix = %w{teaching is my game}
+
+[*prefix, *suffix] # ["orlando", "is", "my", "name", "teaching", "is", "my", "game"]
+```
+
+[Splats](http://blog.honeybadger.io/ruby-splat-array-manipulation-destructuring/)
+
 ## Comparison Operators
 
 ```ruby
@@ -445,9 +454,12 @@ __Functions__
 5. Name some advantages and disadvantages of this approach.
 6. Change the code to only divide when the second argument is greater than or equal to `1` otherwise display the text `"Second argument must be greater than or equal to 1"` to the console.
 
-# Ruby Core Library
+# Resources
 
 [Ruby Docs](http://ruby-doc.org/)
+[RVM Basics](https://rvm.io/rvm/basics)
+[Codeacademy: Ruby](https://www.codecademy.com/learn/learn-ruby)
+[Launchschool: Intro to Ruby](https://launchschool.com/books/ruby/read/introduction)
 
 ## Workshop
 

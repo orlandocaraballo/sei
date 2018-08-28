@@ -27,7 +27,7 @@ end
 # creates a new animal
 # animal = Animal.new("marlon", "6ft 2in", "mammal")
 
-# testing out properties / getters
+# test out getters
 # puts animal.name
 # puts animal.height
 # puts animal.species

@@ -1,8 +1,9 @@
 require './calculator'
 
 class Person
-  # attr_reader :name, :gender
-  # attr_writer :name, :gender
+  # this code is equivalent to:
+  #   attr_reader :name, :gender
+  #   attr_writer :name, :gender
   attr_accessor :name, :gender
 
   def initialize(name, gender)
@@ -23,20 +24,28 @@ class Person
     @born_time = Calculator.sum(@born_time, seconds)
   end
 
+  # THE FOLLOWING CODE CAN DEFINED AS attr_accessor :name
+  
+  # same as attr_reader :name
   # def name
   #   @name
   # end
 
-  # def gender
-  #   @gender
+  # same as attr_writer :name
+  # def name=(name_argument)
+  #   @name = name_argument
   # end
 
+  # EVERYTHING BELOW CAN DEFINED AS attr_accessor :gender
+  
+  # same as attr_writer :gender
   # def gender=(gender_argument)
   #   @gender = gender_argument
   # end
 
-  # def name=(name_argument)
-  #   @name = name_argument
+  # same as attr_reader :gender
+  # def gender
+  #   @gender
   # end
 end
 

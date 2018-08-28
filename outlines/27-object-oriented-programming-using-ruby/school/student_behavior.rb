@@ -3,5 +3,3 @@ module StudentBehavior
     "#{ name }:#{ program_name }"
   end
 end
-
-# puts StudentBehavior.

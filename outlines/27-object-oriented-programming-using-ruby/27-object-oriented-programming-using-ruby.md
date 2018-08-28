@@ -270,6 +270,64 @@ student.name_and_gender # "Hi my name is denisse and my gender is female"
 student.gpa # 4.0
 ```
 
+## Mixins using Modules
+
+```ruby
+# defines a new module Behavior
+module Behavior
+  def name_and_age
+    "#{ @name } : #{ @age }"
+  end 
+end
+
+class Animal
+  def initialize(name, age, species)
+    @name = name
+    @age = age
+    @species = species
+  end
+
+  # mixes in the module Behavior
+  include Behavior
+end
+
+class Person
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  # mixes in the module Behavior
+  include Behavior
+end
+
+# even though we never defined these in our classes
+#   as a result of our mixin we have this behavior available to us
+Person.new("orlando", 34).name_and_age # orlando : 34
+Animal.new("fido", 10) # fido : 34
+```
+
+## Namespaces using Modules
+
+```ruby
+# defines a new module School
+module School
+  class Student
+  end
+
+  class Teacher
+  end
+end
+
+# modules allow us to group things into a category
+#   this allows us to refer to the Student and Teacher class
+#   thru the School module
+
+# this is called namespacing
+School::Student.new
+School::Teacher.new
+```
+
 ## Exercises
 
 - Create an `Animal` class that stores information on an animal's `height`, `species` and `name`. The `name`, `species` and `height` are readable outside of the class definition. Only `name` is changeable outside of the class definition.
@@ -284,12 +342,13 @@ student.gpa # 4.0
   - Add a method to both that returns a message displaying their `name`, `gpa` and `course` in words.
   - Allow for an `SeiStudent` to store their `hours_slept` and then create behavior that displays how many minutes they have slept based on their hours.
 
-
 ## Resources
 
 [Ruby 101: Object Oriented Programming part 1](https://medium.com/the-renaissance-developer/ruby-101-object-oriented-programming-part-1-af734f87f481)
 
 [Ruby 101: Object Oriented Programming part 2](https://medium.com/the-renaissance-developer/ruby-101-object-oriented-programming-part-2-80b3eca2a318)
+
+[Ruby for Beginners: Modules](http://ruby-for-beginners.rubymonstas.org/advanced/modules.html)
 
 ## Workshop
 

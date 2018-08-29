@@ -24,6 +24,10 @@ class Windows
   def version_name
     "Windows version: #{ @version } : #{ @codename }"
   end
+  
+  def load_command_prompt
+    'C:\> '
+  end
 end
 
 class Mac
@@ -44,6 +48,10 @@ class Mac
 
   def version_name
     "OSX version: #{ @version } : #{ @codename }"
+  end
+
+  def load_terminal
+    "#{ @name }:~ $ "
   end
 end
 
@@ -66,7 +74,14 @@ class Linux
   def version_name
     "Ubuntu version: #{ @version } : #{ @codename }"
   end
+
+  def load_terminal
+    "#{ @name }:~ $ "
+  end
 end
 ```
 
-Write a `module` named `OsBehavior` that allows us to mixin all behavior that is the same in all three classes. If you are confused please refer yesterday's example on modules.
+1. Write a `module` named `OsBehavior` that allows us to mixin all behavior that is the same in all three classes
+2. Write a `module` named `UnixBehavior` that allows us to mixin behavior that is the same in the `Linux` and `Mac` classes.
+
+_Note: If you are confused please refer yesterday's example on modules._

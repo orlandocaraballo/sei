@@ -1,4 +1,4 @@
-<img src="blocks.png" style="width: 100%">
+<img src="blocks.png" width="100%">
 
 # Blocks, Procs, Lambdas
 

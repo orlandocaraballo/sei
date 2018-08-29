@@ -1,5 +1,5 @@
+<img src="gem.png" width="100%">
 
-![Gem](gem.png)
 ## Libraries Using Rubygems
 
 ## Libraries

@@ -1,6 +1,6 @@
 <img src="gem.png" width="100%">
 
-## Libraries Using Rubygems
+# Libraries Using Rubygems
 
 ## Libraries
 

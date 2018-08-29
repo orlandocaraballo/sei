@@ -124,6 +124,12 @@ times_eight = proc { |num| num * 8 }
 times_eight.call # this would not give an error
 ```
 
+
+```ruby
+# btw there is also an alternate syntax for lambdas /shrug
+times_seven = -> { |num| num * 7 }
+```
+
 ## Resources
 
 [Medium: What the heck are blocks, procs and lambdas](https://medium.com/@sihui/what-the-heck-are-code-blocks-procs-lambdas-and-closures-in-ruby-2b0737f08e95)

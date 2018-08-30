@@ -39,4 +39,4 @@ If you have some time, attempt to monkey patch this carousel function into the `
 # [1, 2, 3, 4, 5, 6]
 ```
 
-If you are curious on how monkey patching works you can take a look at this [article](https://www.culttt.com/2015/06/17/what-is-monkey-patching-in-ruby/).
+For more information on how to monkey patch a class you can take a look at this [article](https://www.culttt.com/2015/06/17/what-is-monkey-patching-in-ruby/).

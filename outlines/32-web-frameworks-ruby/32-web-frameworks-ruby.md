@@ -1,4 +1,4 @@
-<img src="framework.png" style="width: 100%" />
+<img src="framework.png" width="100%" />
 
 ## What is a Framework?
 

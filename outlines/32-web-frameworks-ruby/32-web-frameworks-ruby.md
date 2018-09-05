@@ -217,7 +217,7 @@ _A microframework is a framework that attempts to provide only the components th
 
 ## HTTP Request / Response Review (YES... AGAIN)
 
-<img src="request-response.png" style="width: 100%">
+<img src="request-response.png" width=" 100%">
 
 Remember the acronym CRUD:
 

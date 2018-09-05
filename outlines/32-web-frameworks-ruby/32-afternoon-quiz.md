@@ -89,7 +89,7 @@ name = "orlando"
 namePlusTen()
 ```
 
-8. Write down in words your process for solving number 2 and number 7?
+8. Write down in words your process for solving number 3 and number 7?
 
 9. Given the following list of comments:
     - Stop embarassing me!

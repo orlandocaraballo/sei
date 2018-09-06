@@ -1,75 +1,87 @@
-require "sinatra"
-require "sinatra/reloader"
-require "./person"
-
-people = {
-  "minhal" => Person.new("minhal", 1000, "male"),
-  "md" => Person.new("md", 9001, "unknown"),
-  "rashid" => Person.new("rashid", 90, "unknown")
-}
+require 'sinatra'
+require 'httparty'
+require_relative 'student'
 
 students = [
-  "edward elric (alchemist / pokemon master)", 
-  "ronnie the html G.O.A.T",
-  "team rocket", 
-  "yorvin the dominican", 
-  "marria the edgecase queen"
+  Student.new('rich', 'sei'), # 0
+  Student.new('anna', 'sei'), # 1
+  Student.new('garth', 'sei'), # 2
+  Student.new('pablo', 'sei'), # 3
+  Student.new('diana', 'sei') # 4
 ]
 
-# routes below
-
-get "/" do
-  "Hello ddd!"
+get '/' do
+  'Go to <a href="/students">students</a> page'
 end
 
-get "/home" do
-  "Hello World"
+get '/students' do
+  output = '<ul>'
+
+  students.each_with_index do |student, index|
+    output += "
+    <li id='#{ student.name.downcase }'>
+      Student: #{ student.name }
+      Course: #{ student.course }
+      Link to Student Page: <a href='/students/#{ index }'>students</a>
+    </li>
+    "
+  end
+
+  output + '</ul>'
 end
 
-get "/people/:name" do
-  puts params[:name]
+# get '/students/:id' do
+#   content_type :json
 
-  person = generate_person(params[:name], 18, "female")
+#   HTTParty.get("https://sei-api.herokuapp.com/students/#{ params[:id] }")
+# end
 
-  "<p>My name is #{ person.name }, my age #{ person.age }, my gender is #{ person.gender }</p>"
+get '/students/:id' do
+  index = params[:id].to_i
+
+  student = students[index]
+  return "<h1 id='#{ params[:id] }'>Student Page</h1> Student name: #{ student.name }"
 end
 
-get "/users/new" do
+get '/form' do
   "
-    <form method='post' action='/users'>
-      <input type='text' name='name' placeholder='Name' />
-      <input type='text' name='age' placeholder='Age' />
-      <input type='text' name='gender' placeholder='Gender' />
-      <input type='submit' value='Go' />
+    <form method='GET' action='/find-student-by-id'>
+      <input type='text' name='id' />
+      <input type='submit' />
     </form>
   "
 end
 
-post "/users" do
-  # create a new person here
-  # psuedocode
-
-  redirect "/users/#{ params[:name] }"
-  # redirect "/users/#{}"
+get '/find-student-by-id' do
+  index = params[:id].to_i
+  student = students[index]
+  student.name
+  # load user from database
 end
 
-get "/users/:name" do
-  # this looks whtin the people hash for the
-  #   key that is represented by params[:name]
-  #   e.g. minhal, rashid, md
-  person = people[params[:name]]
-
-  "<p>My name is #{ person.name }, my age #{ person.age }, my gender is #{ person.gender }</p>"
+get '/sign-in' do
+  "
+    <form method='POST' action='/sign-in'>
+      <input type='text' name='username' placeholder='Username' />
+      <input type='password' name='password' placeholder='Password' />
+      <input type='submit' />
+    </form>
+  "
 end
 
-get "/students" do
-  student_string = "<ul>"
+post '/sign-in' do
+  # params.inspect
+  
+  # log the person in
 
-  for student in students
-    student_string += "<li>#{ student }</li>"
-  end
+  redirect '/thank-you'
+end
 
-  student_string += "</ul>"
-
-  student_string
+get '/thank-you' do
+  '
+    <style>
+      h1 { color: red; }
+    </style>
+    <h1>Thank you for logging in<h1>
+  '
 end

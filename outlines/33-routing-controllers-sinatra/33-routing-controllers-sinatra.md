@@ -109,7 +109,7 @@ _Note: To test your server, remember to run `ruby app.rb` in the terminal and ch
 1. In your `app.rb` file, create a `get` route that responds to the `"/"` path and returns `"Hello human, are you ready for us robots to take over!? |8-D|"`. Test your website in the browser.
 2. Add a new `get` route in your `app.rb` file that responds to `"/sei"` and displays some custom text of your choosing
 3. Create a variable in your `app.rb` file after the `require "sinatra"` statement but before the `get "/"` statement that sets the constant `NAME` equal to your name. Now add yet another `get` route in your `app.rb` file that responds to `"/my_name"` that displays the test `"Hello, my name is [your name here]"` where `"[your name here]"` is replaced with the value of the variable.
-4. Create a variable storing a list of `names` with the following values `"edward elric (alchemist / pokemon master)", "ronnie the html G.O.A.T", "team rocket", "yorvin the dominican", "marria the edgecase queen"` in your `app.rb` file. Write some code to display all their names in a new `get` route of your choosing.
+4. Create a variable storing a list of `names` with the following values `"reynaldo steady hands", "garth the time traveler", "franklin the no sleep machine", "pablo the low key senior dev", "richard who does it differently"` in your `app.rb` file. Write some code to display all their names in a new `get` route of your choosing.
 
 ### Longer Exercise
 
@@ -117,7 +117,7 @@ _Note: To test your server, remember to run `ruby app.rb` in the terminal and ch
 2. In this file create a `class` called `Classmate` that stores a classmates `name` and `super_power`. Objects of type `Classmate` can also display their `name` and `super_power` in an interesting way within a method `i_have_the_power!`.
 3. Now require this file in `app.rb`.
 4. Create some classmate objects before your routes and store them in some variables.
-5. Create three `get` routes with the pathnames representing their names. (e.g. `get "/orlando"`, `get "/chris"`)
+5. Create three `get` routes with the pathnames representing their names. (e.g. `get "/orlando"`, `get "/zak"`)
 6. In each action, try displaying each classmates name and super power by utilizing the `i_have_the_power!` methods on each object within each of the routes. (e.g. `get "/orlando"` would utilize the `i_have_the_power!` method on an `orlando` object I created beforehand)
 
 ### Challenge Exercises

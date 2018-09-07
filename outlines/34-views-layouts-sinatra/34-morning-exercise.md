@@ -31,7 +31,12 @@ Here is some starter code for the ruby implementation:
 class Array
   def far_each
     # your implementation goes here
-    #   remember you are being passed in a block
+    
+    # remember you are being passed in a block
+
+    # blocks can be executed by utilizing the yield command
+    
+    # the array being looped over is represented by the self keyword much like this represents the array in javascript
   end
 end
 

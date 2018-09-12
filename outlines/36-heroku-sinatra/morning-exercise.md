@@ -20,7 +20,7 @@ joinEven(array); // 2 -102
 
 ## Challenge
 
-3. Create a `function` named `joinByDivisible` in javascript that accepts two arguments. The first argument is of type `Array` named array. The second argument is of type `Number` named `divisor`. This `function` should return a string with all numbers that are divisible by `divisor` separated by a space.
+3. Create a `function` named `joinByDivisible` in javascript that accepts two arguments. The first argument is of type `Array` named `array`. The second argument is of type `Number` named `divisor`. This `function` should return a string with all numbers that are divisible by `divisor` separated by a space.
 
 ```js
 const array = [-57, 33, 2, -102];

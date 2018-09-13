@@ -330,7 +330,7 @@ DELETE FROM [table] WHERE [condition];
 
 ## JOIN
 
-_The join command allows us to grab information from a secondary table based on fields store similar data in both tables. Usually a foreign key.  _
+_The join command allows us to grab information from a secondary table based on fields store similar data in both tables. Usually a foreign key._
 
 ```sql
 SELECT [columns] 

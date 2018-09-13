@@ -2,7 +2,7 @@
 
 # Morning Exercise
 
-Download the code from this zip file [here](./morning-exercise.zip) that has three images and two buttons, write javascript code in the `main.js` file to create a carousel from the images provided. In this carousel when you click on the `Previous` button it should shift all images to the left by 1 image. When clicking the `Next` button it should move all images to the right by one image.
+Download the code from this folder [here](./code-exercise.zip) that has three images and two buttons, write javascript code in the `main.js` file to create a carousel from the images provided. In this carousel when you click on the `Previous` button it should shift all images to the left by 1 image. When clicking the `Next` button it should move all images to the right by one image.
 
 Here is an example of using the previous button:
 

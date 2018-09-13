@@ -17,15 +17,21 @@ Popular DBMSs
 - Microsoft SQLServer
 
 We will be using:
-- SQLite
 - PostgreSQL
 
 ## Representing Information
 
-Most informaton stored in a relational database is represented visually in a manner that resembles spreadsheets. Each piece of related information is stored into a `table` that is divided into `columns` and `rows`. Each discrete piece of information within the intersection of a `column` and `row` is called a `record`.
+Most informaton stored in a relational database is represented visually in a manner that resembles spreadsheets. Each piece of related information is stored into a `table` that is divided into columns and rows. 
 
-<table style="border: 1px solid black; ">
-  <caption style="font-style: italic">users</caption>
+- `field`:
+  - one item of information
+  - has a data type
+- `record`:
+  - a complete set of information relative to one database entry
+  - `records` are composed of fields
+
+<table>
+  <caption>users</caption>
   <tr>
     <th>id</th>
     <th>name</th>
@@ -54,15 +60,18 @@ Most informaton stored in a relational database is represented visually in a man
 
 ## Data types 
 
-Similar to Ruby and JavaScript, database columns also have data types for the type of information you are storing in a column
+Similar to Ruby and JavaScript, database `fields` have data types for the type of information you are storing in a column.
 
-## SQLite3 Common Data Types
+## Postgres Common Data Types
+- `CHAR(n)` - used for fixed length strings of n length
 - `VARCHAR(n)` - used for variable length strings of n length up to 255
 - `TEXT` - used for longer strings
 - `INTEGER` - used for whole numbers
 - `REAL` - used for decimal based numbers
 - `BOOLEAN` - used for `true` or `false` values
-- `DATETIME` - used for date + time values
+- `TIMESTAMP` - used for date + time values
+
+__Note: If you use CHAR and the string stored is less than n, Postgres will pad the record with spaces. VARCHAR will not pad if shorter than n`__
 
 ## Schema
 
@@ -80,7 +89,7 @@ gender: varchar
 
 _A `primary key` is a column in a table that represents the primary identifier to search for when looking for data in that table_
 
-**Note:** Schemas should display the table name, the column names and column data types
+**Note:** Schemas should display the table name, the column names, column data types and whether the column is storing a primary / foreign key.
 
 ### Group Exercise
 
@@ -106,7 +115,7 @@ _In a one-to-one relationship, a record in one table is related to only one reco
 - one **car** has one **company** that manufactures it
 
 ### Group Exercise
-- Let's design the schema for a `one-to-one` relationship between `cars` and `companies` table
+- Let's design the schema for a `one-to-one` relationship between `user` and `profile` table
 
 ## one-to-many
 
@@ -133,54 +142,78 @@ _In a many-to-many relationship, a record in one table is related to many record
 ### Group Exercise
 - Design the schema for a `many-to-many` relationship between `users` and `addresses` table
 
-## SQLite3
+## Postgres
 
-You can install sqlite3 on Mac by running the following command on your terminal:
+### Client / Server
 
+Postgres operates on a client server architecture. It should automatically fire up a server on your behalf when you first install it. This server hosts all communication with our database by giving us an interface with which to communicate with it. By default postgres creates a default database we can log into. However, it makes more sense if we first create a database locally and run commands on that.
+
+### Setup
+
+In order to setup our local database to use postgres we need to do the following:
+- Install `postgresql` package locally
+- Create a database (each application should have its own database)
+- Configure our sinatra controller file
+- Run migrations
+
+### Install `postgresql` locally
+**OSX (Mac):**
 ```bash
-$ brew install sqlite3
+# for the purposes of messing with settings in postgres
+$ brew install postgresql
 ```
 
-On Ubuntu:
-
+**Ubuntu (Linux):**
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install sqlite3 libsqlite3-dev
+$ sudo apt-get install postgresql postgresql-contrib
+$ sudo apt-get install libpq-dev
 ```
 
-### Using SQLite3
+[Homebrew: Homepage](https://brew.sh/)
 
-You can connect to a sqlite3 database by running the following command:
+### Server Start
 
-```bash
-$ sqlite3 test.db
-```
+In order to ensure our server is running locally we can run:
 
-**Note:** This will create a database named test.db if none already exists.
-
-### In the Shell
-
-Once you are connected to sqlite3 your terminal should look something like this:
+**OSX (Mac):**
 
 ```bash
-SQLite version 3.8.5 2014-08-15 22:37:57
-Enter ".help" for usage hints.
-sqlite>
+# this starts / stops / restarts our server
+$ brew services [start | stop | restart] postgresql
 ```
 
-You can also connect to a database after loading up the sqlite shell by running:
+**Ubuntu (Linux):**
 
 ```bash
-sqlite> .open test.db
-While within the sqlite shell you can execute sql commands
+$ sudo service postgresql [start | stop]
+
+# or if that doesn't work
+
+$ sudo /sbin/service postgresql [start | stop]
 ```
 
-Common Commands:
-- `.open`
-- `.tables`
-- `.quit`
+### Create database
 
-[Sqlite: Command Line Shell for SQLite3](https://www.sqlite.org/cli.html)
+Postgres provides for us a command `createdb` to create database for us:
+
+#### OSX (Mac)
+
+```bash
+# this creates a database called indicated by name
+#   postgres does not store our information in a ".db" file
+$ createdb [name of database]
+```
+
+#### Linux
+
+On linux the process is slightly more involved because all actions must be made thru the username -> `postgres` therefore:
+
+We must:
+- Create a new user using the `createuser` command
+- Login to our `postgres` account then make necessary system changes or...
+- Run our commands through the `postgres` user account every time
+
+[Digital Ocean: How to Install and Use Postgresql on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
 
 ## SQL
 
@@ -206,13 +239,23 @@ Once you've created your database, you can run SQL commands against it to perfor
 Like other languages you've learned, this can be done at terminal line by line like so:
 
 ```bash
-$ sqlite3 db_name "sql command"
+$ psql [name of database]
+
+# or
+
+$ psql -d [name of database]
+
+# which logs us into postgres client
+[name of database]=# [here we can run sql commands]
 ```
 
 You can also create a sql file and run it against the database like so:
 
 ```bash
-$ sqlite3 db_name < file.sql
+$ psql -d [database name] -f [import sql script]
+
+# example
+$ psql -d app -f import.sql
 ```
 
 ## Defining a schema in SQL
@@ -227,10 +270,10 @@ Remember our example:
 
 ```sql
 CREATE TABLE users (
-  id integer PRIMARY KEY AUTOINCREMENT,
-  name varchar(50),
-  age integer,
-  gender varchar(50)
+  ID INTEGER PRIMARY KEY SERIAL,
+  name VARCHAR(50),
+  age INTEGER,
+  gender VARCHAR(50)
 );
 ```
 
@@ -283,6 +326,29 @@ _The delete command allows us to delete existing records_
 ```sql
 -- deletes records from table where condition is met
 DELETE FROM [table] WHERE [condition];
+```
+
+## JOIN
+
+```sql
+SELECT [columns] 
+FROM [table_to_get_data_from] 
+INNER JOIN [table_to_join_with] 
+ON [join_clause];
+```
+
+```sql
+SELECT [columns]
+FROM [table_to_get_data_from]
+LEFT JOIN [table_to_join_with] 
+ON [join_clause];
+```
+
+```sql
+SELECT [columns]
+FROM [table_to_get_data_from]
+RIGHT JOIN [table_to_join_with]
+ON [join_clause];
 ```
 
 ## Workshop

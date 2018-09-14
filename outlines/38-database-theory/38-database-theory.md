@@ -353,6 +353,11 @@ RIGHT JOIN [table_to_join_with]
 ON [join_clause];
 ```
 
+## Tools
+
+- MacOSX - [Postico](https://eggerapps.at/postico/)
+- Windows/MacOSX/Linux - [PGAdmin](https://www.pgadmin.org/)
+
 ## Workshop
 
 [Carmen Sandiego](https://drive.google.com/open?id=1ZMqmQQaBnAKRZs9J0OrylgPKFiPlAPWVw4Q2T35Thuw)

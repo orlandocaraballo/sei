@@ -270,7 +270,7 @@ Remember our example:
 
 ```sql
 CREATE TABLE users (
-  ID INTEGER PRIMARY KEY SERIAL,
+  ID PRIMARY KEY SERIAL,
   name VARCHAR(50),
   age INTEGER,
   gender VARCHAR(50)

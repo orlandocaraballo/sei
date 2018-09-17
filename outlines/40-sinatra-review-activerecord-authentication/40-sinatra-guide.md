@@ -54,7 +54,7 @@ require "sinatra/activerecord"
 require "./models"
 require "sinatra/flash"
 
-set :database, "sqlite3:[database file name]"
+set :database, "postgresql:[database name]"
 ```
 
 *Where [database name] represents the name you choose for your database.*

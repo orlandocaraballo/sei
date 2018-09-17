@@ -1,4 +1,4 @@
-<img src="unlock.jpg" style="width: 100%">
+<img src="unlock.jpg" width="100%">
 
 # Authentication
 

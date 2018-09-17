@@ -1,4 +1,4 @@
-![Data](data.jpg)
+<img src="data.jpg" width="100%">
 
 # ORM and ActiveRecord
 

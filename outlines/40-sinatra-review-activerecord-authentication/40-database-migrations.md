@@ -1,4 +1,4 @@
-<img src="migration.jpg" style="width: 100%">
+<img src="migration.jpg" width="100%">
 
 # Database Migrations
 
@@ -33,7 +33,7 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "activerecord"
-gem "sqlite3"
+gem "postgresql"
 
 # this command allows us to execute activerecord
 #   migration commands
@@ -48,7 +48,7 @@ In our `app.rb`:
 require "sinatra"
 require "sinatra/activerecord"
 
-set :database, "sqlite3:[name of database file]"
+set :database, "postgresql:[name of database]"
 
 # ... the rest of the code below get "/", post "/", etc
 ```
@@ -136,7 +136,7 @@ The above code would create a table called users with two columns when the migra
 
 ### Common Data Types
 
-Data types in ActiveRecord Migrations translate behind the scenes to sqlite3 / postgres datatypes as follows:
+Data types in ActiveRecord Migrations translate behind the scenes to postgres datatypes as follows:
 
 - `:boolean` => BOOLEAN
 - `:datetime` => DATETIME

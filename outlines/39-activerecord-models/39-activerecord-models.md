@@ -8,45 +8,45 @@ _ORM stands for object relational mapper or object relational mapping. An ORM is
 
 ## ActiveRecord
 
-_ActiveRecord is a ruby gem that provides an ORM for communicating with relational databases such as sqlite3 and postgres. It is based on ActiveRecord design pattern._
+_ActiveRecord is a ruby gem that provides an ORM for communicating with relational databases such as Sqlite, MySql and PostgreSQL. It is based on ActiveRecord design pattern._
 
-## Configure Your Sqlite3
+## Configure Your PostgreSQL
 
-- Verify you have sqlite3 installed on your system
+- Verify you have psql installed on your system
 ```bash
-$ sqlite3 --version
+$ psql --version
 ```
 
 - Create a database file:
 ```bash
-$ sqlite3 [database name].db
+$ createdb [database name]
 ```
 - Create your schema by executing create commands from a sql file on your new database
 ```bash
-$ sqlite3 [database name].db < [sequel file].sql
+$ psql -d [database name] -f [sequel file].sql
 ```
 
 ## ActiveRecord Installation
 
 `Gemfile`:
 ```ruby
-gem "activerecord"
+gem "active_record"
 
 # this gem allows us to communicate with a
-#   sqlite3 db
-gem "sqlite3"
+#   pg db
+gem "pg"
 ```
 
 Next we create a `models.rb` file:
 ```ruby
 # these two lines are necessary
 require "active_record"
-require "sqlite3"
+require "pg"
 
 # this establishes a connection with your db
 ActiveRecord::Base.establish_connection(
-  adapter:  "sqlite3",
-  database: "[name of your database file]"
+  adapter:  "postgresql",
+  database: "[name of your database]"
 )
 
 # the rest of the file will be dedicated to classes inheriting from ActiveRecord
@@ -58,11 +58,11 @@ end
 
 ```ruby
 require "active_record"
-require "sqlite3"
+require "pg"
 
 ActiveRecord::Base.establish_connection(
-  adapter:  "sqlite3",
-  database: "app.db"
+  adapter:  "postgresql",
+  database: "app"
 )
 
 # refers to the users table

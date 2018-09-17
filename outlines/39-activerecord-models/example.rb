@@ -1,3 +1,3 @@
 require "./models"
 
-puts User.find(1).username
+p User.find(1)

@@ -1,9 +1,9 @@
 require "active_record"
-require "sqlite3"
+require "pg"
 
 ActiveRecord::Base.establish_connection(
-  adapter:  "sqlite3",
-  database: "app.db"
+  adapter:  "postgresql",
+  database: "app"
 )
 
 class User < ActiveRecord::Base

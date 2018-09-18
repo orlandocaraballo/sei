@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pages</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/users">Users</a>
+
+    <% if session[:user_id] %>
+      <a href="/logout">Logout</a>
+      <%# dont do this shit %>
+      <%= User.find(session[:user_id]).username %> is logged in
+    <% else %>
+      <a href="/signup">Signup</a>
+      <a href="/signin">Signin</a>
+    <% end %>
+  </nav>
+
+  <% if flash[:info] %>
+    <div id="flash-info">
+      <%= flash[:info] %>
+    </div>
+  <% end %>
+
+  <% if flash[:error] %>
+    <div id="flash-error">
+      <%= flash[:error] %>
+    </div>
+  <% end %>
+
+  <%= yield %>
+</body>
+</html>

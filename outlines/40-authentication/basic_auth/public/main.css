@@ -1,0 +1,15 @@
+#flash-info {
+  background-color: green;
+  color: white;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 15px;
+}
+
+#flash-error {
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 15px;
+}

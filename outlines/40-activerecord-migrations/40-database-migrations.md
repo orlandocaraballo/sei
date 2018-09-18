@@ -33,7 +33,7 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "activerecord"
-gem "postgresql"
+gem "pg"
 
 # this command allows us to execute activerecord
 #   migration commands

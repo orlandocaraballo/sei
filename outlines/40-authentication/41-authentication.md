@@ -130,13 +130,13 @@ Lastly, how would we hide / show links based on signed in status:
     <!-- only show this code when signed in -->
 
     <!-- clicking on this link will hit the get "/sign-out" route -->
-    <a href="/sign-out" />Sign out</a>
+    <a href="/sign-out">Sign out</a>
 
   <% else %>
 
     <!-- only show this code when signed out -->
-    <a href="/sign-in" />Sign In</a>
-    <a href="/sign-up" />Sign Up</a>
+    <a href="/sign-in">Sign In</a>
+    <a href="/sign-up">Sign Up</a>
   
   <% end %>
 

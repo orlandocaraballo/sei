@@ -5,7 +5,7 @@ require "./models"
 
 enable :sessions
 
-set :database, "sqlite3:app.db"
+set :database, "postgresql:app"
 
 get "/" do
   if session[:user_id]

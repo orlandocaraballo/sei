@@ -16,6 +16,8 @@ Cookies can be used for storing convenient information for use by a developer:
 But can also be used for other things:
 - Tracking where you have visited on a website
 
+[Webopedia: What is a Cookie?](https://www.webopedia.com/DidYouKnow/Internet/all_about_cookies.asp)
+
 ## Sessions
 
 _A session represents the span of time in which a user utilizes your application. This information is tracked via the use of a cookie._
@@ -27,6 +29,8 @@ enable :sessions
 ```
 
 into our `app.rb` sinatra controller file
+
+[Machines Are Digging: How does a web session work?](https://machinesaredigging.com/2013/10/29/how-does-a-web-session-work/)
 
 ## How To Use
 

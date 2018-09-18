@@ -245,7 +245,7 @@ Running all these commands can ba very confusing and time confusing but don't fr
 
 ## Working Version
 
-Yes, this is a lot of code and commands to remember. Luckily, I have created a working migrated database for you to play with located in the `session_example` subfolder. If you need to see it working before it makes sense to you then please review that code. It is also using some authentication logic that is described in the [authentication lesson](../41-authentication/41-authentication.md).
+Yes, this is a lot of code and commands to remember. Luckily, I have created a working migrated database for you to play with located in the `session_example` subfolder in the next lesson. If you need to see it working before it makes sense to you then please review that code. It is also using some authentication logic that is described in the [authentication lesson](../41-authentication/41-authentication.md).
 
 ## Exercise
 

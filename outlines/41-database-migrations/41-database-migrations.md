@@ -24,33 +24,46 @@ There are three general steps to utilizing database migrations
 - Modify the migration
 - Run the migration
 
-## Creating a Migration
+## Rake
+
+_Rake is a gem that provides us a framework to define and execute tasks in the terminal. We will be using rake to run commands on our database._
+
+### Setup
 
 In our `Gemfile`:
 ```ruby
 # Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sinatra"
-gem "activerecord"
-gem "pg"
+gem 'sinatra'
+gem 'activerecord'
+gem 'pg'
 
-# this command allows us to execute activerecord
+# this gem allows us to utilize the set :database, 
+#   'postgresql:[database name]'
+gem 'sinatra-activerecord'
+
+# this gem allows us to execute activerecord
 #   migration commands
-gem "sinatra-activerecord"
-gem "rake"
+gem 'rake'
 ```
 
 In our `app.rb`:
 ```ruby
 # app.rb
-
-require "sinatra"
-require "sinatra/activerecord"
-
-set :database, "postgresql:[name of database]"
+require 'sinatra'
+require_relative 'models'
 
 # ... the rest of the code below get "/", post "/", etc
+```
+
+In our `models.rb`:
+
+```ruby
+require 'sinatra/activerecord'
+require 'pg'
+
+set :database, 'postgresql:[name of database]'
 ```
 
 We also need to create a file named `Rakefile` in our sinatra root folder:
@@ -58,13 +71,43 @@ We also need to create a file named `Rakefile` in our sinatra root folder:
 ```ruby
 # Rakefile
 require 'sinatra/activerecord/rake'
-require './app'
+
+# this line loads our app.rb file
+#   the app.rb file:
+#     - loads models.rb file
+#   this models.rb file:
+#     - loads sinatra/activerecord'
+#     - lods pg
+#     - sets the database to 'postgresql:[name of the database]'
+require_relative 'app'
 ```
 
 Once we have these in place, we can run the following command in the terminal:
 
 ```bash
-$ rake db:create_migration NAME=[name of migration file to create]
+$ rake -T
+```
+
+This command lists all available tasks that `rake` is able to run on the terminal. If everything is setup properly, you should see the following:
+
+```bash
+rake db:create              # Creates the database from DATABASE_URL or config/database.yml for the ...
+rake db:create_migration    # Create a migration (parameters: NAME, VERSION)
+rake db:drop                # Drops the database from DATABASE_URL or config/database.yml for the cu...
+rake db:environment:set     # Set the environment value for the database
+rake db:fixtures:load       # Loads fixtures into the current environment's database
+rake db:migrate             # Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)
+rake db:migrate:status      # Display status of migrations
+rake db:rollback            # Rolls the schema back to the previous version (specify steps w/ STEP=n)
+rake db:schema:cache:clear  # Clears a db/schema_cache.yml file
+rake db:schema:cache:dump   # Creates a db/schema_cache.yml file
+rake db:schema:dump         # Creates a db/schema.rb file that is portable against any DB supported ...
+rake db:schema:load         # Loads a schema.rb file into the database
+rake db:seed                # Loads the seed data from db/seeds.rb
+rake db:setup               # Creates the database, loads the schema, and initializes with the seed ...
+rake db:structure:dump      # Dumps the database structure to db/structure.sql
+rake db:structure:load      # Recreates the databases from the structure.sql file
+rake db:version             # Retrieves the current schema version number
 ```
 
 ### Rakefile
@@ -76,11 +119,31 @@ _A `Rakefile` is a file that is used by a gem called `rake`. `rake` is a bash pr
 require 'sinatra/activerecord/rake'
 ```
 
-`rake` looks for what tasks it can run by looking within the `Rakefile`. You can also define your own custom tasks within this same file.
+`rake` looks for what tasks it can run by looking within the `Rakefile`. You can also define your own custom tasks within this same file. Because of the line `require 'sinatra/activerecord/rake'`, this loads all these defined tasks into the `Rakefile`.
 
 [Culttt: Understanding and Using Ruby Rake](https://www.culttt.com/2015/08/05/understanding-and-using-ruby-rake/)
 
+## Migration Procedure
+
+_A migration is a file that lives in your filesystem that indicates a change that should be made to the database. In an activerecord based system, this will be located in the `db` folder within the root of your application under the subfolder `migrate`._
+
+## Create Migrations
+
+To create a migration we run the command:
+```bash
+$ rake db:create_migration NAME=[name of migration]
+```
+
+For example:
+```bash
+$ rake db:create_migration NAME=create_users_table
+```
+
+This command creates a new migration within the `/db/migrate` folder named `20180501110212_create_users_table.rb`.
+
 ### Naming Migrations
+
+_Choosing a name for our migrations is important because we can refer back to these migrations as a later date and the name gives us valuable information on what we expect the migration to do._
 
 Choose a name that represents the change being made to the database
   - `create_users_table`
@@ -91,7 +154,7 @@ Choose a name that represents the change being made to the database
 
 This command above creates a new file in a folder `db/migrate/` that houses a migration file with the same name you chose above. If we would have chosen the name `create_users_table` then it create a file within the `db/migrate` folder called `2018300409813_create_users_table` where `2018300409813` is a timestamp of when it was created to keep all migrations in order.
 
-## Modifying a Migration
+### Modifying a Migration
 
 When you open this file it should look something like this:
 
@@ -134,7 +197,7 @@ The above code would create a table called users with two columns when the migra
 - `username` of type `string`
 - `password` of type `string`
 
-### Common Data Types
+#### Common Data Types
 
 Data types in ActiveRecord Migrations translate behind the scenes to postgres datatypes as follows:
 
@@ -145,7 +208,7 @@ Data types in ActiveRecord Migrations translate behind the scenes to postgres da
 - `:string` => VARCHAR
 - `:text` => TEXT
 
-### Multiple Tasks Per Migration
+#### Multiple Tasks Per Migration
 
 We can also do multiple things within a migration:
 
@@ -166,7 +229,7 @@ class CleanUpTables < ActiveRecord::Migration[5.0]
 end
 ```
 
-## Running a Migration
+### Running a Migration
 
 In order to run a migration, we run the following command on the terminal:
 
@@ -176,7 +239,7 @@ $ rake db:migrate
 
 After running a migration, it should execute the commands indicated in the migration file.
 
-## Reversing a Migration
+### Reversing a Migration
 
 If you need to reverse a migration you can run the following command on the terminal:
 
@@ -186,6 +249,28 @@ $ rake db:rollback
 # if you want to rollback more than one migration at the same time you can
 #   indicate how many migrations you want to reverse via the STEP flag
 $ rake db:rollback STEP=3
+# this would rollback the last 3 migrations
+```
+
+### Redoing a Migration
+
+If you need to rollback a migration and then immediately migrating it back, you can run the following command on the terminal:
+
+```bash
+$ rake db:migrate:redo
+
+# if you want to rollback more than one migration at the same time you can
+#   indicate how many migrations you want to redo via the STEP flag
+$ rake db:migrate:redo STEP=3
+# this would redo the last 3 migrations
+```
+
+### Viewing Migration Status
+
+If you need to check the status of all migrations you can run the following command on the terminal:
+
+```bash
+$ rake db:migrate:status
 ```
 
 ## Seed Data
@@ -210,6 +295,7 @@ There are three steps to creating seed data:
 require "./models"
 
 # in this file we can make use of our ActiveRecord models to create starter data
+#   such as some default users for our app
 User.create(username: "orlandoc", password: "12345")
 ```
 
@@ -241,11 +327,11 @@ D, [2018-05-01T08:47:27.385023 #83632] DEBUG -- :   User Load (0.5ms)  SELECT  "
 
 Running all these commands can ba very confusing and time confusing but don't fret. I have written a step by step guide to creating a Sinatra application including the additional steps necessary to create a database backed app.
 
-[Sinatra Guide](40-sinatra-guide.md)
+[Sinatra Guide](41-sinatra-guide.md)
 
 ## Working Version
 
-Yes, this is a lot of code and commands to remember. Luckily, I have created a working migrated database for you to play with located in the `session_example` subfolder in the next lesson. If you need to see it working before it makes sense to you then please review that code. It is also using some authentication logic that is described in the [authentication lesson](../41-authentication/41-authentication.md).
+Yes, this is a lot of code and commands to remember. Luckily, I have created a working migrated database for you to play with located in the `session_example` subfolder in the next lesson. If you need to see it working before it makes sense to you then please review that code. It is also using some authentication logic that is described in the [authentication lesson](../40-authentication/40-authentication.md).
 
 ## Exercise
 

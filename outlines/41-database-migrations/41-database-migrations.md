@@ -186,6 +186,8 @@ class CreateUsersTable < ActiveRecord::Migration[5.0]
     create_table :users do |t|
       t.string :username
       t.string :password
+
+      # the following is the same as t.timestamps
       t.datetime :created_at
       t.datetime :updated_at
     end

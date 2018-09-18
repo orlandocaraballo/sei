@@ -27,6 +27,9 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.4)
       tilt (~> 2.0)
+    sinatra-activerecord (2.0.13)
+      activerecord (>= 3.2)
+      sinatra (>= 1.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
     thread_safe (0.3.6)
@@ -41,6 +44,7 @@ DEPENDENCIES
   activerecord
   pg
   sinatra
+  sinatra-activerecord
   sinatra-flash
 
 BUNDLED WITH

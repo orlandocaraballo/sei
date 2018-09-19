@@ -152,7 +152,7 @@ Choose a name that represents the change being made to the database
   - `remove_first_name_from_users`
   - `add_content_to_posts`
 
-This command above creates a new file in a folder `db/migrate/` that houses a migration file with the same name you chose above. If we would have chosen the name `create_users_table` then it create a file within the `db/migrate` folder called `2018300409813_create_users_table` where `2018300409813` is a timestamp of when it was created to keep all migrations in order.
+This command above creates a new file in a folder `db/migrate/` that houses a migration file with the same name you chose above. If we would have chosen the name `create_users_table` then it create a file within the `db/migrate` folder called `2018300409813_create_users_table` where `2018300409813` is a unique identifier for the migration.
 
 ### Modifying a Migration
 
@@ -205,7 +205,7 @@ Data types in ActiveRecord Migrations translate behind the scenes to postgres da
 
 - `:boolean` => BOOLEAN
 - `:datetime` => DATETIME
-- `:float` => FLOAT
+- `:float` => REAL
 - `:integer` => INTEGER
 - `:string` => VARCHAR
 - `:text` => TEXT
@@ -246,6 +246,7 @@ After running a migration, it should execute the commands indicated in the migra
 If you need to reverse a migration you can run the following command on the terminal:
 
 ```bash
+# this would rollback the most recently run migration
 $ rake db:rollback
 
 # if you want to rollback more than one migration at the same time you can
@@ -259,6 +260,7 @@ $ rake db:rollback STEP=3
 If you need to rollback a migration and then immediately migrating it back, you can run the following command on the terminal:
 
 ```bash
+# this would redo the most recently run migration
 $ rake db:migrate:redo
 
 # if you want to rollback more than one migration at the same time you can
@@ -272,6 +274,8 @@ $ rake db:migrate:redo STEP=3
 If you need to check the status of all migrations you can run the following command on the terminal:
 
 ```bash
+# this would provide you with information on which migrations have been
+#   executed versus those which have not been executed
 $ rake db:migrate:status
 ```
 
@@ -294,7 +298,7 @@ There are three steps to creating seed data:
 # db/seeds.rb
 
 # we require our models here
-require "./models"
+require_relative "../models"
 
 # in this file we can make use of our ActiveRecord models to create starter data
 #   such as some default users for our app

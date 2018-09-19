@@ -127,7 +127,7 @@ require 'sinatra/activerecord/rake'
 
 _A migration is a file that lives in your filesystem that indicates a change that should be made to the database. In an activerecord based system, this will be located in the `db` folder within the root of your application under the subfolder `migrate`._
 
-## Create Migrations
+### Create Migrations
 
 To create a migration we run the command:
 ```bash

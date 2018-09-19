@@ -343,3 +343,6 @@ Yes, this is a lot of code and commands to remember. Luckily, I have created a w
 
 Let's create a `users` and `posts` table. Each `User` has many posts and each `Post` belongs to `User`. Try loading your sinatra controller file into `irb` to verify both models are behaving accordingly.
 
+## Rousources
+
+[Ruby on Rails Guides: ActiveRecord Migrations](https://edgeguides.rubyonrails.org/active_record_migrations.html)

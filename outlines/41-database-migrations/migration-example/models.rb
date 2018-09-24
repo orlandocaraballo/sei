@@ -1,14 +1,14 @@
 require 'sinatra/activerecord'
 require 'pg'
 
+# local machine
 configure :development do
   set :database, 'postgresql:migration-example'
 end
 
+# on heroku
 configure :production do
-  # this environment variable is auto generated/set by heroku
-  #   check Settings > Reveal Config Vars on your heroku app admin panel
-  set :database, ENV["DATABASE_URL"]
+  set :database, ENV['DATABASE_URL']
 end
 
 class User < ActiveRecord::Base

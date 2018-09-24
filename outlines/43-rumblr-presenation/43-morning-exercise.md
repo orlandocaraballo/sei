@@ -1,3 +1,5 @@
+<img src="morning-exercise.jpg" />
+
 # Morning Exercise
 
 Create a class `BankAccount` in javascript that mirrors the behavior of a bank account. This class should accept one float value argument for the constructor representing the initial starting balance, let's called it `openingBalance`.

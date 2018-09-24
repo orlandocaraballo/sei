@@ -12,12 +12,12 @@ There should be three public methods defined `withdraw`, `deposit` and `checkBal
 ```js
 let newAccount = new BankAccount(1000.00);
 
-let cashInHand = nnewAccount.withdraw(231.22);
-console.log(cashInHand) // 231.22
-newAccount.checkBalance() // 768.78
+let cashInHand = newAccount.withdraw(231.22);
+console.log(cashInHand); // 231.22
+newAccount.checkBalance(); // 768.78
 
-newAccount.deposit(100)
-newAccount.checkBalance() // 868.78
+newAccount.deposit(100);
+newAccount.checkBalance(); // 868.78
 ```
 
 ## Sanity Checks

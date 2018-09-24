@@ -37,7 +37,7 @@
 
 ## Same but Different
 
-- We will be relying on our knowledge of the ruby lanuguage **A LOT MORE**:
+- We will be relying on our knowledge of the ruby language **A LOT MORE**:
   - classes
   - inheritance
   - methods / functions

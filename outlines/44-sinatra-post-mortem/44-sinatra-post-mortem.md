@@ -1,4 +1,4 @@
-<img src="phase-3.jpg" style="width: 100%;"/>
+<img src="phase-3.jpg" width="100%"/>
 
 # Sinatra -> Rails -> Phase 3
 
@@ -82,16 +82,16 @@ Phase 3 of the program will challenge you to think creatively about solutions an
 
 ### Soft Skills Prep
 
-- [Linkedin Profile](https://nycda.instructure.com/courses/62/modules/items/6215)
-- [Linked Summary](https://nycda.instructure.com/courses/62/modules/items/6216)
-- [Portfolio](https://nycda.instructure.com/courses/62/modules/items/6217)
-- [Job Tracker](https://nycda.instructure.com/courses/62/modules/items/6219)
-- [Screen Recording](https://nycda.instructure.com/courses/62/modules/items/6220)
+- [Linkedin Profile](https://nycda.instructure.com/courses/99/assignments/1714)
+- [Linked Summary](https://nycda.instructure.com/courses/99/assignments/1715)
+- [Portfolio](https://nycda.instructure.com/courses/99/assignments/1722)
+- [Job Tracker](https://nycda.instructure.com/courses/99/assignments/1713)
+- [Screen Recording](https://nycda.instructure.com/courses/99/assignments/1725)
 
 ### Build As You Go: Rails Project
 
-- [Pamela's Panel](https://nycda.instructure.com/courses/62/assignments/1058)
+- [Pamela's Panel](https://nycda.instructure.com/courses/99/assignments/1718)
 
 ### Final Products
-- [Startup Crunch](https://nycda.instructure.com/courses/62/assignments/1066)
-- [Personal Passion Project P^3](https://nycda.instructure.com/courses/62/assignments/1059)
+- [Startup Crunch](https://nycda.instructure.com/courses/99/assignments/1726)
+- [Personal Passion Project P^3](https://nycda.instructure.com/courses/99/assignments/1719)

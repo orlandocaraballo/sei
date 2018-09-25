@@ -5,9 +5,9 @@
 ## Answer the following questions either by hand on a piece of paper or in a `.md` file you can refer to in the future. Try your best to do it from memory, but if you cannot then feel free to refer to your notes.
 
 1. Create an analogy for the relationship between a model, view and a controller?
-2. Name all 4 types of http method names and which CRUD letters match with those method names.
+2. Name all 4 types of http method names and the CRUD words that match with those method names.
 3. Why do we use database migrations? What problem does it solve?
-4. Which framework would you use to create a webapp that publically displays images of beautiful landscapes?
+4. Name the benefits and drawbacks of using SASS vs CSS.
 5. What is the name of an `ActiveRecord` class that represents a database table?
 6. What terminal shell application would I use to test out a new language feature in `ruby`?
 7. `ruby` is to server side what `javascript` is to the ______ side.

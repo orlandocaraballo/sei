@@ -1,3 +1,4 @@
+<img src="ror.png" width="100%">
 
 # Introduction to Ruby on Rails: Controllers + Routes
 

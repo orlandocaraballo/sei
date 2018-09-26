@@ -2,6 +2,8 @@
 
 # Morning Exercise
 
+The following should be done in javascript:
+
 1. Create a 4 functions `add`, `subtract`, `divide`, `multiply`. All four functions accept two arguments (`arg1` and `arg2`).
 
   - `add` adds two arguments together

@@ -1,4 +1,4 @@
-<img src="review.jpeg" style="width: 100%;" />
+<img src="review.jpeg" width="100%" />
 
 # Morning Refresher: Computer Science Concepts
 

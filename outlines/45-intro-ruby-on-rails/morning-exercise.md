@@ -11,7 +11,7 @@ literalToArray({
   name: 'orlando', 
   age: 34, 
   bday: '12/01/1983' 
-}) # [['name', 'orlando'], ['age', 34], ['bday', '12/01/1983'] ]
+}) // [['name', 'orlando'], ['age', 34], ['bday', '12/01/1983'] ]
 ```
 
 2. Create a function called `unwindArray` that accepts an array of arrays named `arrayOfArrays` much like the output of above and returns an object literal. The object literal should have two keys:
@@ -23,7 +23,7 @@ unwindArray([
   ['name', 'orlando'], 
   ['age', 34], 
   ['bday', '12/01/1983']
-]) # { keys: ['name', 'age', 'bday'], values: ['orlando', 34, '12/01/1983'] }
+]) // { keys: ['name', 'age', 'bday'], values: ['orlando', 34, '12/01/1983'] }
 ```
 
 3. Create a function named `unwindLiteral` that accepts an object literal as an argument named `literal`. The return value of the this object should be another object literal with two keys:
@@ -35,7 +35,7 @@ unwindLiteral({
   name: 'orlando', 
   age: 34, 
   bday: '12/01/1983' 
-}) # { keys: ['name', 'age', 'bday'], values: ['orlando', 34, '12/01/1983'] }
+}) // { keys: ['name', 'age', 'bday'], values: ['orlando', 34, '12/01/1983'] }
 ```
 
 *Note: Do not use any javascript built in functions for extracting keys or values.*

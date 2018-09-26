@@ -27,8 +27,8 @@ unwindArray([
 ```
 
 3. Create a function named `unwindLiteral` that accepts an object literal as an argument named `literal`. The return value of the this object should be another object literal with two keys:
-- `keys` - that stores an array of all the first elements of the internal arrays
-- `values` that stores an array of all the second elements of the internal arrays
+- `keys` - that stores an array of all the keys of `literal`
+- `values` that stores an array of all the values of `literal`
 
 ```js
 unwindLiteral({ 

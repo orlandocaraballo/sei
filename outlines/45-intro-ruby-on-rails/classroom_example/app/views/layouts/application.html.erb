@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClassroomExample</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <!-- links to users index page -->
+      <%= link_to "Users Index", users_path %>
+
+      <!-- links to user show page -->
+      <%= link_to "Users Show", user_path(12) %>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

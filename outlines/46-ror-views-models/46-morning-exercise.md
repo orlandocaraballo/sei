@@ -2,7 +2,7 @@
 
 # Morning Exercise
 
-## Write three functions in javascript named `combiner`, `summer` and `multiplier`.
+Write three functions in javascript named `combiner`, `summer` and `multiplier`.
 
 1. The `summer` function accepts two integer arguments that are summed together and returned from the function.
 

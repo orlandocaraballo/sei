@@ -1,2 +1,9 @@
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
+
+<!-- users_path == /users -->
+<form method="post" action="<%= users_path %>">
+  Username: <input type="text" name="username" id=""><br />
+  Password: <input type="password" name="password" id=""><br />
+  <input type="submit" value="Create User">
+</form>

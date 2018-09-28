@@ -1,0 +1,8 @@
+<div style="margin-top: 20px;">
+  <strong>Username:</strong> <%= user.username %><br />
+  <strong>Password:</strong> <%= user.password %><br />
+  <strong>Created At:</strong> <%= user.created_at_formatted %><br />
+  <strong>Updated At:</strong> <%= user.updated_at_formatted %><br />
+
+  <a href="<%= edit_user_path(user) %>">Edit <%= user.username %></a><br />
+</div>

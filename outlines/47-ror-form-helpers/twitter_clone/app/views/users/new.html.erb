@@ -1,0 +1,10 @@
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+<!-- users_path == /users -->
+<!-- Very much a user sign up form -->
+<%= form_with(model: @user) do |form| %>
+  Username: <%= form.text_field(:username) %><br />
+  Password: <%= form.password_field(:password) %><br />
+  <%= form.submit %>
+<% end %>

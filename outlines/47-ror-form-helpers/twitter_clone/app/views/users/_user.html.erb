@@ -4,5 +4,7 @@
   <strong>Created At:</strong> <%= user.created_at_formatted %><br />
   <strong>Updated At:</strong> <%= user.updated_at_formatted %><br />
 
-  <a href="<%= edit_user_path(user) %>">Edit <%= user.username %></a><br />
+  <%= link_to "Show User", user_path(user) %>
+  <%= link_to "Edit User", edit_user_path(user) %>
+  <%= link_to "Destroy User", user_path(user), method: :delete %>
 </div>

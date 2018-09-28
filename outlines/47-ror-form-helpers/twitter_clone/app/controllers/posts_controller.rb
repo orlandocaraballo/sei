@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   #   erb :index
   # end
   def index
+    @posts = Post.all
   end
 
   # get '/posts/:id' do
@@ -11,7 +12,7 @@ class PostsController < ApplicationController
   #   erb :show
   # end
   def show
-    @user = User.find(params[:id])
+    
   end
 
   # get '/posts/:id/edit' do
@@ -30,17 +31,29 @@ class PostsController < ApplicationController
   #   
   # end
   def destroy
+    Post.destroy(params[:id])
+
+    redirect_to posts_path
   end
 
   # get '/posts/new' do
   #   erb :new
   # end
   def new
+    @post = Post.new
   end
 
   # get '/posts' do
   #   
   # end
   def create
+    Post.create(
+      title: params[:post][:title],
+      content: params[:post][:content],
+      user_id: params[:post][:user_id]
+    )
+
+    # redirect_to '/posts/new'
+    redirect_to posts_path
   end
 end

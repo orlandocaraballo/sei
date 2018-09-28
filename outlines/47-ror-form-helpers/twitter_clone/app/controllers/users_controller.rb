@@ -40,6 +40,11 @@ class UsersController < ApplicationController
   #   
   # end
   def destroy
+    user = User.find(params[:id])
+    user.destroy
+    # User.destroy(params[:id])
+
+    redirect_to users_path
   end
 
   # get '/users/new' do

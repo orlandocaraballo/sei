@@ -7,9 +7,9 @@
 ```js
 zip([1,2,3,4], [5,6,7,8]) // [[1,5], [2,6], [3,7], [4,8]]
 zip(
-  ["poke", "john", "ronnie", "dot"],
-  ["mons", "cena", "digital", "martin"]
-) // [["poke", "mons], ["john", "cena"], ["ronnie", "digital"], ["dot", "martin"]]
+  ["pokee", "let me", "ruby on", "hdmi"],
+  ["mans", "ask you this", "rails", "kevin"]
+) // [["pokee", "mans], ["let me", "ask you this"], ["ruby on", "rails"], ["hdmi", "kevin"]]
 ```
 
 2. If the `array1` is of larger than `array2` then all remaining elements of the returned array should be populated with `null`. If `array2` is larger than `array1` then those extra elements can be ignored.

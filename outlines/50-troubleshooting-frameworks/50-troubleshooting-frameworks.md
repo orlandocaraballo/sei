@@ -88,7 +88,7 @@ Remember that rails is ruby code, many rails errors come back down to ruby error
 
 ### Model
 - **Singular name on models**
-- **Relationships tense** - verify model name sinfular
+- **Relationships tense** - verify model name singular
 - **Singular**
   - `has_one :[model name]` - verify model name is singular
 - **Plural**

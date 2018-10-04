@@ -14,7 +14,12 @@ File.open('[filename]') do |line|
 end
 ```
 
-You can read more about this method and other ruby `File` operations in this [article](https://www.codecademy.com/articles/writing-to-file-ruby).
+You can read more about this method and other ruby `File` operations in this [article](https://www.codecademy.com/articles/writing-to-file-ruby). Your object should have the following attributes:
+
+- type
+- height
+- gender
+- weight
 
 Your script should display the objects as terminal output. If you were to run this script from the terminal the output should be similar to the following.
 
@@ -23,13 +28,6 @@ $ ruby morning_exercise.rb
 $ #<Animal:0x423270c @type="giraffe", @height=10, @gender=male, @weight=320>
 $ #<Animal:0x423370c @type="elephant", @height=7, @gender=female, @weight=200>
 $ #<Animal:0x423470c @type="kangaroo", @height=10, @gender=female, @weight=400>
-```
-
-```ruby
-type
-height
-gender
-weight
 ```
 
 **Note:** Assume file contents attributes are in the same order.

@@ -28,6 +28,7 @@ $ ruby morning_exercise.rb
 $ #<Animal:0x423270c @type="giraffe", @height=10, @gender=male, @weight=320>
 $ #<Animal:0x423370c @type="elephant", @height=7, @gender=female, @weight=200>
 $ #<Animal:0x423470c @type="kangaroo", @height=10, @gender=female, @weight=400>
+...
 ```
 
 **Note:** Assume file contents attributes are in the same order.

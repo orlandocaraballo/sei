@@ -30,7 +30,7 @@ _Authentication is the process by which a user is verified to have access to the
   - We need to add a new users table or new columns to users table
 - Overriding default behavior
 
-## Using plain sessions - The Hard Way
+## Using plain Bcrypt - The Hard Way
 
 Advantages
 - No gems are required
@@ -55,6 +55,8 @@ Disadvantages
 - Limited featureset
 - Does not provide routes, model methods and controller filters
 
+[Simple Authentication Using has_secure_password](https://gist.github.com/iscott/4618dc0c85acb3daa5c26641d8be8d0d#log-in)
+
 [Ruby on Rails API: has_secure_password](http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html#method-i-has_secure_password)
 
 ## Clearance
@@ -62,7 +64,7 @@ Disadvantages
 Advantages
 - Good common featureset
 - Good middle ground between `has_secure_password` and `Devise`
-- Simple to customize
+- Simpler to customize
 - Creates routes, model methods and controller filters for you to use
 - Sensible default behavior
 - Easy to understand codebase
@@ -82,6 +84,7 @@ Advantages
 - Well maintained
 
 Disadvantages
-- Difficult to customize
+- More challenging to customize
 
+[Rails Girls: Devise](https://guides.railsgirls.com/devise)
 [Github: Devise](https://github.com/plataformatec/devise)

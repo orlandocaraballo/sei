@@ -75,7 +75,7 @@ Create a class `Playlist` with the following features:
   - `play_track`:
     - accepts one integer argument named `track_number`
     - displays the text "Now playing [track number] - [track name] by [artist], [length]" to the terminal
-      - note: because we are dealing with an `Playlist`, a `track_number` is always `1` larger than the index of the `@tracks` array
+      - note: because we are dealing with an `Playlist`, a `track_number` is always 1 larger than the index of the `@tracks` array
       - `track_number` = `index` + 1
   - `shuffle`:
     - accepts no aguments

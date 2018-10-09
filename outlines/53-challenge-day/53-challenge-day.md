@@ -75,7 +75,7 @@ Create a class `Playlist` with the following features:
   - `play_track`:
     - accepts one integer argument named `track_number`
     - displays the text "Now playing [track number] - [track name] by [artist], [length]" to the terminal
-      - note: because we are dealing with an `Playlist`, a `track_number` is always `1` larger than the index of the `tracks` array
+      - note: because we are dealing with an `Playlist`, a `track_number` is always `1` larger than the index of the `@tracks` array
       - `track_number` = `index` + 1
   - `shuffle`:
     - accepts no aguments
@@ -93,9 +93,11 @@ Create a class `Album` with the following features:
     - accepts one argument that is a `Track` object
     - should add a new track to the `tracks` array
   - `get_track`:
-    - accepts one integer argument named `index`
+    - accepts one integer argument named `track_number`
     - returns a `Track` object based on its index
-      - note: because we are dealing with an album, all indexes start at 1
+      - note: because we are dealing with an `Album`, a track_number is always 1 larger than the index of the `@tracks` array
+      - track_number = `index` + 1
+
   - `get_tracks`:
     - accepts no arguments
     - return the array of tracks

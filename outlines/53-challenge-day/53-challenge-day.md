@@ -51,6 +51,12 @@ literal.integers() // [1, 4]
 
 ## Ruby
 
+The following is intended to have you model a music player and its individual pieces. In this music player, we have three different clsses we must create a `Track`, `Album` and `Playlist`. An `Album` stores `Track` objects and can retrieve information a `Track` based on the track number. A `Playlist` also stores `Track` objects but can also play the `Track` based on its track number.
+
+Here is a simple visualization:
+
+![Music Player](music_player.png)
+
 Create a class `Track` with the following features:
 - it has 3 instance variables:
   - `name` - stores the name of the track

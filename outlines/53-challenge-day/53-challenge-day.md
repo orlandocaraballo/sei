@@ -133,7 +133,6 @@ Try adding some more behavior to the `Playlist` class:
 - `play_current_track`:
   - accepts no arguments
   - displays the text "Now playing [track name] by [artist] for [length] " to the terminal
-    - note: because we are dealing with an album, all indexes start at 1
 - `next_track`:
   - move the `current_track_index` up by 1
   - note: `current_track_index` cannot be greater than the size of the length of the array

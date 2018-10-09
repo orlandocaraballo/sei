@@ -24,7 +24,7 @@ Example
 
 ```js
 array = [2, 3, 14, 3, 9, 22]
-downsortEvenly(array, 3) // [22, 14, 2]
+downsortEvenly(array, 2) // [22, 14]
 downsortEvenly(array, 10) // [22, 14, 2]
 downsortOddly(array, 2) // [9, 3]
 ```
@@ -73,13 +73,13 @@ Create a class `Playlist` with the following features:
     - accepts one argument of type `Album`
     - should add all tracks of the album to the end of the `tracks` array
   - `play_track`:
-    - accepts one integer argument named `index`
-    - displays the text "Now playing [track id] - [track name] by [artist], [length]" to the terminal
-      - note: because we are dealing with an album, all indexes start at 1
+    - accepts one integer argument named `track_number`
+    - displays the text "Now playing [track number] - [track name] by [artist], [length]" to the terminal
+      - note: because we are dealing with an `Playlist`, a `track_number` is always `1` larger than the index of the `tracks` array
+      - `track_number` = `index` + 1
   - `shuffle`:
     - accepts no aguments
     - should randomize the order of the elements in the `tracks` array
-  
 
 Create a class `Album` with the following features:
 - it has 2 instance variables:

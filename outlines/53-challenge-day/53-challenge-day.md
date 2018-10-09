@@ -58,6 +58,27 @@ Create a class `Track` with the following features:
   - `length` - stores the length of the track (in [min]:[seconds] format)
   - all 3 of these instance variables should be readable and writeable outside of the class
 
+Create a class `Album` with the following features:
+- it has 2 instance variables:
+  - `name` - the name of the album
+  - `tracks`:
+    - stores `Track` objects
+    - is an empty array by default
+  - this instance variable should not be readable or writeable outside of the class
+- it has 2 methods:
+  - `add_track`:
+    - accepts one argument that is a `Track` object
+    - should add a new track to the `tracks` array
+  - `get_track`:
+    - accepts one integer argument named `track_number`
+    - returns a `Track` object based on its index
+      - note: because we are dealing with an `Album`, a track_number is always 1 larger than the index of the `@tracks` array
+      - track_number = `index` + 1
+
+  - `get_tracks`:
+    - accepts no arguments
+    - return the array of tracks
+
 Create a class `Playlist` with the following features:
 - it has 2 instance variable:
   - `name` - the name of the playlist
@@ -81,27 +102,6 @@ Create a class `Playlist` with the following features:
     - accepts no aguments
     - should randomize the order of the elements in the `tracks` array
 
-Create a class `Album` with the following features:
-- it has 2 instance variables:
-  - `name` - the name of the album
-  - `tracks`:
-    - stores `Track` objects
-    - is an empty array by default
-  - this instance variable should not be readable or writeable outside of the class
-- it has 2 methods:
-  - `add_track`:
-    - accepts one argument that is a `Track` object
-    - should add a new track to the `tracks` array
-  - `get_track`:
-    - accepts one integer argument named `track_number`
-    - returns a `Track` object based on its index
-      - note: because we are dealing with an `Album`, a track_number is always 1 larger than the index of the `@tracks` array
-      - track_number = `index` + 1
-
-  - `get_tracks`:
-    - accepts no arguments
-    - return the array of tracks
-  
 Example
 
 ```ruby

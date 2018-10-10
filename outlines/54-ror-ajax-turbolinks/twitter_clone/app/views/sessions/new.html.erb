@@ -1,0 +1,10 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<%= form_with scope: 'session', method: :post, url: login_path do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %><br/>
+  <%= f.label :password %>
+  <%= f.password_field :password %><br/>
+  <%= f.submit %>
+<% end %>

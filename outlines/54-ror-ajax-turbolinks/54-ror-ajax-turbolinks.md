@@ -18,11 +18,13 @@ As a review, remember that javascript is loaded onto the page within the `views/
 Just in case you forgot, here is an example of a standard piece of json code:
 
 ```js
-animals: [
-  { type: "giraffe", name: "gaf the giraffe", age: 52 },
-  { type: "elephant", name: "benefit the elephant", age: 98},
-  { type: "turtle", name: "squirtle the turtle", age: 33}
-]
+{
+  "animals": [
+    { "type": "giraffe", "name": "gaf the giraffe", "age": 52 },
+    { "type": "elephant", "name": "benefit the elephant", "age": 98},
+    { "type": "turtle", "name": "squirtle the turtle", "age": 33}
+  ]
+}
 ```
 
 Remember, that usually the most effective way to communicate using from the frontend and backend is to pass around json code that represents data.

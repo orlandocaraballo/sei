@@ -277,3 +277,8 @@ Benefits
 
 Caveats
 - May cache css / js code
+
+## Resources
+- [Rails 5 with AJAX](https://www.youtube.com/watch?v=q-CYJQoENUg)
+- [Patrik on Rails: Ajax Calls, Te Rails Way](https://m.patrikonrails.com/how-to-make-ajax-calls-the-rails-way-20174715d176)
+- [Ruby on Rails Guides: Working with Javascript in Rails](https://guides.rubyonrails.org/working_with_javascript_in_rails.html)

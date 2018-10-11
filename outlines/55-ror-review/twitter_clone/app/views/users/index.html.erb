@@ -1,0 +1,14 @@
+<div id="users-index">
+  <%# <a href="/users" id="load-users">Load Users From System</a> %>
+  <%= link_to 'Load Users From System', users_path, remote: true %>
+
+  <div class="frame">
+  </div>
+
+  <h1>Users#index</h1>
+  <p>Find me in app/views/users/index.html.erb</p>
+
+  <% @users.each do |user| %>
+    <%= render partial: 'user', locals: { user: user } %>
+  <% end %>
+</div>

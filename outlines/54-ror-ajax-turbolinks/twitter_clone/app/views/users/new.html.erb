@@ -3,7 +3,7 @@
 
 <!-- users_path == /users -->
 <!-- Very much a user sign up form -->
-<%= form_with model: @user, remote: true do |f| %>
+<%= form_with model: @user, local: true do |f| %>
   <%= f.label :email %>
   <%= f.text_field :email %><br />
   <%= f.label :password %>

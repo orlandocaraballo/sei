@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authorize, except: [:new]
+  # before_action :authorize, except: [:new]
 
   # get '/users' do
   #   @users = User.all

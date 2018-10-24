@@ -1,6 +1,6 @@
 # SEI
 
-Repository for storing SEI class outlines, examples, links and notes.
+Repository for storing SEI class outlines, examples, links and notes
 
 ## aPi
 

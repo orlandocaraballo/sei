@@ -179,8 +179,9 @@ _Semantic HTML means using correct HTML elements for their correct purpose as mu
 ##### Top Level Tags
 - `<header>` - houses the header content of a page 
 - `<nav>` - houses the page navigation
+- `<main>` - houses the main area of the page
+- `<article>` - houses the main content of the page
 - `<aside>` - houses content that is related but not the main content of the page
-- `<main>` - houses the main content of the page
 - `<footer>` - houses the content that extraneous but necessary for the page (copyright, extra links)
 
 ```html

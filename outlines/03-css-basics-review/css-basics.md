@@ -1,8 +1,12 @@
+<img src="html-css.jpg" width="100%">
+
 # CSS Basics
 
 _CSS stands for cascading stylesheets. CSS allows us to design our webpages according to the structure that was defined in our html document._
 
 ## Adding to HTML
+
+The following are ways to add css styling to a webpage:
 
 ### Inline
 
@@ -24,7 +28,15 @@ _CSS stands for cascading stylesheets. CSS allows us to design our webpages acco
   <link rel="stylesheet" href="main.css">
 ```
 
+### Comments
+
+```css
+/* Everything within here is a comment */
+```
+
 ### Rulesets
+
+_Rulesets are rules that dictate how an element will display on a webpage._
 
 ![Image of Yaktocat](https://en-support.files.wordpress.com/2011/09/css-selectors-lrg.png)
 
@@ -34,20 +46,39 @@ _CSS stands for cascading stylesheets. CSS allows us to design our webpages acco
 * Values define how a property is being styled
 
 
-## Selectors
+## Types of Selectors
+
+_Selectors allow us to target a specific html element or elements on an html page based on its element name or attribute value. We then use css properties to change the look of said html element._
 
 ### Individual
 ```css
+/* we can select a single element */
 span { color: red; }
 ```
 
 ### Multiple
 
 ```css
+/* we can select many elements */
 span, div { color: green; }
 ```
 
-### Class
+### By Element
+
+```html
+<!-- html -->
+<span></span>
+```
+
+```css
+/* css */
+span { 
+  color: blue;
+  background-color: red;
+}
+```
+
+### By Class Attribute
 
 ```html
 <!-- html -->
@@ -62,7 +93,7 @@ span, div { color: green; }
 }
 ```
 
-### Id
+### By Id Attribute
 
 ```html
 <!-- html -->
@@ -77,7 +108,23 @@ span, div { color: green; }
 
 ```
 
-### Psuedo Classes
+### Mixing and Matching
+
+```html
+<!-- html -->
+<div id="identifier"></div>
+<div class="class-name"></div>
+<p>Hello!</p>
+```
+
+```css
+/* css */
+#identifier, div.class-name, p {
+  color: blue;
+}
+```
+
+### By Psuedo-Class Attribute
 
 _A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s)._
 
@@ -119,12 +166,8 @@ ul li:first-child, .small {
 
 [MDN: Psuedoclasses](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
-### Comments
-```css
-/* Everything within here is a comment */
-```
-
 ### Common Properties
+
 * color
 * font-family
 * font-size
@@ -132,16 +175,36 @@ ul li:first-child, .small {
 * background-image
 * width
 * height
+* text-align
+* margin
+* padding
+* border
+* display
+* position
+* list-style
+
+### Less Common But Useful
+
+* first-child / last-child / nth-child()
+* box-shadow
+* text-transform
+* border-radius
+* max-width / max-height
+* min-width / min-height
+* translate / translateX / translateY
+* scale
+* rotate / rotateX / rotateY / rotateZ / rotate3d
+* skew
 
 [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
-### Display
+### Display Property
 
 ```css
 display: inline | block | inline-block | table-cell | ...
 ```
 
-[MDN: Display Property]()
+[MDN: Display Property](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
 ### Units
 
@@ -185,6 +248,8 @@ Create a new folder in their class directory called CSS-practice and make a new 
 
 ### Positioning
 
+_Positioning is used to change how elements are placed on the page._
+
 ```css
 position: absolute | fixed / sticky | relative;
 ```
@@ -222,7 +287,7 @@ _Note: Boxes are 150px by 150px_
 
 [Flexbox Defense](http://www.flexboxdefense.com/)
 
-## Floats
+## Floats (Do not use floats for layouts)
 
 _Floating an element was originally designed for the purpose of having text surround images inline_
 

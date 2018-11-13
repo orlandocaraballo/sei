@@ -128,6 +128,10 @@ Examples
 - D:\\\cool-tunes\the-dopest-track.mp3
 - E:\\\steamapps\greatest-game-of-all-time.exe
 
+Diagram
+
+![Windows Tree](windows-tree.jpg)
+
 #### Unix
 
 _Files in unix systems begin with a root "/" and use forward slashes to denote separation between nested folders and files_
@@ -136,6 +140,10 @@ Examples
 - /home/orlandocaraballo/documents/readme.txt
 - /etc/file.conf
 - /tmp/1829h218h213n812h3n8m123
+
+Diagram
+
+![Unix Like Tree](unix-like-tree.gif)
 
 ### File pathing
 

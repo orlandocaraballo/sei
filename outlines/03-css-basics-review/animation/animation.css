@@ -42,15 +42,20 @@ div {
   0% {
     top: 0;
     right: 0;
+    background-color: red;
   }
 
   66% {
     top: 300px;
     right: 0;
+    background-color: blue;
+    transform: rotate(0deg);
   }
 
   100% {
     top: 300px;
     right: 300px;
+    background-color: black;
+    transform: rotate(30deg);
   }
 }

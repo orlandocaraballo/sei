@@ -1,0 +1,22 @@
+div#container {
+  background-color: blue;
+}
+
+#container {
+  height: 400px;
+  background-color: gray;
+}
+
+div.box {
+  height: 200px;
+} 
+
+.box {
+  height: 300px;
+  width: 25%;
+  background-color: lightblue;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+  font-size: 110%;
+}

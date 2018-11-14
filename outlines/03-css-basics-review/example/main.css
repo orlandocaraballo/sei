@@ -1,0 +1,9 @@
+/* body {
+  background-image: url('./image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+li:last-child {
+  color: red;
+}

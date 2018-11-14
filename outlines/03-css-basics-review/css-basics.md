@@ -301,7 +301,7 @@ img {
 
 Floating elements have traditionally have also been used for laying out pages but more recently it is a better practice to use flexbox for layouts.
 
-[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
+[MDN Reference: Float](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 
 ## Specificity
 
@@ -311,7 +311,7 @@ CSS will decide which styles to "take" when reading a stylesheet in the followin
 2. Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
 3. ID selectors (e.g., #example).
 
-[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+[MDN Reference: Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
 
 ## Vendor prefixing
@@ -324,11 +324,13 @@ The following prefixes are used to target specific browsers:
 
 ## Mobile Responsive Design
 
-[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+[MDN Reference: Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 
 [Smashing Magazine Example](https://www.smashingmagazine.com/2018/03/comprehensive-website-planning-guide-part3/)
 
 [Mobile vs Desktop First](https://themeover.com/mobile-first-vs-desktop-first-responsive-design/)
+
+[My Own Github: Mobile First Example](https://github.com/orlandocaraballo/mobile-first-example)
 
 Testing on Browser
 * Resizing browser
@@ -341,8 +343,6 @@ To scale properly on mobile device:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-[Mobile Responsive Exercises](https://docs.google.com/document/d/1AN3cHrLX0axbf56jlZZ5_QzwZeR2LXJ1v2mFBbCIt-8/edit)
-
 #### Exercise
 
 ##### Setup
@@ -351,9 +351,9 @@ Use the same folder as the prior exercises
 
 ##### Instructions
 
-Create the following Media Queries:
-1. For a laptop screen of min-width of 313 px and max-width of 513 px. 
-2. For a phone screen of max width of 480 px and orientation is landscape
+Create the following Media Queries: 
+1. For a phone screen of max width of 480 px and orientation is landscape
+2. For a laptop screen of min-width of 481 px and max-width of 1200 px.
 
 ## Animations
 

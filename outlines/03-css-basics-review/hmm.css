@@ -65,13 +65,21 @@ img {
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateY(-60%);
   }
 
   50% {
     opacity: 0;
+    transform: translateY(-60%);
+  }
+
+  75% {
+    opacity: 0.5;
+    transform: translateY(10%);
   }
 
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }

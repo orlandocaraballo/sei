@@ -1,30 +1,34 @@
 // 1
 function royalizer(gender, name) {
+  let prefix;
+  
   if(gender == "male") {
-    return `His Majesty ${ name }`
+    prefix = 'His';
   } else {
-    return `Her Majesty ${ name }`
+    prefix = 'Her';
   }
+
+  return `${ prefix } Majesty ${ name }`; 
 }
 
-console.log( royalizer("female", "Denisse") )
+console.log( royalizer("male", "Orlando") );
 
 // 2
 function magicDoor(door) {
-  if(door == 1) {
-    return "Here is your brand new car"
-  } else if(door == 2) {
-    return "Here is your brand t-shirt"
-  } else if(door == 3) {
-    return "Here is your blackhole"
+  if(door === 1) {
+    return "Here is your brand new car";
+  } else if(door === 2) {
+    return "Here is your brand t-shirt";
+  } else if(door === 3) {
+    return "Here is your blackhole";
   }
 }
 
-console.log( magicDoor(3) )
+console.log( magicDoor(1) );
 
-// 3
+// // 3
 function chooseDoor(door) {
-  return magicDoor(door)
+  return magicDoor(door);
 }
 
-console.log( chooseDoor(1) )
+console.log( chooseDoor(3) );

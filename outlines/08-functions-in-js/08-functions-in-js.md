@@ -77,7 +77,7 @@ _**Arguments** are the values that you assign to the parameters_
 
 ## Exercises
 
-- NYCDA needs a simple welcome program for registered students. Create a function called `nycdaWelcome` that will take in a student's `name` as an argument and return a string that looks like: “Welcome to NYCDA {`name`}! Enjoy your stay!”
+- NYCDA needs a simple welcome program for registered students. Create a function called `nycdaWelcome` that will accept a student's `name` as a parameter and return a string that looks like: “Welcome to NYCDA {`name`}! Enjoy your stay!”
 - Create a simple calculator function called `brokenCalculator` that given two arguments will multiply the second argument by `3` and return the result.
 - Define a function `lineThemUp` that takes three integers as arguments and returns the integers as an array.
 

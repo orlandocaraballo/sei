@@ -1,18 +1,18 @@
 // 1
 function nycdaWelcome(studentName) {
-  return `Welcome to NYCDA ${ studentName }! Enjoy your stay!`
+  return `Welcome to NYCDA ${ studentName }! Enjoy your stay!`;
 }
 
 // 2
 function brokenCalculator(argumentA, argumentB) {
-  let result = argumentB * 3
-
-  return result
+  return argumentB * 3;
 }
 
 // 3
 function lineThemUp(argumentA, argumentB, argumentC) {
-  let array = [argumentA, argumentB, argumentC]
-
-  return array
+  return [argumentA, argumentB, argumentC];
 }
+
+console.log(nycdaWelcome('Ryan'));
+console.log(brokenCalculator(1,2));
+console.log(lineThemUp(10, 11, 12));

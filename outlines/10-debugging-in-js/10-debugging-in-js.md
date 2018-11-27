@@ -104,6 +104,22 @@ There are various approaches:
 </html>
 ```
 
+- Add the attribute `defer` to your script tag so that your code only executes once the entire html document is loaded
+
+```html
+<html>
+  <head>
+    <!--
+      the defer attribute defers the loading of this script
+        until the entire document is loaded
+     -->
+    <script type="text/javscript" src="main.js" defer></script>
+  <head>
+  <body>
+  <body>
+</html>
+```
+
 - Wrap all your javascript code in a function that fires when the document is loaded
 
 ```js
@@ -115,10 +131,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ## Tools
 
-- Stack Trace
-- Console
-- Error messages
-- Debugger
+### Stack Trace
+
+_A stack trace is a list dictating what functions have been executed that is provided to you when an error occurs in your js code_
+
+### Console
+
+_The console is where you can experiment with language commands line by line. This is useful if you need to experiment with code._
+
+The console can be accessed in one of two ways:
+- Inspect the page as normal -> navigate to console tab on browser
+- Type `node` on the terminal with no filename
+
+[Chrome: Devtools](https://developers.google.com/web/tools/chrome-devtools/)
+
+### Error Messages
 
 ### Example
 
@@ -150,7 +177,6 @@ sayHelloAgain()
 
 [MDN: Debugging Javascript](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript)
 
-[Chrome: Devtools](https://developers.google.com/web/tools/chrome-devtools/)
 
 ## Techniques
 
@@ -412,16 +438,6 @@ tipAmount(50, 5, 10) // "$1 per person".
 ```
 
 ### Challenge 5
-
-_IBM has hired you to build them a simple calculator. 
-Create a function named ibmCalc that when given two numbers and a string which can be one of the following ( "add" , "subtract" , "multiply" , "divide" ) will return the result of the operation performed on the two numbers.
-If a bad value for the operation is provided return a error string that says "That is not a valid operation"
-
-```js
-ibmCalc(1,5, "multiply") // 5
-```
-
-### Challenge 6
 
 You're tasked with creating a string parser that will tell you how many times a letter appears in a string. 
 Create a function called parser that given a letter ( Ex. "a" ) and a string ("Ex : daslndeungnsio393c810sx") can return how many times that letter appears.

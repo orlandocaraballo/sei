@@ -9,10 +9,11 @@ div.addEventListener("click", onClick);
 //  be set as the click handler
 function onClick(event) {
   // check if div has large class
-  if(div.classList[0] !== "large") {
-    div.classList.add("large");
-  } else {
+  if(div.classList.contains("large")) {
     div.classList.remove("large");
-    div.classList.add("small");
+    div.classList.add("small"); 
+  } else {
+    div.classList.add("large");
+    div.classList.remove("small");
   }
 }

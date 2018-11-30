@@ -4,7 +4,7 @@ div {
   background-color: black;
 }
 
-.large {
+div.large {
   animation-name: grow;
   animation-duration: 1s;
   animation-fill-mode: forwards;

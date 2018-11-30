@@ -1,11 +1,18 @@
 // captures the div tags into the divs variable
-let divs = document.getElementsByTagName("div")[0]
+let div = document.getElementsByTagName("div")[0];
+let header = document.getElementsByTagName("header")[0];
 
 // makes it so that the click handler is set to the function
-divs.addEventListener("click", myScript)
+div.addEventListener("click", onClick);
 
 // creates a function called myScript that will
 //  be set as the click handler
-function myScript(event) {
-  divs.classList.add("large")
+function onClick(event) {
+  // check if div has large class
+  if(div.classList[0] !== "large") {
+    div.classList.add("large");
+  } else {
+    div.classList.remove("large");
+    div.classList.add("small");
+  }
 }

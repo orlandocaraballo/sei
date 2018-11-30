@@ -10,14 +10,36 @@ div.large {
   animation-fill-mode: forwards;
 }
 
+div.small {
+  animation-name: shrink;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes grow {
   0% {
     height: 200px;
     width: 200px;
+    background-color: black;
   }
 
   100% {
     height: 400px;
     width: 400px;
+    background-color: red;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+  }
+
+  100% {
+    height: 200px;
+    width: 200px;
+    background-color: black;
   }
 }

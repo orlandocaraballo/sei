@@ -5,12 +5,6 @@ class Animal {
     this.weight = weight
     this.type = type
     this.gender = gender
-
-    // alternative way of writing the function
-    //  has the caveat of not being able to use 'get' or 'set'
-    // this.displayHeightAndWeight = function() {
-    //   return `${ this.height }ft : ${ this.weight }lb`
-    // }
   }
 
   displayHeightAndWeight() {

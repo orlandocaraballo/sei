@@ -58,4 +58,4 @@ giraffe.neckLength // 4
 
 ## Challenge
 
-A giraffe's neck is a part of its body, therefore when you decrease or increase its `neckLength` it should also change its `height`. What logic would you use to change its `height` based on a change in its `neckLength`?
+A giraffe's neck is a part of its body, therefore when you decrease or increase its `neckLength` it should also change its `height`. What logic would you use to change its `height` based on a change in its `neckLength`? When we increase the `neckLength` what checks should we have in place to prevent it from being too short or too large?

@@ -17,7 +17,6 @@ _Objects provide us with a lot of power in how we organize our information becau
 
 ## Examples
 
-- Object literal (sometimes seen as hashes in other languages)
 - Object
 - Array
 - Stack
@@ -25,6 +24,36 @@ _Objects provide us with a lot of power in how we organize our information becau
 - Tree
 - Linked List
 - Blockchain
+
+## Arrays
+
+Arrays represent a contiguous set of memory locations in sequential order. These are oftentimes used to represent lists of information
+
+## Stacks
+
+Stacks model a relationship of related data wherein the user of the stack only cares about the last piece of data added.
+
+## Queues
+
+Queues model a relationship of related data wherein the user of the queue cares about the first or last piece of data added.
+
+## Linked List
+
+A linked list is used to represent a data relationship where the information is stored 
+
+## Tree
+
+
+
+## When to Use
+
+Knowing when to use which data structure is a skill that takes time to fully master but there are some general rules you can follow.
+
+- Arrays are used to store information that is related together simply
+- Objects are often used to represent more complexly related data
+  - Generally are used for creating data structures
+  - You can define your own data structures to represent data more naturally
+  - If you can use a common data structure to represent your data (stack, queue, linked list, tree, etc...), it is oftentimes a better idea than defining a custom one
 
 ## Exercises
 

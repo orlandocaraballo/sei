@@ -37,14 +37,6 @@ Stacks model a relationship of related data wherein the user of the stack only c
 
 Queues model a relationship of related data wherein the user of the queue cares about the first or last piece of data added.
 
-## Linked List
-
-A linked list is used to represent a data relationship where the information is stored 
-
-## Tree
-
-
-
 ## When to Use
 
 Knowing when to use which data structure is a skill that takes time to fully master but there are some general rules you can follow.

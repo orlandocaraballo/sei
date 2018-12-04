@@ -19,9 +19,6 @@ spider.type // "spider"
 spider.gender // "female"
 spider.displayHeightAndWeight() // 0.1ft : 3lb
 
-// console.log( spider )
-// console.log( spider.displayHeightAndWeight() )
-
 // 2
 class Giraffe extends Animal {
   constructor(height, weight, gender, neck) {

@@ -1,31 +1,19 @@
 let students = [
   {
-    name: "franklin",
+    name: "mohammed",
     gender: "male",
-    famousPhrase: "Lemme ask you this..."
+    famousPhrase: "[Insert question about topic already explained here]"
   },
   {
-    name: "richard",
-    gender: "male",
-    famousPhrase: "I did it another way..."
-  },
-  {
-    name: "diana",
+    name: "christine",
     gender: "female",
-    famousPhrase: "Seriously!!??"
+    famousPhrase: "..."
+  },
+  {
+    name: "bryan",
+    gender: "male",
+    famousPhrase: "Zzzzzzzzz"
   }
 ]
 
-let ul = document.getElementsByTagName("ul")[0]
-
-students.forEach(element => {
-  let li = document.createElement("li")
-
-  li.innerHTML = `
-    <strong>${ element.name }</strong>
-    <em>${ element.gender }</em>
-    <p>${ element.famousPhrase }</p>
-  `
-  
-  ul.appendChild(li)
-})
+// your code goes here

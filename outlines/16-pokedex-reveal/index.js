@@ -3,7 +3,7 @@ const gifs = window.data.data;
 const main = document.querySelector("main");
 const h1 = document.querySelector("h1");
 const image = document.createElement("img");
-const imageUrlArray = generateUrlArrayUsingMap(gifs);
+const imageUrlArray = generateUrlArray(gifs);
 
 // set the click handler of the h1
 h1.addEventListener("click", event => {
@@ -27,7 +27,7 @@ h1.addEventListener("click", event => {
 
 // pick a random integer
 function randomInteger(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * max);
 }
 
 // generate new array

@@ -93,6 +93,14 @@ Grid systems define css classes for both:
 - You have to work within the grid system architecture
 - Flexibility
 
+## CSS Grid
+
+_CSS grid is a feature built into css that allows us to create our own grid system from_
+
+- [Intro to CSS Grid](https://youtu.be/jV8B24rSN5o)
+- [Mobile Layout + Grid + Flexbox](https://youtu.be/M3qBpPw77qo)
+- [Build a Responsive Website From Scratch](https://youtu.be/moBhzSC455o)
+
 ## Workshop
 
 [Just Mockery](https://drive.google.com/open?id=1dMFzofpjUKETl_fxu9tPygqJ9zIv5gtN7XJqLu4-qpk)

@@ -10,7 +10,7 @@ const students = [
     famousPhrase: "..."
   },
   {
-    name: "bryan",
+    name: "ryan",
     gender: "male",
     famousPhrase: "Zzzzzzzzz"
   }

@@ -1,4 +1,4 @@
-let students = [
+const students = [
   {
     name: "mohammed",
     gender: "male",

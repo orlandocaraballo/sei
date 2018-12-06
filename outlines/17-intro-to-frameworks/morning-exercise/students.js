@@ -13,6 +13,11 @@ const students = [
     name: "ryan",
     gender: "male",
     famousPhrase: "Zzzzzzzzz"
+  },
+  {
+    name: "bryan",
+    gender: "male",
+    famousPhrase: "I am not ryan!"
   }
 ]
 

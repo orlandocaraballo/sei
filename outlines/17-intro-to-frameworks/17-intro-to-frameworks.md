@@ -65,18 +65,20 @@ Grid systems define css classes for both:
 ### Example
 
 ```html
-<div class="row">
-      <div class="col s1">1</div>
-      <div class="col s1">2</div>
-      <div class="col s1">3</div>
-      <div class="col s1">4</div>
-      <div class="col s1">5</div>
-      <div class="col s1">6</div>
-      <div class="col s1">7</div>
-      <div class="col s1">8</div>
-      <div class="col s1">9</div>
-      <div class="col s3">10-12</div>
-    </div>
+<div class="container">
+  <div class="row">
+    <div class="col-1">1</div>
+    <div class="col-1">2</div>
+    <div class="col-1">3</div>
+    <div class="col-1">4</div>
+    <div class="col-1">5</div>
+    <div class="col-1">6</div>
+    <div class="col-1">7</div>
+    <div class="col-1">8</div>
+    <div class="col-1">9</div>
+    <div class="col-3">10-12</div>
+  </div>
+</div>
 ```
 
 ### Advantages

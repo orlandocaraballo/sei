@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 2em;
+}
+
+li {
+  background: #666;
+  color: #eee;
+  margin-bottom: 1em;
+  padding: 1em;
+}

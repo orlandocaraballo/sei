@@ -1,28 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Slabo+27px');
-@import "variables";
+$main-color: #FF2E00;
+$main-font-family: sans-serif;
+$border-size: .5em;
+$border-color: blue;
+$border-style: solid;
+$border-shorthand: $border-size $border-style $border-color;
 
-article p {
-  color: $fancy-red;
-  font-family: $secondary-font;
+
+%button {
+  margin-left: .5em;
+  border-radius: .2em;
+  padding: .5em;
+  text-decoration: none;
 }
 
-header, footer, article {
-  color: $fancy-red;
-  font-family: $primary-font;
+.button-active {
+  @extend %button;
+  background: blue;
+  color: white;
+}
+
+.button-alert {
+  @extend %button;
+  background: red;
+  color: black;
 }
 
 ul {
-  padding-left: 0;
-
+  list-style: none;
+  padding: 0;
+  margin-left: .5em;
+  border: $border-shorthand;
+  
   li {
-    border: 1px solid rgb(56, 78, 108);
-    margin: 10px;
-    list-style: none;
-    padding: 30px;
-
-    &:first-child {
-      border: 1px solid blue;
-      padding: 0px;
+    font-size: 1.5em;
+    
+    a {
+      color: $main-color;
+      font-family: $main-font-family;
+    }
+    
+    p {
+      text-align: right;
+      font-family: $main-font-family;
     }
   }
 }

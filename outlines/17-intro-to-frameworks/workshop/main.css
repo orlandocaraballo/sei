@@ -1,0 +1,13 @@
+body {
+  background: #303030;
+}
+
+h1 {
+  text-align: center;
+  background: #EB5757;
+  padding: .5em;
+}
+
+.card {
+  margin: 1em 0;
+}

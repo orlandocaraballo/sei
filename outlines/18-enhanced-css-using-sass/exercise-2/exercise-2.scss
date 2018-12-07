@@ -1,0 +1,30 @@
+$custom-font-family: Raleway, sans-serif;
+
+%font-style {
+  font-family: $custom-font-family;
+  font-size: 12px;
+}
+
+@mixin shadow($size) {
+  box-shadow: $size $size $size black;
+}
+
+.thin-shadow {
+  @include shadow(1px);
+}
+
+table td {
+  color: grey;
+  border-radius: 2px;
+  border: 1px solid blue;
+  @extend %font-style;
+}
+
+h4 {
+  @extend %font-style;
+  color: cyan;
+}
+
+.strong-shadow {
+  @include shadow(3px);
+}

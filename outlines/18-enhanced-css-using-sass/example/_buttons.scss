@@ -1,0 +1,25 @@
+@mixin rounded-corner($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;  
+}
+
+%button {
+  margin-left: .5em;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.button-active {
+  @extend %button;
+  background: blue;
+  color: white;
+  @include rounded-corner(.2em);
+}
+
+.button-alert {
+  @extend %button;
+  background: red;
+  color: black;
+  @include rounded-corner(1em);
+}

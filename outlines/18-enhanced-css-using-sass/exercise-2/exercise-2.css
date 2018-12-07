@@ -1,0 +1,19 @@
+table td, h4 {
+  font-family: Raleway, sans-serif;
+  font-size: 12px; }
+
+.thin-shadow {
+  box-shadow: 1px 1px 1px black; }
+
+table td {
+  color: grey;
+  border-radius: 2px;
+  border: 1px solid blue; }
+
+h4 {
+  color: cyan; }
+
+.strong-shadow {
+  box-shadow: 3px 3px 3px black; }
+
+/*# sourceMappingURL=exercise-2.css.map */

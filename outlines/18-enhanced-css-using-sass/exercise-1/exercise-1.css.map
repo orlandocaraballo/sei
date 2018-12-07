@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,0BAAO;EACL,SAAS,EAHI,IAAI;;ACEjB,SAAK;EACH,KAAK,EDJE,OAAO;ACOhB,OAAG;EACD,KAAK,EDRE,OAAO",
+"sources": ["_partial.scss","exercise-1.scss"],
+"names": [],
+"file": "exercise-1.css"
+}

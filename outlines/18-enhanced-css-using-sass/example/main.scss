@@ -1,29 +1,5 @@
-$main-color: #FF2E00;
-$main-font-family: sans-serif;
-$border-size: .5em;
-$border-color: blue;
-$border-style: solid;
-$border-shorthand: $border-size $border-style $border-color;
-
-
-%button {
-  margin-left: .5em;
-  border-radius: .2em;
-  padding: .5em;
-  text-decoration: none;
-}
-
-.button-active {
-  @extend %button;
-  background: blue;
-  color: white;
-}
-
-.button-alert {
-  @extend %button;
-  background: red;
-  color: black;
-}
+@import "variables";
+@import "buttons";
 
 ul {
   list-style: none;

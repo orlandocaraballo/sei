@@ -1,0 +1,21 @@
+@import "partial";
+
+main {
+  span {
+    color: $my-color;
+  }
+
+  h2 {
+    color: $my-color;
+  }
+
+  p {
+    .large {
+      @extend %large;
+    }
+  }
+
+  .large {
+    @extend %large;
+  }
+}

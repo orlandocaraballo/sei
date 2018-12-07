@@ -1,0 +1,34 @@
+.button-active, .button-alert {
+  margin-left: .5em;
+  padding: .5em;
+  text-decoration: none; }
+
+.button-active {
+  background: blue;
+  color: white;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em; }
+
+.button-alert {
+  background: red;
+  color: black;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: .5em;
+  border: 0.5em solid blue; }
+  ul li {
+    font-size: 1.5em; }
+    ul li a {
+      color: black;
+      font-family: sans-serif; }
+    ul li p {
+      text-align: right;
+      font-family: sans-serif; }
+
+/*# sourceMappingURL=main.css.map */

@@ -61,7 +61,7 @@ axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outline
 })
 
 // retrieve data from hosted person-2 json file
-axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/18-working-with-ajax/json/person-2.json")
+axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/19-working-with-ajax/json/person-2.json")
 .then((response) => {
   // creates new li element
   let li = document.createElement("li")

@@ -1,34 +1,16 @@
-let promise = axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/18-working-with-ajax/json/person-1.json")
+// create new p tag
+const p = document.createElement("p");
 
-console.log(promise)
+// makes request via axios
+axios.get("https://raw.githubusercontent.com/orlandocaraballo/sei/master/outlines/19-working-with-ajax/json/person-1.json")
+.then(response => {
+  const data = response.data;
 
-promise.then(response => {
-  let data = response.data
-  let person = new Person(
-    data["first-name"],
-    data["last-name"],
-    data["age"],
-    data["gender"]
-  )
-
-  console.log( person )
-
-  // let p = document.createElement("p")
-
-  // p.innerHTML = response.data["first-name"]
-  // // console.log(response)
-
-  // document.body.appendChild(p)
-}).catch(function(response){
-  console.error(response)
-})
-
-class Person {
-  constructor(firstName, lastName, age, gender) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.gender = gender
-    this.type = "mammal"
-  }
-}
+  // adds response data to p tag
+  p.innerHTML += `<h1>${ data["first-name"] } ${ data["last-name"] }</h1>`;
+  p.innerHTML += `<em>${ data["age"] }</em>`;
+  p.innerHTML += `<strong>${ data["gender"] }</strong>`;
+  
+  // adds p tag to body
+  document.body.appendChild(p);
+});

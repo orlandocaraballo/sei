@@ -41,15 +41,15 @@ https://swapi.co/api/people/1
 #### Pokemon API:
 
 ```
-http://pokeapi.co/api/v2/[id]
+https://pokeapi.co/api/v2/pokemon/[id]
 ``` 
-retrieves information on a specific pokemon
+retrieves information on a specific pokemon with id of [id]
 
 #### Star Wars API:
 ```
-people/[id]
+https://swapi.co/api/people/[id]
 ``` 
-retrieves information on a specific Star Wars character
+retrieves information on a specific Star Wars character with id of `[id]`
 
 ### Root Endpoint
 
@@ -72,7 +72,7 @@ _The path determines the resource you’re requesting for_
 Using the endpoint from the example above, the following would be the path:
 
 ```
-/people/1/
+/people/[id]
 ```
 
 ## Forms

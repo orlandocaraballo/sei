@@ -1,9 +1,11 @@
 "use strict";
 
+// converts the start and end coordinates to a string
 function stringifyLine(startingCoordinates, endingCoordinates) {
   return `{(${ startingCoordinates.x },${ startingCoordinates.y }) - (${ endingCoordinates.x },${ endingCoordinates.y })}`;
 }
 
+// moves a point 
 function translatePoint(startingCoordinates, amountToMoveBy) {
   startingCoordinates.x += amountToMoveBy;
   startingCoordinates.y += amountToMoveBy;
@@ -11,6 +13,7 @@ function translatePoint(startingCoordinates, amountToMoveBy) {
   return startingCoordinates;
 }
 
+// uses the first two functions and combines them together to use here
 function createLineAndStringify(startingCoordinates, amountToMoveBy) {
   let startPoint = startingCoordinates;
   let endPoint = translatePoint(startingCoordinates, amountToMoveBy);

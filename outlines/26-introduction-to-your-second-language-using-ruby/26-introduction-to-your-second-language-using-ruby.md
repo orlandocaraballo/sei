@@ -268,7 +268,6 @@ number = 5
 number > 3 # true
 number < -9 # false
 number == "5" # false
-number === "5" # also false; does not mean the same thing as in js
 
 number > 3 && number < 10 # true
 number > 3 and number < 10 # true, avoid using this

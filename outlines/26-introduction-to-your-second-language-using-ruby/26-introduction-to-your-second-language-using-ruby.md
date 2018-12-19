@@ -190,10 +190,11 @@ __First Steps__
 __IRB Practice__
 1. Try adding subtracting multiplying and dividing
 2. Try storing values in variables and running some operations on them
-3. Become comfortable with IRB because we will be using it a lot
-4. Try requiring the `hello_world.rb` file
-5. What happened when you required it?
-6. Name the differences and similarities between javascript and ruby console?
+3. Try requiring the `hello_world.rb` file
+4. What happened when you required it?
+5. Name the differences and similarities between javascript and ruby console?
+
+__Become comfortable with IRB because we will be using it a lot__
 
 __Basics__
 1. Create a new file named `basics.rb`, write code to do the following:
@@ -433,14 +434,15 @@ numbers.map do |element|
   element + 1
 end
 
+# the original array has not changed
 numbers # [1,2,3,4,5]
 
-# returns the same array as before,
-#   now modified
+# modifies the original array
 numbers.map! do |element|
   element + 1
 end
 
+# the original array has changed
 numbers # [2,3,4,5,6]
 ```
 
@@ -456,11 +458,11 @@ __Functions__
 
 # Resources
 
-[Ruby Docs](http://ruby-doc.org/)
-[RVM Basics](https://rvm.io/rvm/basics)
-[Codeacademy: Ruby](https://www.codecademy.com/learn/learn-ruby)
-[Launchschool: Intro to Ruby](https://launchschool.com/books/ruby/read/introduction)
-[Erik Trautman: Everything in Ruby is an Object](https://www.eriktrautman.com/posts/ruby-explained-objects-and-methods)
+- [Ruby Docs](http://ruby-doc.org/)
+- [RVM Basics](https://rvm.io/rvm/basics)
+- [Codeacademy: Ruby](https://www.codecademy.com/learn/learn-ruby)
+- [Launchschool: Intro to Ruby](https://launchschool.com/books/ruby/read/introduction)
+- [Erik Trautman: Everything in Ruby is an Object](https://www.eriktrautman.com/posts/ruby-explained-objects-and-methods)
 
 ## Workshop
 

@@ -8,6 +8,14 @@ colors_and_names = {
   :names => names
 }
 
+colors.each do |color|
+  puts color
+end
+
+names.each do |name|
+  puts name
+end
+
 # loop thru colors and display each color
 colors_and_names[:colors].each do |color|
   puts color

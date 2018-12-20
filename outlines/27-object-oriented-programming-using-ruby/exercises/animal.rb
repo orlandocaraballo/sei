@@ -17,9 +17,9 @@ class Animal
   end
 end
 
-curious_george = Animal.new(5, "monkey", "george")
-puts curious_george.name
-puts curious_george.species
-puts curious_george.height
-puts curious_george.walk
-puts curious_george.run
+# curious_george = Animal.new(5, "monkey", "george")
+# puts curious_george.name
+# puts curious_george.species
+# puts curious_george.height
+# puts curious_george.walk
+# puts curious_george.run

@@ -6,9 +6,9 @@
 
 _A library is a reusable piece of code that has been packaged for use by the broader community_
 
-Definition and overview of what a library is
-Use cases of implementing a library 
-Definition and overview of what gems are and how they are used
+# Ruby Gems
+
+_A ruby gem is a ruby library that has been packaged for use in a ruby program._
 
 ## Common Gems
 
@@ -25,7 +25,7 @@ Definition and overview of what gems are and how they are used
 
 ### Gems Used in this Class
 
-- Rollbar
+- Sentry / Raven
 - Rake
 - JSON
 - Bundler
@@ -34,10 +34,34 @@ Definition and overview of what gems are and how they are used
 
 ## Using Ruby Gems
 
+Here are some commands you can run in the terminal:
+
 ```bash
-$ gem install mygem
-$ gem uninstall mygem
+# this will list all locally installed gems
 $ gem list --local
+
+# this will install a gem where [gem name] 
+#   is the name of the gem
+$ gem install [gem name]
+
+# this will uninstall a gem where [gem name]
+#   is the name of the gem
+$ gem uninstall [gem name]
+```
+
+Once a gem is installed we can use it in our code:
+
+```bash
+$ gem install httparty
+```
+
+```ruby
+# the following line loads the json gem
+require "httparty"
+
+# we can use the httparty gem to make an http request to 
+#   the Pokemon API
+response = HTTParty.get('https://fizal.me/pokeapi/api/1.json')
 ```
 
 ## Bundler

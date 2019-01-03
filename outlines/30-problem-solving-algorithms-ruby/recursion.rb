@@ -1,23 +1,17 @@
 def recursive_sum(array)
-  # Termination Condition:
-  #   if the array is empty then return false
-  if array.empty?
-    return false
-  end
-
   # Base Case:
   #  when array is down to one element, return that element
-  if array.length <= 1
-    # if its down to the last element then return
-    return array.first
+  if array.empty?
+    return 0
   end
   
   # first element of array is removed
-  array.shift
+  #   stored in first_element
+  first_element = array.shift
   
   # Recursive Step:
   #  the now shortened array is passed into the function
-  return array.first + recursive_sum(array)
+  return first_element + recursive_sum(array)
 end
 
 # wut D-:

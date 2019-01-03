@@ -65,6 +65,20 @@ Using our two similar pieces of information we were able to formulate a solution
 
 ## Common Algorithms
 
+### Linear Search
+
+- Requires you to search through every element in the array
+- If input match is found then return index
+
+### Binary Search
+
+- Sort the list
+- Find the midpoint
+- Divide list in half
+- Handle two scenarios:
+  - If either half is a single number then return index if number matches input
+  - Otherwise, run binary search on left half and right half
+
 ### Bubble Sort
 
 - Requires a double loop
@@ -83,19 +97,6 @@ Using our two similar pieces of information we were able to formulate a solution
   2. Swap if the number on left is greater than right
   3. Repeat steps 1-2 with the numbers before that until number is in right place
   4. Repeat steps 1-3 with the next number in the list
-
-### Linear Search
-
-- Requires you to search through every element in the array
-- If input match is found then return index
-
-### Binary Search
-
-- Sort the list
-- Divide list in half
-- Run binary search on left half
-- Run Binary search on right half
-- If either half is a single number then return index if number matches input
 
 ## Workshop
 

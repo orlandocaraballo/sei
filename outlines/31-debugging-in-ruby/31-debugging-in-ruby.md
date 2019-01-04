@@ -25,16 +25,28 @@ In order to handle exceptions we need to introduce some new keywords:
 Handling errors up until now has looked something like this:
 
 ```ruby
+# this function will return a string if the
+#   input value is a string otherwise it will return
+#   a number
 def times_three(number)
-  # this creates an exception
   return "Argument must be a number" unless number.is_a? Numeric
 
   number * 3
 end
 
+# 
+api_response = HTTParty.get("some api request here").parsed_response
+
 # this will return the string "Argument must be a number"
-if output = times_three("orlando") # Argument must be a number
-  puts output
+output = times_three(api_response) # Argument must be a number
+
+# check if the output is a string first
+if output.is_a? String
+  # exit the program
+  exit(1)
+else
+  # add output to number together
+  puts(output + 4)
 end
 ```
 The problem lies with the fact that we must write our code to handle the situation where the code returns a string and then display it to the console.

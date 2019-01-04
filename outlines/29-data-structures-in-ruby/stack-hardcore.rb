@@ -80,6 +80,8 @@ end
 # create new stack
 new_stack = Stack.new
 
+new_stack.pop
+
 # check if stack is empty
 puts new_stack.empty?
 
@@ -89,22 +91,28 @@ new_stack.push(8)
 
 # remove last items and display to terminal
 puts new_stack.pop
-puts new_stack.pop
+# puts new_stack.pop
+
+puts new_stack.show
+
 
 # push new items onto the stack
 new_stack.push(4)
 new_stack.push(2)
-new_stack.push(-987)
-new_stack.push(-888)
-new_stack.push(9000)
-new_stack.push(3)
-new_stack.push(-1)
+# new_stack.push(-987)
+# new_stack.push(-888)
+# new_stack.push(9000)
+# new_stack.push(3)
+# new_stack.push(-1)
+# new_stack.push(4)
+# new_stack.push(3)
+
 
 # show last item
-puts new_stack.peek
+# puts new_stack.peek
 
 # check if empty
-puts new_stack.empty?
+# puts new_stack.empty?
 
 # display entire stack
 puts new_stack.show

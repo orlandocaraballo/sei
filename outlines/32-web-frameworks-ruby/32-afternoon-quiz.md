@@ -64,7 +64,7 @@ puts bad_joke.tell
 ```
 
 4. What is the code structure that is **always** needed in every HTML page?
-    - Meaning, what code do you always need to have on every html page?
+  - Meaning, what code do you always need to have on every html page?
 
 5. Label the following code into keywords defined by the language and names that are defined by a developer in the following code:
 
@@ -92,18 +92,18 @@ namePlusTen()
 8. Write down in words your process for solving number 3 and number 7?
 
 9. Given the following list of comments:
-    - Stop embarassing me!
-    - Console log monsta...
-    - My HDMI port doesn't work
-    - ...watch altered carbon...
-    - Seriously, I know trigonometry.
+    - Orange
+    - Spinach
+    - Milk
+    - Eggs
+    - Apple
 
     a. Describe this list in javascript code form.
 
     b. What javascript code would I write to allow someone to swap a value from one location on the list to another location on the list?
 
-10. Given the list on number 9, assign each comment / phrase to the person it best fits. If you had to describe this relationship in javascript and ruby code, how would you write it?
+    c. If you were told to sort these values, what characteristic would you use to sort them?
+
+10. Given the list on number 9, assign each comment / phrase to one of the following categories: `dairy`, `vegetables`, `fruits`. If you had to describe this relationship in javascript and ruby code, how would you write it?
 
 11. If you had to rate your confidence level so far in this course using a scale of 1-10 where 1 is "absolutely lost" and 10 is "extremely confident", where would you place yourself? Why? What current habits are you utilizing to improve your confidence in the course?
-
-12. What is best in life?

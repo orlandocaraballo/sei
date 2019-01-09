@@ -273,8 +273,8 @@ In order to link your files just refer to the name minus the `public` folder:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link type="text/stylesheet" href="main.css" />
-  <script type="text/javascript" src="main.js"></script>
+  <link type="text/stylesheet" href="/main.css" />
+  <script type="text/javascript" src="/main.js"></script>
 </head>
 <body>
   <nav>

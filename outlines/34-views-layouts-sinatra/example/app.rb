@@ -19,3 +19,7 @@ get "/groceries/:id" do
 
   erb(:grocery)
 end
+
+get "/main.css" do
+  scss(:main)
+end

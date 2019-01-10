@@ -1,0 +1,11 @@
+<ul>
+<% @books.each do |book| %>
+  <li>
+    <a href="<%= book.info_link %>">
+      <img src="<%= book.image_link %>">
+    </a>
+    <h2><%= book.title %></h2>
+    <p><%= book.description %></p>
+  </li>
+<% end %>
+</ul>

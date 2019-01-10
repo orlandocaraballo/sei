@@ -55,19 +55,16 @@ In order to send mail to another person we would normally have to setup a mail s
 ```ruby
 require 'sendgrid-ruby'
 
-# includes SendGrid mixin code
-include SendGrid
-
-from = Email.new(email: '[your email address]')
-to = Email.new(email: '[the email address you want to send to]')
+from = Sendgrid::Email.new(email: '[your email address]')
+to = Sendgrid::Email.new(email: '[the email address you want to send to]')
 subject = '[subject]'
-content = Content.new(
+content = Sendgrid::Content.new(
   type: 'text/plain', 
   value: '[plain text content]'
 )
 
 # create mail object with from, subject, to and content
-mail = Mail.new(from, subject, to, content)
+mail = Sendgrid::Mail.new(from, subject, to, content)
 
 # sets up the api key
 sg = SendGrid::API.new(

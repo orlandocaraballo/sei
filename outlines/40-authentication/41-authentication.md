@@ -147,7 +147,11 @@ Lastly, how would we hide / show links based on signed in status:
 
 ## Working Example
 
-I have provided a working example for you can use as a reference located in the `session_example` subfolder. Run the `rake db:migrate` command within that subfolder and then you can run the command `ruby app.rb` to run the server.
+I have provided a working example for you can use as a reference located in the `basic_auth` subfolder.
+
+1. Create the `basic_auth` database using the `createdb` command.
+2. Run the `import.sql` script on a new `basic_auth` db.
+3. Run the command `ruby app.rb` to run the server.
 
 **Note:** I added some special sauce on `flash` messages in there. For more info on how to setup flash messages read thru [this markdown document](https://gist.github.com/cmkoller/0d3b048b3c4b48ee4955).
 

@@ -1,5 +1,11 @@
+<!-- we create a ul to list our users -->
 <ul>
-<% users.each do |user| %>
+<!-- loops thru all users stored in @users -->
+<% @users.each do |user| %>
+  <!-- 
+    for every user, display their username and password:
+      within an li html element
+  -->
   <li>
     Username: <%= user.username %><br />
     Password: <%= user.password %>

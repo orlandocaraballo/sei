@@ -1,7 +1,14 @@
 <h1>Signin</h1>
 
+<!-- 
+  the action and the method indicate which route it will submit to
+    post "/signin" in app.rb
+-->
 <form action="/signin" method="post">
-  <input type="text" name="username" id="" placeholder="Username">
-  <input type="password" name="password" id="" placeholder="Password">
+  <!-- will be stored in the variable params[:username] in app.rb -->
+  <input type="text" name="username" placeholder="Username">
+
+  <!-- will be stored in the variable params[:password] in app.rb -->
+  <input type="password" name="password" placeholder="Password">
   <input type="submit" value="Go!">
 </form>

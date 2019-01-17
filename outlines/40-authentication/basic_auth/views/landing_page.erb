@@ -1,1 +1,11 @@
-Hello world
+<!-- checks to see if the user is signed in -->
+<% session[:user_id] %>
+  <!-- if the user is signed in, then inform them that they can logout -->
+  Please click on the corresponding links to logout.
+<% else %>
+  <!-- 
+    if the user is not signed in
+      then inform them that they can signup or signin
+  -->
+  Please click on the corresponding links to signup or signin or logout.
+<% end %>

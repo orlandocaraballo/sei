@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   # post '/users/', to: 'users#create'
   # put '/users/:id', to: 'users#update'
   # delete '/users/:id', to: 'users#destroy'
-  resources :users
+  resources :users do
+    get "/posts", to: "posts#index_by_user"
+  end
 
   # resources :posts implicitly defines
   #   the following routes

@@ -47,11 +47,11 @@ class PostsController < ApplicationController
     #   from the database
     post.update(
       title: params[:post][:title],
-      content: params[:post][:content]
+      content: params[:post][:content],
       user_id: params[:post][:user_id]
     )
 
-    redirect_to edit_posts_path(post)
+    redirect_to post_path(post)
   end
 
   # delete '/posts/:id' do
@@ -72,6 +72,9 @@ class PostsController < ApplicationController
   # end
   def new
     @post = Post.new
+
+    # load all the users in the system
+    @users = User.all
   end
 
   # post '/posts' do
@@ -93,5 +96,13 @@ class PostsController < ApplicationController
 
     # redirect_to '/posts/new'
     redirect_to posts_path
+  end
+
+  def index_by_user
+    # load posts by user id
+    @posts = Post.where(user_id: params[:user_id])
+
+    # render posts index template
+    render :index
   end
 end

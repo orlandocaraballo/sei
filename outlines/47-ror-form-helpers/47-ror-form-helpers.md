@@ -25,7 +25,7 @@ Judging by the location of where this form will go, this should create a new pos
 
 ```ruby
 # routes.rb
-get "/posts", to: "posts#new"
+get "/posts/new", to: "posts#new"
 post "/posts", to: "posts#create"
 ```
 

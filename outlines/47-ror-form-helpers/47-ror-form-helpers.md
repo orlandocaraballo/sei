@@ -191,6 +191,8 @@ Which roughly generates the following html:
 </form>
 ```
 
+[Patrick On Rails: Form Tag vs Form For vs Form With](https://m.patrikonrails.com/rails-5-1s-form-with-vs-old-form-helpers-3a5f72a8c78a)
+
 ## Other View Helpers
 
 - `image_path("[image name]")` - constructs html for `img` tag by path

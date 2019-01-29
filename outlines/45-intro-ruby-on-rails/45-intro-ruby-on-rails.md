@@ -9,9 +9,13 @@
 # this installs much faster than normal
 $ gem install rails --no-rdoc --no-ri
 
-# creates a new app
+# creates a new rails app with sqlite3 as its DBMS
 # check http://localhost:3000 to verify your server
 $ rails new [app_name]
+
+# creates a new rails app with postgresql as its DBMS
+# check http://localhost:3000 to verify your servers
+$ rails new [app_name] --database=postgresql
 
 # runs the rails console
 $ rails console

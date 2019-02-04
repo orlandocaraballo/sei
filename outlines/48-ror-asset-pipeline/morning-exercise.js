@@ -15,22 +15,22 @@ function zip(array1, array2) {
 function objectify(zippedArray) {
   let obj = {};
 
-  for(let key of zippedArray) {
-    obj[key[0]] = key[1];
+  for(let subArray of zippedArray) {
+    obj[subArray[0]] = subArray[1];
   }
 
   return obj;
 }
 
 // console.log(zip(
-//   ["pokee", "let me", "ruby on", "hdmi"],
-//   ["mans", "ask you this", "rails", "kevin"]
+//   ["hello", "the matrix", "ruby on", "sinatra"],
+//   ["world", "has you", "rails", "was just the beginning"]
 // )) // [["pokee", "mans], ["let me", "ask you this"], ["ruby on", "rails"], ["hdmi", "kevin"]])
 
-// console.log(
-//   zip(["a", "b", "c", "d", "e"], [1,2,3,4])
-// ) // [["a", 1], ["b", 2], ["c", 3], ["d", 4], ["e", null]]
+console.log(
+  zip(["a", "b", "c", "d", "e"], [1,2,3,4,5,6,7])
+) // [["a", 1], ["b", 2], ["c", 3], ["d", 4], ["e", null]]
 
-console.log(objectify(
-  [[1, 99], [3, -90], ["x", 3], ["q", null]]
-))
+// console.log(objectify(
+//   [[1, 99], [3, -90], ["x", 3], ["q", null]]
+// )) // { 1 : 99, 3 : 90, "x" : 3, "q" : null }

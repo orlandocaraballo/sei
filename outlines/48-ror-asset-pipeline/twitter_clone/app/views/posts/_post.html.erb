@@ -1,0 +1,17 @@
+<!-- 
+  the following code is available to us in the following files:
+    - index.html.erb
+    - show.html.erb
+-->
+<div style="margin-top: 10px;">
+  <strong>Id:</strong> <%= post.id %><br />
+  <strong>Title:</strong> <%= post.title %><br />
+  <strong>Content:</strong> <%= post.content %><br />
+  <strong>User id:</strong> <%= post.user_id %><br />
+  <strong>Username:</strong> <%= post.user.username %><br />
+  
+  <!-- these links allow us to show, edit and delete a post -->
+  <%= link_to "Show Post", post_path(post) %>
+  <%= link_to "Edit Post", edit_post_path(post) %>
+  <%= link_to "Destroy Post", post_path(post), method: :delete %>
+</div>

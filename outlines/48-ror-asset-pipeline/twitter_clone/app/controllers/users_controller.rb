@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  layout 'orlando_layout'
-
   # get '/users' do
   #   @users = User.all
   #   erb :index

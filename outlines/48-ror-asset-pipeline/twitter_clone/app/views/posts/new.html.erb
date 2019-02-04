@@ -5,5 +5,6 @@
   Title: <%= form.text_field :title %><br />
   Content: <%= form.text_area :content %><br />
   <%= form.hidden_field :user_id, value: session[:user_id] %>
+  <%= form.select :user_id, @users.map { |u| [u.username, u.id] } %>
   <%= form.submit %>
 <% end %>

@@ -3,6 +3,11 @@
 
 # AJAX
 
+## Use Cases for AJAX
+- Submitting a form without reloading the page
+- Loading up potentially slow loading database queries on demand
+
+**Note:** Disable submit boxes on click and reenable on return
 
 ## Javascript Review
 
@@ -261,12 +266,6 @@ let userLi = null
 ```
 
 ^ this method can be confusing, pick the method that makes the most sense to you and use that
-
-## Use Cases for AJAX
-- Submitting a form without reloading the page
-- Loading up potentially slow loading database queries on demand
-
-**Note:** Disable submit boxes on click and reenable on return
 
 ## Turbolinks
 

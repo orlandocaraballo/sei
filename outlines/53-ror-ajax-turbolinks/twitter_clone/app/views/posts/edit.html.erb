@@ -1,2 +1,9 @@
 <h1>Posts#edit</h1>
 <p>Find me in app/views/posts/edit.html.erb</p>
+
+<%= form_with(model: @post) do |form| %>
+  Username: <%= form.text_field(:title) %><br />
+  Content: <%= form.text_area(:content) %><br />
+  <%= form.select :user_id, @users.map { |u| [u.username, u.id] } %><br />
+  <%= form.submit %>
+<% end %>

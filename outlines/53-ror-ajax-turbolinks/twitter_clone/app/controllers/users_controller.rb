@@ -1,18 +1,10 @@
 class UsersController < ApplicationController
-  # before_action :authorize, except: [:new]
-
   # get '/users' do
   #   @users = User.all
   #   erb :index
   # end
   def index
     @users = User.all
-
-    respond_to do |format|
-      format.html { render '/users/index.html.erb' }
-      format.js { render '/users/index.js.erb' }
-      format.json { render json: @users }
-    end
   end
 
   # get '/users/:id' do
@@ -52,15 +44,15 @@ class UsersController < ApplicationController
     # updates the user that was currently loaded
     #   with the information retrieved from the
     #   form
-
-    # user.update(
-    #   username: params[:user][:username],
-    #   password: params[:user][:password]
-    # )
-    user.update(user_params)
-
-    # goes to show page
-    redirect_to user_path(user)
+    if user.update(user_params)
+      flash[:info] = "User info been updated"
+      
+      # redirect to show page
+      redirect user_path(user)
+    else
+      flash[:error] = "There was a problem updating this user's info"
+      render :edit
+    end
   end
 
   # delete '/users/:id' do
@@ -76,10 +68,17 @@ class UsersController < ApplicationController
 
     # this uses the information inside the user
     #   object and deletes the user
-    user.destroy
-    # User.destroy(params[:id])
+    if user.destroy
+      flash[:info] = "User has been deleted"
 
-    redirect_to users_path
+      # redirect to the users index path
+      redirect_to users_path
+    else
+      flash[:error] = "There was a problem deleting the user"
+      
+      # redirect back to the page you came from
+      redirect_back
+    end
   end
 
   # get '/users/new' do
@@ -103,32 +102,36 @@ class UsersController < ApplicationController
   # end
   def create
     # creates a new user
-    # user = User.create(
-    #   username: params[:user][:username],
-    #   password: params[:user][:password]
-    # )
+    user = User.new(user_params)
 
-    # user = User.create(user_params)
+    # checks if the user can save
+    if user.save
+      # signs the newly created user in
+      session[:user_id] = user.id
+      flash[:info] = "Good"
 
-    @user = User.new(user_params)
-    
-    # the following command returns true if the user was
-    #   stored and false if it failed validations
-    @user.save
-
-    # signs the newly created user in
-    session[:user_id] = @user.id
-
-    respond_to do |format|
       # redirects to the '/users' path
-      format.html { redirect_to users_path }
-      format.js { render '/users/create.js.erb' }
+      redirect_to users_path
+    else
+      # gather all user messages and redirect
+      flash[:error] = user.errors.messages.join(",")
+
+      # redirect back to the page you came from
+      redirect_back
     end
   end
 
   private
 
+  def is_admin
+    if params[:user][:is_admin] == "1"
+      true
+    else
+      false
+    end
+  end
+
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:username, :password)
   end
 end

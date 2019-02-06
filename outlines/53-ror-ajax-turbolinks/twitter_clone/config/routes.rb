@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
   # sets the landing page controller and route
   root to: 'users#index'
   
@@ -17,7 +14,9 @@ Rails.application.routes.draw do
   # post '/users/', to: 'users#create'
   # put '/users/:id', to: 'users#update'
   # delete '/users/:id', to: 'users#destroy'
-  resources :users, except: [:new]
+  resources :users do
+    get "/posts", to: "posts#index_by_user"
+  end
 
   # resources :posts implicitly defines
   #   the following routes
@@ -30,9 +29,4 @@ Rails.application.routes.draw do
   # delete '/posts/:id', to: 'posts#destroy'
   resources :posts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  get '/login', to: 'sessions#new', as: 'login' # login_path, login_url
-  post '/login', to: 'sessions#create'
-  get '/signup', to: 'users#new', as: 'signup' # signup_path, signup_url
-  delete '/logout', to: 'sessions#destroy', as: 'logout'
 end

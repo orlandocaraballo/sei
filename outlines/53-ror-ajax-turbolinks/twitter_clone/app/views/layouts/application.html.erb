@@ -5,29 +5,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: 'defer' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <% if flash[:notice] %>
-      <%= flash[:notice] %>
-    <% end %>
-
-    <% if flash[:alert] %>
-      <%= flash[:alert] %>
-    <% end %>
-
     <nav>
-      <% if current_user %>
-        <%= link_to "Logout", logout_path, method: :delete %>
-      <% else %>
-        <%= link_to "Login", login_path %>
-        <%= link_to "Signup", signup_path %>
-      <% end %>
+      <%= link_to "Home", root_path %>
+      <%= link_to "New User", new_user_path %>
+      <%= link_to "All Posts", posts_path %>
+      <%= link_to "New Post", new_post_path %>
     </nav>
+
+    <%= flash[:info] %>
+    <%= flash[:error] %>
 
     <%= yield %>
   </body>

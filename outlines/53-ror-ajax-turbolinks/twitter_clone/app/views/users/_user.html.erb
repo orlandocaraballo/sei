@@ -4,8 +4,9 @@
     - show.html.erb
 -->
 <div style="margin-top: 20px;">
-  <strong>Email:</strong> <%= user.email %><br />
-  <strong>Password Digest:</strong> <%= user.password_digest %><br />
+  <strong>Username:</strong> <%= user.username %><br />
+  <strong>Password:</strong> <%= user.password %><br />
+  <strong>Admin:</strong> <%= user.is_admin? %><br />
   <strong>Created At:</strong> <%= user.created_at_formatted %><br />
   <strong>Updated At:</strong> <%= user.updated_at_formatted %><br />
 
@@ -13,4 +14,5 @@
   <%= link_to "Show User", user_path(user) %>
   <%= link_to "Edit User", edit_user_path(user) %>
   <%= link_to "Destroy User", user_path(user), method: :delete %>
+  <%= link_to "Posts", user_posts_path(user) %>
 </div>

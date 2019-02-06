@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  layout 'orlando_layout'
-
   # get '/users' do
   #   @users = User.all
   #   erb :index
@@ -46,11 +44,6 @@ class UsersController < ApplicationController
     # updates the user that was currently loaded
     #   with the information retrieved from the
     #   form
-
-    # user.update(
-    #   username: params[:user][:username],
-    #   password: params[:user][:password]
-    # )
     user.update(user_params)
 
     # goes to show page
@@ -97,27 +90,32 @@ class UsersController < ApplicationController
   # end
   def create
     # creates a new user
-    # user = User.create(
-    #   username: params[:user][:username],
-    #   password: params[:user][:password]
-    # )
-
-    # user = User.create(user_params)
-
     user = User.new(user_params)
-    
-    # the following command returns true if the user was
-    #   stored and false if it failed validations
-    user.save
 
-    # signs the newly created user in
-    session[:user_id] = user.id
 
-    # redirects to the '/users' path
-    redirect_to users_path
+    if user.save
+      # signs the newly created user in
+      session[:user_id] = user.id
+      flash[:info] = "Good"
+
+      # redirects to the '/users' path
+      redirect_to users_path
+    else
+      flash[:error] = user.errors.messages.join(",")
+
+      redirect_to new_user_path
+    end
   end
 
   private
+
+  def is_admin
+    if params[:user][:is_admin] == "1"
+      true
+    else
+      false
+    end
+  end
 
   def user_params
     params.require(:user).permit(:username, :password)

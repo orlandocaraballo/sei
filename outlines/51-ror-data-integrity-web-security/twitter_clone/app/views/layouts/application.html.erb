@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to "Home", root_path %>
+      <%= link_to "New User", new_user_path %>
+      <%= link_to "All Posts", posts_path %>
+      <%= link_to "New Post", new_post_path %>
+    </nav>
+
+    <%= flash[:info] %>
+    <%= flash[:error] %>
+
     <%= yield %>
   </body>
 </html>

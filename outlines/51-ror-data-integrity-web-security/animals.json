@@ -1,0 +1,44 @@
+[
+  {
+    "type":"giraffe",
+    "height": 10,
+    "gender": "male",
+    "weight": 320 
+  },
+  {
+    "type":"elephant",
+    "height": 7,
+    "gender": "female",
+    "weight": 200
+  },
+  {
+    "type":"kangaroo",
+    "height": 10,
+    "gender": "female",
+    "weight": 400 
+  },
+  {
+    "type":"pidgeon",
+    "height": 1,
+    "gender": "male",
+    "weight": 10
+  },
+  {
+    "type":"bear",
+    "height": 6,
+    "gender": "male",
+    "weight": 700
+  },
+  {
+    "type":"monkey",
+    "height": 2,
+    "gender": "female",
+    "weight": 30
+  },
+  {
+    "type":"hippo",
+    "height": 7,
+    "gender": "male",
+    "weight": 400
+  }
+]

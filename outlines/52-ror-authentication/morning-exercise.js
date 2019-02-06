@@ -1,7 +1,7 @@
 "use strict";
 
 function studentFactory(course) {
-  return (name, gender, age) => {
+  return rails(name, gender, age) => {
     return { 
       name: name, 
       gender: gender, 

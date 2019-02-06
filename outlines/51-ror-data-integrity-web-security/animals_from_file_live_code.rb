@@ -1,31 +1,19 @@
-animals = File.readlines("animals.txt")
-
 class Animal
-  attr_accessor :type, :height, :gender, :weight
-
   def initialize(type, height, gender, weight)
-    @type = type
-    @height = height
-    @gender = gender
-    @weight = weight
+    @type, @height, @gender, @weight = type, height, gender, weight
   end
 end
 
-animals.each do |animal|
-  type = animal.split(" ")[0].sub(":", "")
+File.open(ARGV[0]).each do |line|
+  split_by_colon = line.split(":")
+  type = split_by_colon[0]
 
-  height_with_equals = animal.split(" ")[1].sub(",", "")
-  gender_with_equals = animal.split(" ")[2].sub(",", "")
-  weight_with_equals = animal.split(" ")[3]
+  split_by_comma = split_by_colon[1].strip.split(", ")
 
-  height = height_with_equals.split("=")[1].to_i
-  gender = gender_with_equals.split("=")[1]
-  weight = weight_with_equals.split("=")[1].to_i
+  height = split_by_comma[0].split("=")[1]
+  gender = split_by_comma[1].split("=")[1]
+  weight = split_by_comma[2].split("=")[1]
 
-  p Animal.new(
-    type,
-    height,
-    gender,
-    weight
-  )
+  p Animal.new(type, height, gender, weight)
 end
+

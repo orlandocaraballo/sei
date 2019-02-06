@@ -1,9 +1,0 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
-
-<%= form_with model: @post do |form| %>
-  Title: <%= form.text_field :title %><br />
-  Content: <%= form.text_area :content %><br />
-  <%= form.hidden_field :user_id, value: session[:user_id] %>
-  <%= form.submit %>
-<% end %>

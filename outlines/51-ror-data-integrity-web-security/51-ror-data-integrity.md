@@ -239,7 +239,7 @@ class PersonsController < ApplicationController
     # let's say person age is set to -64
     # update returns true or false depending
     #   on if it passed validation or not
-    if person.update(age: params[:person][:age])
+    if person.update(user_params)
       flash[:info] = "Your age has been updated"
       redirect_to action: "index"
     else

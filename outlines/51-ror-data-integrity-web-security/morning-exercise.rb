@@ -30,5 +30,5 @@ begin
     puts Animal.new(type, height, gender, weight).inspect
   end
 rescue Errno::ENOENT => e
-  puts 'There has an error, the file you chose is not found'
+  puts 'There has been an error, the file you chose is not found'
 end

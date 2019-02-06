@@ -17,12 +17,6 @@
       <%= link_to "New Post", new_post_path %>
     </nav>
 
-    <img src="/images/file.jpg" alt="">
-    <img src="<%= image_path 'file.jpg' %>" />
-    <%= image_tag("file.jpg", { class: "name", width: "100px" }) %>
-    <div id="something">
-    </div>
-
     <%= yield %>
   </body>
 </html>

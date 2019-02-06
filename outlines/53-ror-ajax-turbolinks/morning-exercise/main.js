@@ -11,31 +11,22 @@ function studentsRetrieved(response) {
 
   students.sort(downSort).forEach(student => {
     li = document.createElement('li');
-    li.innerHTML = `<strong>${ student.name.capitalize() }</strong>`;
+    li.innerHTML = `<strong>${ student.name }</strong>`;
     li.innerHTML += ` - <em>${ student.knownFor }</em>`;
     ul.appendChild(li);
   })
 }
 
-function downSort(elementA, elementB) {
+function downSort(studentA, studentB) {
   let returnValue;
 
-  if(elementA.name > elementB.name) {
+  if(studentA.name > studentB.name) {
     returnValue = 1;
-  } else if(elementA.name < elementB.name) {
+  } else if(studentA.name < studentB.name) {
     returnValue = -1;
   } else {
     returnValue = 0;
   }
 
   return returnValue;
-}
-
-// add capitalize to String prototype
-String.prototype.capitalize = function() {
-  // orlando
-  // o^ = O
-  // O + rlando
-  // Orlando
-  return this.charAt(0).toUpperCase() + this.substr(1);
 }

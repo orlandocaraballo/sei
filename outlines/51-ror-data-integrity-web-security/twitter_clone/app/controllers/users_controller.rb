@@ -44,10 +44,15 @@ class UsersController < ApplicationController
     # updates the user that was currently loaded
     #   with the information retrieved from the
     #   form
-    user.update(user_params)
-
-    # goes to show page
-    redirect_to user_path(user)
+    if user.update(user_params)
+      flash[:info] = "User info been updated"
+      
+      # redirect to show page
+      redirect user_path(user)
+    else
+      flash[:error] = "There was a problem updating this user's info"
+      render :edit
+    end
   end
 
   # delete '/users/:id' do
@@ -63,10 +68,17 @@ class UsersController < ApplicationController
 
     # this uses the information inside the user
     #   object and deletes the user
-    user.destroy
-    # User.destroy(params[:id])
+    if user.destroy
+      flash[:info] = "User has been deleted"
 
-    redirect_to users_path
+      # redirect to the users index path
+      redirect_to users_path
+    else
+      flash[:error] = "There was a problem deleting the user"
+      
+      # redirect back to the page you came from
+      redirect_back
+    end
   end
 
   # get '/users/new' do
@@ -92,7 +104,7 @@ class UsersController < ApplicationController
     # creates a new user
     user = User.new(user_params)
 
-
+    # checks if the user can save
     if user.save
       # signs the newly created user in
       session[:user_id] = user.id
@@ -101,9 +113,11 @@ class UsersController < ApplicationController
       # redirects to the '/users' path
       redirect_to users_path
     else
+      # gather all user messages and redirect
       flash[:error] = user.errors.messages.join(",")
 
-      redirect_to new_user_path
+      # redirect back to the page you came from
+      redirect_back
     end
   end
 

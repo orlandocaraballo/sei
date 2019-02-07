@@ -1,0 +1,6 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+<% @addresses.each do |address| %>
+  <%= link_to "Link Address #{address.id} to User", user_address_path(@user, address) %><br />
+<% end %>
